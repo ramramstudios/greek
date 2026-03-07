@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demeter and Jesus Refuse — The Sacred Drink Refusal | Pagan Roots of Monotheism</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){var t=localStorage.getItem('prm-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();
+    function toggleTheme(){var n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('prm-theme',n);}
+    function toggleNav(){var l=document.getElementById('nav-links'),b=document.getElementById('nav-toggle'),o=l.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.innerHTML=o?'\u2715':'\u2630';}
+  </script>
+  <style>
+    /* ── Crimson / wine-red accent for this branch ── */
+    :root {
+      --cr: #902828;
+      --cr-dim: rgba(144,40,40,0.35);
+      --cr-faint: rgba(144,40,40,0.07);
+      --cr-mid: rgba(144,40,40,0.18);
+    }
+    [data-theme="dark"] {
+      --cr: #c85050;
+      --cr-dim: rgba(200,80,80,0.38);
+      --cr-faint: rgba(200,80,80,0.07);
+      --cr-mid: rgba(200,80,80,0.2);
+    }
+
+    .dr-section { margin-bottom: 52px; }
+    .dr-section h2 {
+      color: var(--cr);
+      border-bottom: 2px solid var(--cr-dim);
+      padding-bottom: 10px;
+      margin-bottom: 24px;
+      font-size: 1.2rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Parallel comparison blocks ── */
+    .parallel-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0 28px;
+    }
+    .par-side {
+      background: var(--cr-faint);
+      border-left: 3px solid var(--cr-dim);
+      border-radius: 0 4px 4px 0;
+      padding: 14px 16px;
+    }
+    .par-side.par-gold {
+      background: rgba(200,168,75,0.07);
+      border-color: rgba(200,168,75,0.35);
+    }
+    .par-hero {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cr);
+      display: block;
+      margin-bottom: 6px;
+    }
+    .par-side.par-gold .par-hero { color: var(--gold); }
+
+    .parallel-num {
+      display: inline-block;
+      width: 28px; height: 28px;
+      background: var(--cr-mid);
+      border: 1px solid var(--cr-dim);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--cr);
+      margin-right: 10px;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+    .parallel-title {
+      font-weight: 700;
+      color: var(--fg);
+      font-size: 0.95rem;
+      vertical-align: middle;
+    }
+    .parallel-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    /* ── Source / quote blocks ── */
+    .source-block {
+      background: var(--cr-faint);
+      border: 1px solid var(--cr-dim);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+    .source-block .sb-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cr);
+      margin-bottom: 10px;
+      font-family: 'Courier New', monospace;
+    }
+    .source-block blockquote {
+      font-style: italic;
+      color: var(--gold-light);
+      border-left: 3px solid var(--cr-dim);
+      margin: 10px 0 0;
+      padding: 10px 16px;
+      line-height: 1.75;
+    }
+    [data-theme="dark"] .source-block blockquote { color: var(--gold-light); }
+
+    /* ── Greek text display ── */
+    .greek-text-block {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin: 18px 0;
+      font-family: 'Georgia', serif;
+      line-height: 2;
+    }
+    .greek-text-block .gt-source {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cr);
+      font-family: 'Courier New', monospace;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .gt-greek { font-size: 1.05rem; color: var(--text); display: block; }
+    .gt-trans  { font-size: 0.87rem; color: var(--text-dim); font-style: italic; display: block; margin-top: 4px; }
+
+    /* ── Axis cards ── */
+    .axis-card {
+      border: 1px solid var(--cr-dim);
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-bottom: 18px;
+      background: var(--cr-faint);
+    }
+    .axis-card h4 {
+      color: var(--cr);
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .axis-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+    .axis-demeter {
+      padding: 10px 14px;
+      background: rgba(144,40,40,0.08);
+      border-radius: 4px;
+      border-left: 3px solid var(--cr-dim);
+    }
+    .axis-jesus {
+      padding: 10px 14px;
+      background: rgba(200,168,75,0.07);
+      border-radius: 4px;
+      border-left: 3px solid rgba(200,168,75,0.3);
+    }
+    .axis-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .demeter-label { color: var(--cr); }
+    .jesus-label   { color: var(--gold); }
+
+    /* ── Hypothesis box ── */
+    .hypothesis-box {
+      background: var(--cr-faint);
+      border: 2px solid var(--cr-dim);
+      border-radius: 8px;
+      padding: 22px 28px;
+      margin: 24px 0;
+    }
+    .hypothesis-box h3 { color: var(--cr); margin-bottom: 16px; font-size: 1.05rem; }
+    .step { display: flex; gap: 14px; margin-bottom: 14px; align-items: flex-start; }
+    .step-num {
+      min-width: 28px; height: 28px;
+      background: var(--cr-mid);
+      border: 1px solid var(--cr-dim);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--cr);
+      flex-shrink: 0;
+    }
+    .step-text { font-size: 0.9rem; line-height: 1.65; color: var(--fg); padding-top: 4px; }
+
+    /* ── Pull quote ── */
+    .pull-quote-cr {
+      border-left: 3px solid var(--cr-dim);
+      padding: 0.6rem 1.2rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+
+    /* ── Sources ── */
+    .sources-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .sources-list { font-size: 0.84rem; line-height: 1.85; color: var(--fg-dim); }
+    .sources-list li { margin-bottom: 4px; list-style: disc; margin-left: 1.2rem; }
+    .sources-list em { color: var(--gold-light); }
+
+    /* ── Drink sequence diagram ── */
+    .drink-sequence {
+      display: flex;
+      gap: 0;
+      align-items: stretch;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+    .ds-step {
+      flex: 1;
+      min-width: 120px;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+    .ds-step .ds-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .ds-step .ds-drink {
+      font-weight: bold;
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .ds-step.ds-offered {
+      background: rgba(90,90,90,0.06);
+      border: 1px solid var(--border);
+      border-radius: 4px 0 0 4px;
+    }
+    .ds-step.ds-refused {
+      background: rgba(144,40,40,0.08);
+      border: 1px solid var(--cr-dim);
+    }
+    .ds-step.ds-accepted {
+      background: rgba(40,112,64,0.07);
+      border: 1px solid rgba(40,112,64,0.3);
+      border-radius: 0 4px 4px 0;
+    }
+    .ds-step.ds-refused .ds-label { color: var(--cr); }
+    .ds-step.ds-accepted .ds-label { color: var(--green); }
+    .ds-arrow {
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    /* ── Callout override ── */
+    .callout-cr {
+      background: var(--cr-faint);
+      border-left: 4px solid var(--cr);
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 700px) {
+      .parallel-block, .axis-row, .sources-two-col { grid-template-columns: 1fr; }
+      .drink-sequence { flex-direction: column; }
+      .ds-step.ds-offered { border-radius: 4px 4px 0 0; }
+      .ds-step.ds-accepted { border-radius: 0 0 4px 4px; }
+      .ds-arrow { transform: rotate(90deg); justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">&#9737; Pagan Roots of Monotheism</a>
+  <div class="nav-links" id="nav-links">
+    <span class="nav-sep">|</span>
+    <a href="christos_tlg_report.html">&#967;&#961;&#953;&#963;&#964;&#972;&#962; Research</a>
+    <span class="nav-sep">|</span>
+    <a href="pharmakon_hypothesis.html">Pharmakon</a>
+    <span class="nav-sep">|</span>
+    <a href="jason_jesus_sidequest.html">Jason / Jesus</a>
+    <span class="nav-sep">|</span>
+    <a href="demeter_jesus_drink_refusal.html" style="color:var(--cr)">Demeter &amp; Jesus</a>
+    <span class="nav-sep">|</span>
+    <a href="related_works.html">Related Works</a>
+  </div>
+  <div class="nav-controls">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">&#9776;</button>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header" style="border-color: var(--cr)">
+    <h1>Demeter and Jesus Refuse</h1>
+    <div class="page-meta">
+      <span class="badge-nt" style="background:var(--cr-faint); border-color:var(--cr); color:var(--cr)">Ritual Drink Refusal Branch</span>
+      Wine Refused &nbsp;&middot;&nbsp; Sacred Drink Accepted &nbsp;&middot;&nbsp; Threshold Crossed
+    </div>
+  </div>
+
+  <div class="callout" style="border-color:var(--cr); margin-bottom:32px;">
+    <strong>Hypothesis:</strong> The refusal of wine followed by the acceptance of an alternative ritual drink at a moment of sacred transition is a coherent Mediterranean literary and ritual motif, attested independently in the <em>Homeric Hymn to Demeter</em> (7th&ndash;6th century BCE) and the crucifixion narratives of the New Testament Gospels. The recurrence of this pattern &mdash; identical in structure, complementary in theology &mdash; points toward a shared symbolic grammar in which ritual beverages mark initiation, transformation, and passage through death toward renewal.
+  </div>
+
+  <!-- ─── SECTION I: THE PATTERN ─── -->
+  <div class="dr-section">
+    <h2>I. The Pattern &mdash; Refusal, Substitution, Transformation</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      The pattern is simple enough to state in three steps, and remarkable enough to require explanation:
+    </p>
+
+    <div class="hypothesis-box">
+      <h3>The Core Structure</h3>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>A sacred figure is offered wine</strong> &mdash; the ordinary ritual drink of the Greek world, the drink of Dionysus, of sacrifice, of social bonds.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>The figure refuses the wine</strong> &mdash; a deliberate rejection that marks the moment as outside ordinary ritual order.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>The figure accepts a different drink</strong> &mdash; a substitute liquid with distinct symbolic or pharmacological associations &mdash; <em>and by accepting it, crosses a liminal threshold into a new sacred order.</em></div>
+      </div>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:16px;">
+      Both instances occur at the most charged moment in their respective narratives. In the
+      <em>Homeric Hymn to Demeter</em>, Demeter is at the nadir of her grief and the threshold of the
+      initiatory act that will create the Eleusinian Mysteries. In the Passion narratives,
+      Jesus is at the moment of his death &mdash; the pivot of the Christian account of redemption.
+      Wine is offered and refused. A different drink is offered and accepted. The world changes.
+    </p>
+
+    <div class="pull-quote-cr">
+      "The refusal of wine is not mere abstinence. It is a semiotic act: the sacred figure signals departure
+      from the ordinary ritual order by refusing its central sacramental drink. The acceptance of
+      the alternative is the corresponding entry into a new one."
+    </div>
+  </div>
+
+  <!-- ─── SECTION II: DEMETER ─── -->
+  <div class="dr-section">
+    <h2>II. Demeter at Eleusis &mdash; The <span class="gk">Κυκεών</span> Refusal</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      The evidence begins with the <em>Homeric Hymn to Demeter</em>, generally dated to the
+      7th&ndash;6th century BCE and among the most important documents for understanding Greek mystery
+      religion. The hymn narrates Demeter's grief after the abduction of Persephone by Hades,
+      her wandering in disguise, her arrival at the house of Celeus at Eleusis, and the
+      founding of her cult.
+    </p>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      The drink-refusal scene appears at lines 206&ndash;211. Metaneira, queen of Eleusis,
+      offers the goddess (disguised as an old woman) a cup of <strong>sweet wine</strong>
+      (<span class="gk">μελιηδέα οἶνον</span>). Demeter refuses. She instructs her hostess
+      instead to mix her a <span class="gk">κυκεών</span> &mdash; a ritual drink of barley-meal,
+      water, and soft pennyroyal.
+    </p>
+
+    <div class="greek-text-block">
+      <span class="gt-source">Homeric Hymn to Demeter, lines 208&ndash;211</span>
+      <span class="gt-greek">
+        ἣ δ&rsquo; ἀπανήνατο ἔργον, ἀνήνατο δεῖπνον ἑλέσθαι·<br>
+        αὐτὰρ ἐπεὶ κεδνὴ Μετάνειρα δέπας προτέτυκτο<br>
+        οἴνου ἐρυθροῖο μελιηδέος, ἡ δ&rsquo; ἀπανήνατο&mdash;<br>
+        οὐ γὰρ ἔφη θεμιτὸν εἶναι οἶνον ἐρυθρὸν πίνειν·
+      </span>
+      <span class="gt-trans">
+        She refused the task, refused to take food; but when noble Metaneira
+        offered a cup of honey-sweet red wine, she refused it &mdash;
+        for she said it was not lawful (themis) for her to drink red wine.
+      </span>
+    </div>
+
+    <div class="greek-text-block">
+      <span class="gt-source">Homeric Hymn to Demeter, lines 208&ndash;211 (continued) — The Kykeon Requested</span>
+      <span class="gt-greek">
+        ἀλλ&rsquo; ἄλφι καὶ ὕδατι δοῦναι μῖξαι γλήχωνι τέρεινῃ.
+      </span>
+      <span class="gt-trans">
+        But she bade them mix barley-meal and water with soft pennyroyal [to give her].
+      </span>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-top:20px; margin-bottom:20px;">
+      The key term is <span class="gk">θεμιτόν</span>: "lawful," "permitted by divine law or custom."
+      This is not personal preference. Demeter is making a theological declaration: wine belongs to
+      a different sacred order &mdash; Dionysus's order &mdash; and at this liminal moment, that order
+      is precisely what she is stepping outside. The kykeon (<span class="gk">κυκεών</span>: from
+      <span class="gk">κυκάω</span>, "to mix, to stir") is the alternative: a mixed drink, a
+      threshold drink, associated not with the Olympian economy of wine and sacrifice but with
+      the chthonic economy of grain, death, and renewal.
+    </p>
+
+    <div class="drink-sequence">
+      <div class="ds-step ds-offered">
+        <span class="ds-label">Offered</span>
+        <span class="ds-drink">Red Wine</span>
+        <span>μελιηδέα οἶνον</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">Dionysian, social, ordinary</span>
+      </div>
+      <div class="ds-arrow">&#8594;</div>
+      <div class="ds-step ds-refused">
+        <span class="ds-label">Refused</span>
+        <span class="ds-drink">Refused</span>
+        <span>οὐ θεμιτόν</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">"Not lawful" — the threshold declaration</span>
+      </div>
+      <div class="ds-arrow">&#8594;</div>
+      <div class="ds-step ds-accepted">
+        <span class="ds-label">Accepted</span>
+        <span class="ds-drink">Kykeon</span>
+        <span>κυκεών</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">Barley + water + pennyroyal</span>
+      </div>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:16px;">
+      This same kykeon became the sacred drink of the Eleusinian Mysteries &mdash; the beverage
+      initiates drank at the climax of the nocturnal ceremony, after days of fasting, a
+      rite promising initiation into the mystery of death and return. Scholars including
+      R. Gordon Wasson, Albert Hofmann, and Carl Ruck (<em>The Road to Eleusis</em>, 1978)
+      have proposed that ergotized barley &mdash; barley infected with <em>Claviceps purpurea</em>,
+      the natural precursor to LSD &mdash; may have given the kykeon psychoactive properties,
+      explaining the visionary experiences reported by initiates. Whether or not this
+      pharmacological hypothesis is correct, the kykeon's ritual function is unambiguous:
+      it is the drink of the threshold, the drink of the initiated, the drink that
+      accompanies the symbolic experience of death and rebirth.
+    </p>
+
+    <div class="callout-cr">
+      <strong>The critical point:</strong> Demeter does not merely refuse wine out of ascetic scruple.
+      She is in the act of founding a new mystery cult. By refusing the Dionysian drink and
+      demanding the kykeon, she is constituting a new ritual order &mdash; one governed by her own
+      chthonic law, not the conventions of Olympian festivity. The kykeon she accepts at
+      Eleusis is the same drink that will initiate thousands over the next thousand years
+      into the mysteries of grain, death, and renewal.
+    </div>
+  </div>
+
+  <!-- ─── SECTION III: JESUS ─── -->
+  <div class="dr-section">
+    <h2>III. Jesus at Golgotha &mdash; The Crucifixion Drink Sequence</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      The Gospel narratives present a two-act drink sequence at the crucifixion. The structure
+      is rarely read as a unit; it repays close attention.
+    </p>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:16px;">
+      <strong>Act I: The Refusal.</strong> According to Mark 15:23, immediately before the
+      crucifixion begins, Jesus is offered wine mixed with myrrh
+      (<span class="gk">ἐσμυρνισμένον οἶνον</span>). He refuses it.
+      Matthew 27:34 narrates the same scene, substituting gall (<span class="gk">χολή</span>)
+      for myrrh &mdash; possibly a deliberate allusion to Psalm 69:21, which reads: "They gave
+      me gall for food, and for my thirst they gave me vinegar to drink." Either way, the
+      first drink is wine-based and it is refused.
+    </p>
+
+    <div class="greek-text-block">
+      <span class="gt-source">Mark 15:23</span>
+      <span class="gt-greek">καὶ ἐδίδουν αὐτῷ ἐσμυρνισμένον οἶνον· ὃς δὲ οὐκ ἔλαβεν.</span>
+      <span class="gt-trans">And they offered him wine mixed with myrrh; but he did not take it.</span>
+    </div>
+
+    <div class="greek-text-block">
+      <span class="gt-source">Matthew 27:34</span>
+      <span class="gt-greek">ἔδωκαν αὐτῷ πιεῖν οἶνον μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἠθέλησεν πιεῖν.</span>
+      <span class="gt-trans">They gave him wine mixed with gall to drink; and when he had tasted it, he would not drink.</span>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-top:20px; margin-bottom:16px;">
+      <strong>The wine-myrrh mixture is significant.</strong> According to the Babylonian Talmud
+      (<em>b. Sanhedrin</em> 43a), it was the practice in Jerusalem to offer condemned prisoners
+      a narcotizing drink before execution &mdash; specifically wine mixed with frankincense &mdash;
+      as a mercy, to dull the senses and ease the passage into death. Myrrh served a similar
+      analgesic function; it was used as a pain-reliever in ancient pharmacology. This was,
+      in other words, an <em>anesthetic wine</em> &mdash; a drug designed to blunt
+      consciousness at the moment of death. Jesus refuses it.
+    </p>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      <strong>Act II: The Acceptance.</strong> Much later in the narrative, at the
+      moment of death itself, Jesus accepts a very different drink. John 19:28&ndash;30
+      records that Jesus, knowing all things were now finished, says "I thirst"
+      (<span class="gk">Διψῶ</span>). A sponge soaked in sour wine
+      (<span class="gk">ὄξος</span> &mdash; posca, the sour wine of Roman soldiers,
+      vinegar-wine diluted with water) is raised to his lips on a hyssop stalk.
+      He receives it and says: <span class="gk">Τετέλεσται</span>. "It is finished."
+    </p>
+
+    <div class="greek-text-block">
+      <span class="gt-source">John 19:28&ndash;30</span>
+      <span class="gt-greek">
+        μετὰ τοῦτο εἰδὼς ὁ Ἰησοῦς ὅτι ἤδη πάντα τετέλεσται, ἵνα τελειωθῇ ἡ γραφή, λέγει· Διψῶ.<br>
+        σκεῦος ἔκειτο ὄξους μεστόν· σπόγγον οὖν μεστὸν τοῦ ὄξους ὑσσώπῳ περιθέντες<br>
+        προσήνεγκαν αὐτοῦ τῷ στόματι. ὅτε οὖν ἔλαβεν τὸ ὄξος ὁ Ἰησοῦς εἶπεν· Τετέλεσται.
+      </span>
+      <span class="gt-trans">
+        After this, Jesus, knowing that all things were now finished, so that Scripture might be fulfilled,
+        said, "I thirst." A jar full of sour wine was standing there; so they put a sponge full of the
+        sour wine on a hyssop branch and brought it to his mouth. Therefore when Jesus had received the
+        sour wine, he said, "It is finished."
+      </span>
+    </div>
+
+    <div class="drink-sequence" style="margin-top: 24px;">
+      <div class="ds-step ds-offered">
+        <span class="ds-label">Offered</span>
+        <span class="ds-drink">Wine + Myrrh</span>
+        <span>ἐσμυρνισμένον οἶνον</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">Analgesic, mercy drug, dulls consciousness</span>
+      </div>
+      <div class="ds-arrow">&#8594;</div>
+      <div class="ds-step ds-refused">
+        <span class="ds-label">Refused</span>
+        <span class="ds-drink">Refused</span>
+        <span>οὐκ ἔλαβεν</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">"He did not take it" — full consciousness chosen</span>
+      </div>
+      <div class="ds-arrow">&#8594;</div>
+      <div class="ds-step ds-accepted">
+        <span class="ds-label">Accepted</span>
+        <span class="ds-drink">Posca (Sour Wine)</span>
+        <span>ὄξος</span>
+        <span style="margin-top:4px; font-size:0.78rem; color:var(--text-muted)">Soldier's drink, thirst quenched, "It is finished"</span>
+      </div>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-top:20px; margin-bottom:16px;">
+      The posca Jesus accepts is not a sacred drink by nature &mdash; it was the common field
+      ration of Roman soldiers, sour wine cut with water. What makes it sacred is the
+      context: it is the drink Jesus requests precisely at the moment of fulfillment
+      (<span class="gk">Τετέλεσται</span>), the declarative completion of his sacrificial
+      death. The hyssop stalk on which it is presented is itself ritually charged: hyssop
+      is the purification plant of Leviticus 14 and Psalm 51:9
+      (<span class="gk">ὑσσώπῳ</span> appears in both), used for sprinkling blood in
+      the Passover (Exodus 12:22). John's use of hyssop transforms the posca offering
+      into a typological act &mdash; the sour wine on hyssop recalls the Passover blood
+      on hyssop. The accepted drink is the completion drink, the drink of the moment
+      at which the threshold is crossed.
+    </p>
+  </div>
+
+  <!-- ─── SECTION IV: STRUCTURAL COMPARISON ─── -->
+  <div class="dr-section">
+    <h2>IV. Structural Comparison &mdash; Side by Side</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:24px;">
+      The two narratives map onto each other across four independent structural axes.
+    </p>
+
+    <!-- Parallel 1 -->
+    <div class="parallel-header">
+      <span class="parallel-num">1</span>
+      <span class="parallel-title">The Liminal Context</span>
+    </div>
+    <div class="parallel-block">
+      <div class="par-side">
+        <span class="par-hero">Demeter / Homeric Hymn</span>
+        Demeter is at the lowest point of grief, wandering after the loss of Persephone.
+        She arrives at Eleusis on the threshold of the foundational ritual act: the
+        inauguration of the Mysteries. She sits on the Mirthless Stone at the Well of
+        Beautiful Dances. This is the hinge-point of the myth.
+      </div>
+      <div class="par-side par-gold">
+        <span class="par-hero" style="color:var(--gold)">Jesus / Passion Narratives</span>
+        Jesus is at the threshold of death, having been condemned, scourged, and led
+        to Golgotha. The crucifixion is the hinge-point of the Christian narrative:
+        the moment at which the sacrificial logic of the Passion reaches its culmination
+        and (by Christian theology) the new covenant is inaugurated.
+      </div>
+    </div>
+
+    <!-- Parallel 2 -->
+    <div class="parallel-header">
+      <span class="parallel-num">2</span>
+      <span class="parallel-title">The Wine Refused</span>
+    </div>
+    <div class="parallel-block">
+      <div class="par-side">
+        <span class="par-hero">Demeter / HhDem 208&ndash;211</span>
+        Metaneira offers honey-sweet red wine (<span class="gk">μελιηδέα οἶνον</span>).
+        Demeter refuses with a theological declaration: <span class="gk">οὐ θεμιτόν</span>
+        &mdash; "it is not lawful." Wine belongs to Dionysus's order; this moment
+        belongs to a different order entirely.
+      </div>
+      <div class="par-side par-gold">
+        <span class="par-hero" style="color:var(--gold)">Jesus / Mark 15:23</span>
+        The soldiers offer wine mixed with myrrh
+        (<span class="gk">ἐσμυρνισμένον οἶνον</span>).
+        Jesus refuses: <span class="gk">οὐκ ἔλαβεν</span> &mdash; "he did not take it."
+        The narration gives no reason; the refusal stands as a bare act.
+        In context it reads as a refusal of the mercy-drug, a choice of full
+        consciousness at the threshold of death.
+      </div>
+    </div>
+
+    <!-- Parallel 3 -->
+    <div class="parallel-header">
+      <span class="parallel-num">3</span>
+      <span class="parallel-title">The Alternative Drink Accepted</span>
+    </div>
+    <div class="parallel-block">
+      <div class="par-side">
+        <span class="par-hero">Demeter / HhDem 208&ndash;211</span>
+        Demeter requests and accepts the kykeon (<span class="gk">κυκεών</span>):
+        barley-meal, water, and soft pennyroyal. A mixed drink, not a
+        fermented one. A drink associated with grain, the earth, and
+        initiatory ritual. It becomes the sacred drink of the Mysteries.
+      </div>
+      <div class="par-side par-gold">
+        <span class="par-hero" style="color:var(--gold)">Jesus / John 19:29&ndash;30</span>
+        Jesus accepts sour wine (posca, <span class="gk">ὄξος</span>): the
+        soldier's vinegar-wine, humble and unadorned, lifted on hyssop.
+        Not a sacred drink by nature, but made sacred by the act:
+        the drink that accompanies <span class="gk">Τετέλεσται</span>.
+        "It is finished."
+      </div>
+    </div>
+
+    <!-- Parallel 4 -->
+    <div class="parallel-header">
+      <span class="parallel-num">4</span>
+      <span class="parallel-title">The Transformation or New Order</span>
+    </div>
+    <div class="parallel-block">
+      <div class="par-side">
+        <span class="par-hero">Demeter / Eleusinian Tradition</span>
+        The refusal and acceptance at Eleusis precede Demeter's institution of
+        the Mysteries &mdash; the most important initiatory cult of the ancient
+        world, promising participants direct experience of death and return,
+        and the hope of a blessed afterlife. The kykeon is its central sacrament.
+      </div>
+      <div class="par-side par-gold">
+        <span class="par-hero" style="color:var(--gold)">Jesus / Christian Tradition</span>
+        The refusal and acceptance at Golgotha frame the moment of Jesus's death,
+        which Christian theology interprets as the atoning sacrifice that inaugurates
+        the new covenant. The Eucharist &mdash; the wine of the Last Supper
+        ("my blood of the new covenant") &mdash; is its central sacrament.
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SECTION V: THE DRINKS AS WORLD-MAKERS ─── -->
+  <div class="dr-section">
+    <h2>V. The Drinks as World-Makers &mdash; Kykeon, Posca, and the Eucharist</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      The deepest structural parallel is not merely that wine is refused and something
+      else is accepted. It is that in both cases the <em>pattern of refusal and acceptance</em>
+      constitutes a new sacred order. The drink that is accepted becomes the founding
+      sacramental drink of a new ritual world.
+    </p>
+
+    <div class="axis-card">
+      <h4>The Kykeon as Mystery Sacrament</h4>
+      <div class="axis-row">
+        <div class="axis-demeter">
+          <span class="axis-label demeter-label">Demeter's Drink</span>
+          The kykeon Demeter requests at Eleusis does not merely quench her thirst.
+          It constitutes the sacred drink of the Eleusinian Mysteries.
+          For nearly a thousand years (roughly 700 BCE to 400 CE), initiates at
+          Eleusis drank the kykeon after the ritual fast &mdash; a drink linked to
+          Demeter's own experience of grief, threshold, and return. The drink Demeter
+          chose at her most liminal moment became the drink initiates chose at their own
+          liminal moment: the enactment of symbolic death and rebirth.
+        </div>
+        <div class="axis-jesus">
+          <span class="axis-label jesus-label">The Last Supper Cup</span>
+          The sour wine at the cross is not Jesus's last drink in the narrative arc of the
+          Gospels. His last ritual drink is the cup of the Last Supper
+          (<span class="gk">τοῦτο γάρ ἐστιν τὸ αἷμά μου τῆς διαθήκης</span>,
+          "for this is my blood of the covenant," Matt 26:28), which he explicitly
+          refuses to drink again until the Kingdom of God arrives (Mark 14:25).
+          That cup becomes the Eucharist &mdash; the sacramental drink of Christian
+          initiation, drunk in memory of his death and in anticipation of
+          resurrection. Just as the kykeon commemorates Demeter's threshold moment,
+          the Eucharist commemorates Jesus's.
+        </div>
+      </div>
+    </div>
+
+    <div class="axis-card">
+      <h4>The Refusal as Constitutive Act</h4>
+      <div class="axis-row">
+        <div class="axis-demeter">
+          <span class="axis-label demeter-label">Demeter's Refusal</span>
+          Demeter refuses wine not because wine is bad but because wine belongs to
+          Dionysus's world. At the moment of founding a mystery cult rooted in
+          <em>her</em> suffering, her law, and her grain, she refuses the drink
+          that belongs to another deity's domain. The refusal is a declaration of
+          differentiation: what follows is governed by a different logic, a different
+          sacred economy. The Eleusinian order is constituted by and against the
+          wine-refusal.
+        </div>
+        <div class="axis-jesus">
+          <span class="axis-label jesus-label">Jesus's Refusal</span>
+          Jesus's refusal of the wine-myrrh is a refusal of anesthesia at the most
+          painful threshold of his existence. In the Gospel of Mark's stark narration,
+          the refusal carries enormous weight: this death will be undergone
+          consciously, without dulling. Read theologically: the sacrifice requires
+          full presence and full suffering; the mercy-drug would short-circuit the
+          atonement. What follows &mdash; the death, the cry of dereliction, the
+          completion &mdash; is governed by a different logic than the mercy
+          the soldiers were prepared to offer.
+        </div>
+      </div>
+    </div>
+
+    <div class="pull-quote-cr">
+      "In both cases, the sacred figure's refusal of wine is a world-making act.
+      Demeter's refusal founds the Eleusinian order. Jesus's refusal founds &mdash;
+      or rather confirms and enacts &mdash; the new covenant logic of his death.
+      The drink refused tells us which world we are leaving; the drink accepted
+      tells us which world we are entering."
+    </div>
+  </div>
+
+  <!-- ─── SECTION VI: THE PHARMACOLOGICAL THREAD ─── -->
+  <div class="dr-section">
+    <h2>VI. The Pharmacological Thread</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      This motif connects directly to the broader Pharmakon research branch of this archive.
+      The Greek world did not draw clean lines between medicine, poison, intoxicant, and
+      sacred substance &mdash; all were <span class="gk">φάρμακα</span> (<em>pharmaka</em>),
+      substances with power over the boundary between life and death.
+      The drink-refusal motif is pharmacologically as much as theologically charged.
+    </p>
+
+    <div class="axis-card">
+      <h4>The Pharmacology of the Drinks</h4>
+      <div class="axis-row">
+        <div class="axis-demeter">
+          <span class="axis-label demeter-label">Kykeon</span>
+          The three components of the kykeon &mdash; barley-meal, water, and pennyroyal
+          (<span class="gk">γλήχων</span>) &mdash; each carry pharmacological associations.
+          Pennyroyal (<em>Mentha pulegium</em>) was used in antiquity as an abortifacient,
+          an emmenagogue, and a ritual herb. Wasson, Hofmann, and Ruck proposed that
+          ergotized barley introduced ergine (d-lysergic acid amide) &mdash; a natural
+          analogue of LSD &mdash; into the mixture, producing the visionary experiences
+          reported by Eleusinian initiates including Plato, Pindar, and (reputedly)
+          Cicero. Whether or not the ergot hypothesis holds, the kykeon was understood
+          as a threshold-crossing substance.
+        </div>
+        <div class="axis-jesus">
+          <span class="axis-label jesus-label">Wine-Myrrh</span>
+          Myrrh (<span class="gk">σμύρνα</span>) was known in antiquity as an analgesic
+          and a sedative. Modern pharmacology has confirmed that myrrh contains
+          sesquiterpene compounds with opioid-receptor activity. The wine-myrrh mixture
+          Jesus refuses is, in pharmacological terms, a pain-dulling drink &mdash;
+          designed to reduce the suffering of crucifixion by chemically suppressing
+          consciousness. What Jesus refuses is not merely a drink but an
+          <em>analgesic pharmacon</em> &mdash; a substance that would have altered
+          his consciousness at the moment of sacrifice. The refusal, read
+          pharmacologically, is a choice of unmediated suffering.
+        </div>
+      </div>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-top:20px; margin-bottom:16px;">
+      The contrast is pharmacologically precise as well as theologically significant:
+    </p>
+
+    <div class="source-block">
+      <div class="sb-label">The Pharmacological Contrast</div>
+      <p style="font-size:0.88rem; line-height:1.75; color:var(--fg-dim);">
+        Demeter <strong>refuses ordinary wine</strong> and accepts the kykeon &mdash; a
+        substance associated with altered consciousness, visionary experience, and the
+        chthonic threshold. She accepts a pharmacologically active drink in order to cross
+        into a new ritual space.<br><br>
+        Jesus <strong>refuses pharmacologically active wine</strong> (wine + analgesic myrrh)
+        and accepts the posca &mdash; a pharmacologically neutral drink (merely sour wine
+        and water). He refuses the pharmacon that would alter his consciousness and accepts
+        the drink that leaves it intact.<br><br>
+        The polarity is inverted, but the logic is identical: each figure refuses the
+        drink that would keep them in the ordinary world (ordinary wine for Demeter;
+        drugged wine for Jesus) and accepts the drink appropriate to the sacred threshold
+        being crossed.
+      </p>
+    </div>
+  </div>
+
+  <!-- ─── SECTION VII: TRANSMISSION ─── -->
+  <div class="dr-section">
+    <h2>VII. Transmission Mechanisms &mdash; How the Pattern Persists</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      Direct literary borrowing from the <em>Homeric Hymn to Demeter</em> by the
+      Gospel authors is neither demonstrable nor the most plausible explanation.
+      The Gospel writers worked within Jewish scriptural traditions, and the
+      Passion narrative as a whole draws most heavily on the Hebrew Psalms (22, 69)
+      and the Suffering Servant passages of Isaiah. Three alternative transmission
+      mechanisms are more compelling.
+    </p>
+
+    <div class="hypothesis-box">
+      <h3>Mechanisms of Persistence</h3>
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <strong>Shared Mediterranean Symbolic Grammar.</strong> Throughout the ancient
+          Mediterranean world, ritual drinks mark sacred transitions. Initiatory rites,
+          mystery cults, and rites of passage consistently feature a special drink that
+          separates sacred from profane time. This is not a Greek invention: it is a
+          deep structural feature of human ritual across cultures. The wine-refusal motif
+          participates in a more general grammar in which <em>refusing the ordinary drink</em>
+          is a powerful ritual sign of departure from ordinary time.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <strong>The Hellenistic Cultural Environment.</strong> Early Christianity was
+          born and grew to maturity within the Greek-speaking Mediterranean world. Paul
+          writes in Greek; the Gospels were composed in Greek; the earliest Christian
+          communities lived in cities like Corinth, Ephesus, and Antioch where mystery
+          religion was a living cultural force. It is not necessary to propose that
+          Gospel authors read the <em>Homeric Hymn to Demeter</em>: they breathed the
+          symbolic air of a world in which the Eleusinian narrative &mdash; grief, wandering,
+          sacred drink, threshold, return &mdash; was part of shared cultural consciousness.
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <strong>The Narrative Grammar of the Liminal Hero.</strong> Myth-criticism
+          has identified a recurring pattern across cultures: the hero at the threshold
+          refuses ordinary nourishment (food or drink) before undergoing the ordeal that
+          transforms them. Moses fasts forty days on Sinai. Elijah fasts in the desert.
+          Jesus fasts forty days before his ministry. The refusal of food or drink signals
+          entry into sacred time. The wine-refusal at the cross is the culminating
+          instance of this grammar within the Gospel narrative: at the ultimate threshold,
+          the ordinary is refused, and the sacred alternative accepted.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── SECTION VIII: LIMITATIONS ─── -->
+  <div class="dr-section">
+    <h2>VIII. Limitations and Scholarly Cautions</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:16px;">
+      A rigorous presentation of this hypothesis requires acknowledgment of the counterarguments
+      and the limits of the comparison.
+    </p>
+
+    <div class="source-block" style="border-color: rgba(90,56,144,0.35); background: rgba(90,56,144,0.05);">
+      <div class="sb-label" style="color: var(--purple);">Scholarly Cautions</div>
+      <p style="font-size:0.88rem; line-height:1.8; color:var(--fg-dim);">
+        <strong>The Jewish scriptural background dominates the Passion narrative.</strong>
+        Mark 15:23 and Matthew 27:34 both read most naturally as fulfillments of
+        Psalm 69:21 ("they gave me gall for food; for my thirst they gave me
+        vinegar to drink"). The wine-refusal in the Gospels is best explained
+        first by its Hebrew scriptural context, and only secondarily by any
+        parallel with Greek religion.<br><br>
+        <strong>The ergot hypothesis for the kykeon remains unproven.</strong>
+        While the Wasson-Hofmann-Ruck argument is philologically stimulating,
+        the archaeological and pharmacological evidence is inconclusive.
+        The ritual significance of the kykeon does not depend on its
+        psychoactivity, but the pharmacological comparison with the myrrh-wine
+        is weakened if neither drink's active compounds are confirmed.<br><br>
+        <strong>Structural parallels may arise independently.</strong>
+        The ritual logic of refusing the ordinary and accepting the sacred is
+        available to any storyteller at any time. The parallel between Demeter
+        and Jesus may represent independent deployments of a universal narrative
+        grammar rather than evidence of cultural transmission.<br><br>
+        <strong>The substances are not equivalent.</strong>
+        Kykeon is a non-alcoholic mixed drink; posca is diluted sour wine.
+        Neither is the same substance as the wine-myrrh or wine-gall that is
+        refused. The comparison is structural and functional &mdash; it argues
+        for parallel narrative patterns, not identical ritual content.
+      </p>
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-top:20px;">
+      These cautions do not falsify the comparison; they calibrate it.
+      The hypothesis is strongest as a claim about <strong>shared narrative structure</strong>
+      and <strong>participation in a common Mediterranean symbolic grammar</strong>, not
+      as a claim of direct literary dependence or identical ritual content.
+    </p>
+  </div>
+
+  <!-- ─── SECTION IX: THE ARGUMENT ─── -->
+  <div class="dr-section">
+    <h2>IX. The Cumulative Argument</h2>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:20px;">
+      Taken together, the evidence supports a coherent hypothesis.
+    </p>
+
+    <div class="callout-cr" style="margin-bottom: 24px;">
+      <strong>The strongest version of the argument:</strong><br><br>
+      Both Demeter and Jesus stand at the most charged liminal moment of their respective
+      narratives &mdash; Demeter at the founding of the Mysteries, Jesus at the pivot of
+      the Passion. In both cases, wine is offered. In both cases, wine is refused. In both
+      cases, a different drink is accepted. In both cases, the accepted drink marks or
+      inaugurates a new sacred order.<br><br>
+      The coincidence is too structurally precise to be random and too culturally embedded
+      to be surprising. The ancient Mediterranean world thought in categories of sacred
+      threshold, ritual drink, and the meaning of refusal. The <em>Homeric Hymn to Demeter</em>
+      and the Passion narratives of the Gospels &mdash; composed centuries apart, within
+      traditions that claim no direct relationship &mdash; both deploy this grammar
+      at their most critical moment.<br><br>
+      The pattern belongs to no single tradition. It belongs to the symbolic inheritance
+      of the ancient world: the drink refused names the world you are leaving;
+      the drink accepted names the world you are entering.
+    </div>
+
+    <p style="line-height:1.8; color:var(--fg-dim); margin-bottom:0;">
+      The Eleusinian Mysteries promised initiates that those who drank the kykeon and
+      survived the night-rite had glimpsed what lay beyond death and would face it without
+      fear. The Christian Eucharist promises those who drink the cup of the new covenant
+      a share in the death and resurrection of Jesus. Both promises are sealed by a drink.
+      Both drinks were preceded, in the foundational narrative, by the refusal of wine.
+    </p>
+  </div>
+
+  <!-- ─── KEY SOURCES ─── -->
+  <div class="dr-section">
+    <h2>Key Sources</h2>
+    <div class="sources-two-col">
+      <div>
+        <h4 style="color:var(--cr); margin-bottom:12px; font-size:0.88rem; text-transform:uppercase; letter-spacing:0.06em;">Primary Sources</h4>
+        <ul class="sources-list">
+          <li><em>Homeric Hymn to Demeter</em>, lines 206&ndash;211 — the kykeon refusal</li>
+          <li>Gospel of Mark 15:23 — wine-myrrh refused</li>
+          <li>Gospel of Matthew 27:34 — wine-gall refused</li>
+          <li>Gospel of Luke 23:36 — vinegar offered at the cross</li>
+          <li>Gospel of John 19:28&ndash;30 — posca accepted; "It is finished"</li>
+          <li>Psalm 69:21 (LXX 68:22) — gall and vinegar as scriptural type</li>
+          <li>Babylonian Talmud, <em>b. Sanhedrin</em> 43a — the mercy-wine tradition</li>
+          <li>Exodus 12:22 — hyssop in the Passover rite</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:var(--cr); margin-bottom:12px; font-size:0.88rem; text-transform:uppercase; letter-spacing:0.06em;">Secondary Sources</h4>
+        <ul class="sources-list">
+          <li>Wasson, R.G., Hofmann, A., &amp; Ruck, C.A.P. <em>The Road to Eleusis</em> (1978) — the ergot hypothesis</li>
+          <li>Richardson, N.J. <em>The Homeric Hymn to Demeter</em> (1974) — standard commentary</li>
+          <li>Foley, H.P. <em>The Homeric Hymn to Demeter</em> (1994) — translation and essays</li>
+          <li>Burkert, W. <em>Ancient Mystery Cults</em> (1987) — Eleusinian context</li>
+          <li>Mylonas, G.E. <em>Eleusis and the Eleusinian Mysteries</em> (1961)</li>
+          <li>Ruck, C.A.P. <em>Sacred Mushrooms of the Goddess</em> (2006) — kykeon pharmacology</li>
+          <li>Brown, R.E. <em>The Death of the Messiah</em>, vol. 2 (1994) — Passion narrative commentary</li>
+          <li>Marcus, J. <em>Mark 8&ndash;16</em>, Anchor Bible (2009) — on Mark 15:23</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end page-wrapper -->
+</body>
+</html>
