@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>φάρμακον Chemical Lineage — Christ-TLG</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pharmakon-section { margin: 2rem 0; }
+    .passage-block { border: 1px solid rgba(152,120,208,0.2); border-radius: 6px; padding: 0.9rem 1.2rem; margin: 1rem 0; background: rgba(152,120,208,0.04); }
+    .passage-ref { font-size: 0.8rem; color: var(--purple); letter-spacing: 0.03em; margin-bottom: 0.4rem; font-weight: 600; }
+    .passage-greek { font-style: italic; color: var(--gold-light); font-size: 1.02rem; margin: 0.25rem 0; }
+    .passage-trans { color: #c8d8c4; font-size: 0.95rem; margin: 0.2rem 0 0.3rem 0; }
+    .passage-note { font-size: 0.85rem; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.06); padding-top: 0.4rem; margin-top: 0.4rem; }
+    .substance-crosswalk { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1.5rem 0; }
+    .substance-crosswalk th { background: rgba(152,120,208,0.15); color: var(--purple); padding: 0.5rem 0.75rem; text-align: left; border-bottom: 2px solid rgba(152,120,208,0.3); }
+    .substance-crosswalk td { padding: 0.5rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--text-dim); vertical-align: top; }
+    .substance-crosswalk td:first-child { color: var(--gold-light); }
+    .substance-crosswalk td:nth-child(2) { font-style: italic; color: var(--purple); font-size: 0.9rem; }
+    .timeline-table { width: 100%; border-collapse: collapse; font-size: 0.87rem; margin: 1.5rem 0; }
+    .timeline-table th { background: rgba(200,168,75,0.12); color: var(--gold); padding: 0.5rem 0.75rem; text-align: left; border-bottom: 2px solid rgba(200,168,75,0.25); }
+    .timeline-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); color: var(--text-dim); vertical-align: top; }
+    .timeline-table td:first-child { color: var(--gold); white-space: nowrap; font-weight: 600; }
+    .pharmakon-dyad { display: flex; gap: 1.5rem; margin: 1rem 0; flex-wrap: wrap; }
+    .dyad-pole { flex: 1; min-width: 200px; border: 1px solid rgba(152,120,208,0.2); border-radius: 6px; padding: 0.75rem 1rem; text-align: center; }
+    .dyad-pole .pole-word { font-size: 1.3rem; font-style: italic; color: var(--purple); }
+    .dyad-pole .pole-desc { font-size: 0.82rem; color: var(--text-dim); margin-top: 0.3rem; }
+    .dyad-arrow { display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.5rem; }
+    .tlg-tag { font-family: monospace; font-size: 0.78rem; background: rgba(255,255,255,0.06); color: var(--muted); padding: 0.1rem 0.4rem; border-radius: 3px; }
+    .section-num { color: var(--purple); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 0.3rem; }
+    .bib-entry { font-size: 0.88rem; color: var(--text-dim); margin: 0.25rem 0 0.25rem 1.5rem; }
+    .bib-entry::before { content: "—"; margin-left: -1.5rem; margin-right: 0.5rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+<nav class="nav-bar">
+  <a href="index.html">Home</a>
+  <a href="pharmakon_hypothesis.html">Hypothesis</a>
+  <a href="pharmakon_sources.html">Sources</a>
+  <a href="pharmakon_full_sources.html">Full Sources</a>
+  <a href="christos_tlg_report.html">TLG Report</a>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header" style="border-color: var(--purple);">
+    <div class="page-header-inner">
+      <h1><span class="gk">φάρμακον</span> and the Chemical Lineage</h1>
+      <div class="page-meta">From Medea to Jesus · A Philological-Pharmacological Research Report · 2026-03-06</div>
+    </div>
+  </div>
+
+  <div class="callout callout-purple">
+    <div class="callout-label">Research Hypothesis</div>
+    <p>The pharmacological tradition embedded in Greek mystery religion (Eleusinian, Bacchic, Orphic) — specifically the ritual use of death-inducing substances and antidotes — forms a neglected cultural substrate for understanding the ministry and passion of Jesus of Nazareth, who as a Galilean Jew living under Hellenistic cultural saturation may have encountered this tradition directly and incorporated its symbolic grammar into his self-presentation as <span class="gk">χριστός</span> (the anointed/smeared one).</p>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat-box" style="border-color: var(--purple);">
+      <div class="stat-number">13</div>
+      <div class="stat-label">Research Sections</div>
+    </div>
+    <div class="stat-box" style="border-color: var(--purple);">
+      <div class="stat-number">20+</div>
+      <div class="stat-label">Ancient Texts Analyzed</div>
+    </div>
+    <div class="stat-box" style="border-color: var(--purple);">
+      <div class="stat-number">~800 BCE – 216 CE</div>
+      <div class="stat-label">Chronological Range</div>
+    </div>
+    <div class="stat-box" style="border-color: var(--purple);">
+      <div class="stat-number">9</div>
+      <div class="stat-label">Key Pharmaka Documented</div>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#s1">I. The Polysemy of φάρμακον</a></li>
+      <li><a href="#s2">II. The Mythological Foundation — Medea, Hecate</a></li>
+      <li><a href="#s3">III. Herodotus — Historical Ethnography of Ritual Substances</a></li>
+      <li><a href="#s4">IV. The Eleusinian Mysteries — Kykeon and the Entheogenic Hypothesis</a></li>
+      <li><a href="#s5">V. Dionysiac Rites — Wine, Sparagmos, Death/Resurrection</a></li>
+      <li><a href="#s6">VI. Theophrastus and the Rhizotomoi</a></li>
+      <li><a href="#s7">VII. Dioscorides — The Pharmacopoeia of the First Century CE</a></li>
+      <li><a href="#s8">VIII. Mithridates VI and the Antidote Tradition</a></li>
+      <li><a href="#s9">IX. Galen — Systematizing the Antidote</a></li>
+      <li><a href="#s10">X. The Crucifixion Pharmacology — A Close Reading</a></li>
+      <li><a href="#s11">XI. Josephus, the Essenes, and Jewish Sectarian Pharmacology</a></li>
+      <li><a href="#s12">XII. Synthesis — The Chemical Lineage</a></li>
+      <li><a href="#s13">XIII. The χριστός / χρίω Connection</a></li>
+      <li><a href="#bib">Bibliography</a></li>
+    </ol>
+  </nav>
+
+  <!-- SECTION I -->
+  <section id="s1" class="pharmakon-section">
+    <h2><span class="section-num">Section I</span>The Polysemy of <span class="gk">φάρμακον</span></h2>
+    <p style="color:var(--text-dim);">The Greek word <span class="gk">φάρμακον</span> is irreducibly ambivalent. It designates:</p>
+    <ul style="color:var(--text-dim);margin:0.5rem 0 1rem 1.5rem;">
+      <li>(a) a drug or medicine (healing sense)</li>
+      <li>(b) a poison (lethal sense)</li>
+      <li>(c) a charm or magical substance (ritual sense)</li>
+      <li>(d) a dye or pigment (physical-material sense — directly cognate with <span class="gk">χρίω</span>)</li>
+    </ul>
+    <div class="callout callout-note">
+      <div class="callout-label">LSJ s.v. φάρμακον (φάρμακον, τό)</div>
+      <p>I. a drug, whether healing or noxious &nbsp;·&nbsp; II. a charm, spell, enchantment &nbsp;·&nbsp; III. a dye, paint (Theocritus, Plato)</p>
+    </div>
+    <p style="color:var(--text-dim);">This semantic instability — the same word for cure and poison, medicine and magic — is not incidental. It encodes a Greek metaphysical assumption: that all powerful substances occupy a threshold between life and death, and that the distinction between healer and poisoner depends entirely on dosage, intent, and ritual context.</p>
+    <p style="color:var(--muted);font-size:0.88rem;">Jacques Derrida's analysis ("La pharmacie de Platon," 1968) has made this polysemy philosophically canonical. But the philological evidence within TLG is more directly relevant to the research hypothesis.</p>
+
+    <div class="pharmakon-dyad">
+      <div class="dyad-pole">
+        <div class="pole-word">φάρμακον</div>
+        <div class="pole-desc">as cure / medicine</div>
+      </div>
+      <div class="dyad-arrow">⇄</div>
+      <div class="dyad-pole">
+        <div class="pole-word">φάρμακον</div>
+        <div class="pole-desc">as poison / death</div>
+      </div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Homer · Odyssey 4.220–221 · <span class="tlg-tag">TLG 0012.002</span> · ~8th–7th c. BCE</div>
+      <div class="passage-greek">αὐτίκ' ἄρ' εἰς οἶνον βάλε φάρμακον, ἔνθεν ἔπινον, νηπενθές τ' ἄχολόν τε, κακῶν ἐπίληθον ἁπάντων.</div>
+      <div class="passage-trans">"Straightway she cast into the wine a drug (pharmakon), nepenthes and free from gall, a remedy for grief and anger, that makes men forget all ills."</div>
+      <div class="passage-note">Helen's nepenthes — identified in ancient commentary as an Egyptian opium preparation. The first documented drug transfer from Egypt to Greece in Western literature. Egypt is the pharmacological font of the Greek imagination, just as in the Exodus narrative.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Homer · Odyssey 10.234–236, 302–306 · <span class="tlg-tag">TLG 0012.002</span></div>
+      <div class="passage-greek">φάρμακα λύγρ'.</div>
+      <div class="passage-trans">Circe mixes "baneful pharmaka" into the kykeon drink; Hermes gives Odysseus the herb moly (μῶλυ) as the ἀντίφαρμακον (counter-pharmakon / antidote).</div>
+      <div class="passage-note">This is structurally a DEATH-INDUCER / ANTIDOTE pair — the primal pharmacological dyad that recurs across centuries of Greek ritual. The antidote is literally named ἀντίφαρμακον: "counter-pharmakon."</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Plato · Charmides 155e · <span class="tlg-tag">TLG 0059.005</span> · ~380 BCE</div>
+      <div class="passage-trans">"The leaf has a certain power, but without the charm (ἐπῳδή) it is of no use. It is not possible to benefit from the pharmakon without the charm."</div>
+      <div class="passage-note">Confirms that Greek pharmaka regularly required ritual accompaniment — drug and incantation were a unified pharmacological-magical act.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Plato · Phaedo 117a–118a · <span class="tlg-tag">TLG 0059.008</span> · ~360 BCE · Death of Socrates</div>
+      <div class="passage-trans">Socrates drinks the pharmakon (hemlock preparation). Numbness begins in the feet and ascends toward the heart — a clinically accurate description of Conium maculatum alkaloid poisoning.</div>
+      <div class="passage-note">Crucially, Socrates approaches his death as a philosopher's initiation: "practice for dying" (μελέτη θανάτου, Phaedo 81a). The structural parallel to mystery cult initiation — a deliberate death-like experience — is made explicit. The pharmakon is the initiatory instrument.</div>
+    </div>
+  </section>
+
+  <!-- SECTION II -->
+  <section id="s2" class="pharmakon-section">
+    <h2><span class="section-num">Section II</span>The Mythological Foundation — Medea, Hecate, and Pharmacological Power</h2>
+    <p style="color:var(--text-dim);">The mythological lineage of Greek pharmacology begins with Hecate (Ἑκάτη), goddess of the crossroads, the underworld, and pharmaka. Her priestess-initiate is Medea (Μήδεια), whose name may derive from <span class="gk">μέδομαι</span> ("to devise, to know"), cognate with Latin <em>medicus</em> (physician). Medea is the ur-pharmacist of Greek mythology.</p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Pindar · Pythian 4.221–223 · <span class="tlg-tag">TLG 0033.002</span> · 462 BCE</div>
+      <div class="passage-greek">πολυφάρμακοι Μήδειαν... θελξίμβροτοι ἐπᾳοιδαί</div>
+      <div class="passage-trans">"Medea, skilled in many drugs (polypharmakos)... with man-enchanting chants"</div>
+      <div class="passage-note">Medea as <em>polypharmakos</em> — a master of many pharmaka. The word recurs in Homer's description of Circe (Od. 10.276). These are the two great female pharmacologists of Greek mythology, both operating at the margins of the civilized world (Colchis, Aeaea).</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Pindar · Pythian 3.54–58 · <span class="tlg-tag">TLG 0033.002</span> · ~474 BCE · Asclepius myth</div>
+      <div class="passage-greek">ὁ δὲ καὶ τὸν ἐκεῖθεν ἀμαχανίᾳ δεδεμένον / ἤδη τιν' ἄνδρ' ἐκ θανάτου κόμισεν</div>
+      <div class="passage-trans">"He [Asclepius] brought back from death a man already bound in hopeless bonds — taking gold in his hands as fee — and Zeus, offended, destroyed him."</div>
+      <div class="passage-note">The pharmacist-healer who raises the dead is divinely punished for transgressing the boundary. The structural parallel to the Jesus narrative (healer who raises Lazarus and is then killed) is remarkable. The one who brings back the dead violates cosmic law and pays with his life.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Euripides · Medea · <span class="tlg-tag">TLG 0006.003</span> · 431 BCE</div>
+      <div class="passage-greek">ἐκ τῆς γὰρ Ἑκάτης Φεραίας, ἣν ἐγὼ / πάντων μάλιστα δαιμόνων σέβω ξύνεργον. (lines 384–385)</div>
+      <div class="passage-trans">"From Hecate of Pherae, whom I revere above all divine powers as my collaborator."</div>
+      <div class="passage-note">Lines 1200–1221: the poisoned robe adheres and burns like fire (contact poisons — possibly aconite-laced oil). The image of a garment that anoints with death is a pharmacological inversion of <span class="gk">χρίω</span> — where anointing normally consecrates or heals, here it kills.<br><br>Line 716: <span class="gk">"τεκεῖν σέ φημι παῖδας, ὧν ἔχω φάρμακα"</span> — "I will make you father children; I have the pharmaka for it." Fertility drugs — the other pole of the life/death spectrum.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Apollonius Rhodius · Argonautica 3.844–869 · <span class="tlg-tag">TLG 0001.001</span> · ~3rd c. BCE</div>
+      <div class="passage-greek">νυκτὶ δ' ἐν ὀρφναίῃ φάρμακον ἔντυεν, / ὃ καλέουσι Προμήθειον... / τὸ δ' ἀπὸ ζωῆς ἀνδρῶν ἔτι θαλπόμενον / ἄνθος ἐρυθρόν, ἴκελον κρόκου.</div>
+      <div class="passage-trans">"In the dark of night she prepared the drug which they call the Promethean... its flower, still warmed by the blood of living men, is blood-red, like saffron."</div>
+      <div class="passage-note">The drug is derived from the blood dripped from Prometheus's liver, harvested at midnight (the hour of Hecate), and applied as a protective ointment (<span class="gk">χρίω</span> again) to make Jason's body invulnerable. The substance is applied to the BODY SURFACE — it is a <span class="gk">χρίσμα</span>, an anointing substance. Its protective power is its pharmacological essence.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Sophocles · Women of Trachis · <span class="tlg-tag">TLG 0011.007</span> · ~450–430 BCE</div>
+      <div class="passage-trans">Deianira sends Heracles the robe soaked in Nessus's blood, believing it is a love-charm (φίλτρον). It is a death-inducer. When Heracles puts on the robe, the Hydra-poisoned blood adheres to his flesh and cannot be removed. He burns alive.</div>
+      <div class="passage-note">A substance presented as a love charm / resurrection tool is actually a death-inducer. The antidote role is absent, making it a tragedy. The hero dies from his own anointing.</div>
+    </div>
+  </section>
+
+  <!-- SECTION III -->
+  <section id="s3" class="pharmakon-section">
+    <h2><span class="section-num">Section III</span>Herodotus — Historical Ethnography of Ritual Substances</h2>
+
+    <div class="passage-block">
+      <div class="passage-ref">Herodotus · Histories 4.73–75 · <span class="tlg-tag">TLG 0016.001</span> · ~440 BCE · Scythian funerary rites</div>
+      <div class="passage-trans">"The Scythians take the seed of this hemp and, creeping under the felt coverings, they throw it upon the red-hot stones; and, being thrown, it smolders and gives out such a vapor... the Scythians, delighted, shout for joy (ὀλολύζουσι)."</div>
+      <div class="passage-note">Greek text: <span class="gk">κάνναβις</span> (kannabis) — the first unambiguous textual reference to cannabis psychoactive use in Western literature. The ritual context is FUNERARY. The shout of joy (ὀλολύζειν, normally a ritual cry) suggests a structured, communal ecstatic experience. Herodotus documents a death ritual that uses a mind-altering substance to induce altered consciousness — structurally identical to what the entheogen hypothesis proposes for the Eleusinian kykeon.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Herodotus · Histories 1.211 · <span class="tlg-tag">TLG 0016.001</span> · Cyrus and the Massagetae</div>
+      <div class="passage-trans">"Cyrus set out quantities of all the good things that the army had, including unwatered wine (ἄκρητον οἶνον). The Massagetae fell upon the Persian camp... lay down and feasted, drinking the wine until they were overcome."</div>
+      <div class="passage-note">Wine as a military pharmakon — a substance weaponized to incapacitate. The pharmacological logic applied to geopolitics.</div>
+    </div>
+  </section>
+
+  <!-- SECTION IV -->
+  <section id="s4" class="pharmakon-section">
+    <h2><span class="section-num">Section IV</span>The Eleusinian Mysteries — Kykeon and the Entheogenic Hypothesis</h2>
+    <p style="color:var(--text-dim);">The Eleusinian Mysteries were the most prestigious religious institution in the ancient Greek world, celebrated at Eleusis (near Athens) for perhaps 2000 years (~1500 BCE–392 CE). Initiation promised initiates a blessed afterlife and a transformed understanding of death and rebirth. The initiatory drink was the <span class="gk">κυκεών</span> (kykeon).</p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Homeric Hymn to Demeter, Lines 206–211 · <span class="tlg-tag">TLG 0012.003</span> · ~7th–6th c. BCE</div>
+      <div class="passage-greek">ἀλλά τε κυκεῶ τεῦξαι ἐκέλευσε / ἀλφίτῳ ἐν ὕδατι, βληχῶνί τε μαλακῷ.</div>
+      <div class="passage-trans">"She commanded them to mix a kykeon: barley-groat (ἄλφιτον) in water, with soft pennyroyal (βληχών)."</div>
+      <div class="passage-note">The kykeon's three ingredients: barley (ἄλφιτον), water, and βληχών (pennyroyal, Mentha pulegium). The Homeric Hymn preserves the founding mythological scene. The kykeon is distinguished from wine — a categorical separation.<br><br>
+      <strong style="color:var(--gold-light);">The Entheogenic Hypothesis</strong> (R. Gordon Wasson, Albert Hofmann, Carl A.P. Ruck, "The Road to Eleusis," 1978): The barley was ergotized — infected with Claviceps purpurea (ergot fungus), which produces ergotamine and related alkaloids, precursors of LSD. A controlled dose would produce a powerful visionary experience. Supporting evidence: ergot grows preferably on barley and rye in moist conditions; the Rarian plain near Eleusis was the mythic site of first grain cultivation; the kykeon's mixing (<span class="gk">κυκεῶν</span> = "that which has been stirred") suggests a processed preparation, not simple barley water.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Clement of Alexandria · Protrepticus 2.12–22 · <span class="tlg-tag">TLG 0555.001</span> · ~195 CE · Synthema (password)</div>
+      <div class="passage-greek">ἐνήστευσα, ἔπιον τὸν κυκεῶνα, ἔλαβον ἐκ κίστης· ἐργασάμενος ἀπεθέμην εἰς κάλαθον καὶ ἐκ καλάθου εἰς κίστην.</div>
+      <div class="passage-trans">"I fasted; I drank the kykeon; I took from the chest; having done my task, I placed in the basket, and from the basket into the chest."</div>
+      <div class="passage-note">The Eleusinian initiation formula (synthema), preserved by Clement as a Christian apologist revealing Mystery secrets. The initiate drank the kykeon as a central ritual act — a physically consumed substance that mediated the death/rebirth experience.</div>
+    </div>
+  </section>
+
+  <!-- SECTION V -->
+  <section id="s5" class="pharmakon-section">
+    <h2><span class="section-num">Section V</span>Dionysiac Rites — Wine, Sparagmos, and Death/Resurrection</h2>
+    <p style="color:var(--text-dim);">Dionysus is the god of wine, of ecstatic dissolution of self, and of death-and-rebirth. His mythological biography includes multiple deaths and resurrections. His cult offered initiates a version of his experience: to die and return.</p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Euripides · Bacchae · <span class="tlg-tag">TLG 0006.016</span> · 405 BCE (posthumous)</div>
+      <div class="passage-greek">ὁ δ' αὖ θεὸς Βρόμιος οἶνον ἀνθρώποις φέρει· (lines 772–774)</div>
+      <div class="passage-trans">"The god Bromios brings wine to men."</div>
+      <div class="passage-note">The wine is explicitly a pharmakon. Lines 1125–1136: Agave tears off her son Pentheus's head believing him a lion — the <em>sparagmos</em> (σπαραγμός, "tearing apart"). The violence is read ritually as a parallel to the tearing of Dionysus by the Titans.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Orphic Gold Tablets · 5th–4th c. BCE · Pelinna, Thurii, Hipponion, Petelia · Pelinna tablet ~325 BCE</div>
+      <div class="passage-greek">νῦν ἔθανες καὶ νῦν ἐγένου, τρισόλβιε, ἄματι τῷδε. / εἰπεῖν Φερσεφόναι σ' ὅτι Βάκχιος αὐτὸς ἔλυσε.</div>
+      <div class="passage-trans">"Now you have died and now you have been born, O thrice happy one, on this same day. Say to Persephone that the Bacchic one himself [Dionysus] released you."</div>
+      <div class="passage-note">Death and rebirth on the same day; Dionysus as liberator of the dead. The pharmacological parallel: death-inducing substance → antidote → return to life on the same day. Tablets are buried with the dead and contain instructions for navigation of the underworld.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Plutarch · De Iside et Osiride · <span class="tlg-tag">TLG 0007.062</span> · ~100 CE</div>
+      <div class="passage-trans">Plutarch draws explicit parallels between Osiris (torn apart by Set, reassembled by Isis, resurrected) and Dionysus-Zagreus. Notes (ch. 16) that Isis used <em>pharmaka</em> in restoring Osiris — implying a pharmacological dimension to the resurrection rite.</div>
+      <div class="passage-note">The death/resurrection pattern is understood as a universal mystery religion template across Greek and Egyptian traditions.</div>
+    </div>
+  </section>
+
+  <!-- SECTION VI -->
+  <section id="s6" class="pharmakon-section">
+    <h2><span class="section-num">Section VI</span>Theophrastus and the Rhizotomoi</h2>
+    <p style="color:var(--text-dim);">Theophrastus (~371–287 BCE), Aristotle's successor at the Lyceum, wrote the first systematic botanical works. His account of the rhizotomoi (ῥιζοτόμοι, "root-cutters") in <em>Historia Plantarum</em> Book 9 is the most direct ancient source for the ritual pharmacological tradition.</p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Theophrastus · Historia Plantarum 9.8.5–6 · <span class="tlg-tag">TLG 0085.001</span> · ~300 BCE · Mandrake harvest ritual</div>
+      <div class="passage-greek">τρεῖς κύκλους ξίφει περιγράψαντα δεῖν ἐκτεμεῖν πρὸς ἑσπέραν ὁρῶντα· τῇ δὲ δευτέρᾳ τομῇ κυκλεῖν καὶ λέγειν τὰ ἐρωτικά.</div>
+      <div class="passage-trans">"They say one should draw three circles around the mandrake with a sword, and cut it looking toward the west; at the second cutting, one should dance around the plant and speak as many erotic things as possible."</div>
+      <div class="passage-note">Pharmacology embedded in ritual: the act of harvesting requires circumambulation, directional orientation (west = the land of the dead), and verbal incantation. The drug and the ritual are inseparable. HP 9.9.6: mandrake as surgical anesthetic — "given in wine for those who are about to have a limb cut off... they do not feel the pain."</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Theophrastus · Historia Plantarum 9.8.7 · Aconite</div>
+      <div class="passage-trans">"They say aconite comes from Akonai, or according to some, it sprang from the mouth of Cerberus when Heracles dragged him up from Hades."</div>
+      <div class="passage-note">The drug's origin myth locates it in the realm of death itself — it is a substance of the underworld. HP 9.17.1–2: "those who use it add sesame and wine to slow the effect so that the person dies more slowly." Explicit dose-timing pharmacology for the purpose of death management.</div>
+    </div>
+  </section>
+
+  <!-- SECTION VII -->
+  <section id="s7" class="pharmakon-section">
+    <h2><span class="section-num">Section VII</span>Dioscorides — The Pharmacopoeia of the First Century CE</h2>
+    <p style="color:var(--text-dim);">Pedanius Dioscorides (~40–90 CE) wrote <em>De Materia Medica</em> during the reigns of Nero and Vespasian — overlapping with the generation immediately after Jesus. His work documents in exhaustive detail the very substances that appear in Greek mystery religion and in the passion narrative. <span class="tlg-tag">TLG 0058.001</span></p>
+
+    <div class="passage-block">
+      <div class="passage-ref">De Materia Medica 4.64 — Opium (μηκώνιον / ὄπιον)</div>
+      <div class="passage-trans">"It has a soporific effect (ὑπνωτικόν). Taken in excess it is lethal (θανάσιμον). The juice, called opos or opion, if taken in too large a quantity sends men to sleep forever (εἰς ὕπνον ἀΐδιον καταφέρει)."</div>
+      <div class="passage-note">Opion (ὄπιον) → opium. In small doses: sleep and pain relief. In large doses: death. The boundary between the two doses is the pharmacological threshold of the mystery rite. It is the primary ingredient in the theriac antidote.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">De Materia Medica 4.68 — Henbane (ὑοσκύαμος, hyoscyamos) · Species: Hyoscyamus niger</div>
+      <div class="passage-trans">"Its leaf, seed, and juice have a narcotic and benumbing power (ναρκωτικὴν καὶ καρωτικὴν δύναμιν). Taken in excess, it produces madness (μανίαν) and in greater excess death."</div>
+      <div class="passage-note">Contains scopolamine, hyoscine, and atropine — anticholinergic alkaloids that produce vivid hallucinations, confusion, and at higher doses, respiratory failure. The same alkaloids appear in mandrake and belladonna (Atropa belladonna, named for Atropos, the Fate who cuts the thread of life).</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">De Materia Medica 4.75 — Mandrake (μανδραγόρας) · Species: Mandragora officinarum</div>
+      <div class="passage-greek">καθυπνώσαντες γὰρ οὐκ αἰσθάνονται.</div>
+      <div class="passage-trans">"The bark of the root, crushed with wine, is given in a dram measure to those who cannot sleep, or who are in pain, or who are about to be cut or cauterized — they do not feel the pain because they have been put to sleep by it."</div>
+      <div class="passage-note">Note <span class="gk">ἐπαλειφόμενα</span> (its leaves "smeared upon" the eyes to induce sleep) — from <span class="gk">ἐπαλείφω</span>, "to smear upon," in the same semantic field as <span class="gk">χρίω</span>. Pharmacological anointing.<br><br>"The wine of mandrake (οἶνος μανδραγορίτης): soak the root in new wine for three months, then give a cup-measure to those who need to be put to sleep before a cutting or cauterizing." — This is surgical anesthesia via wine infusion, exactly the kind of preparation that could be administered via a sponge.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">De Materia Medica 4.78 — Hemlock (κώνειον) · Species: Conium maculatum</div>
+      <div class="passage-trans">"A cold drug... its juice taken in too large a dose kills, numbing the limbs from below upward (κατ' ὀλίγον ψυχομένου). Used by the Athenians and some other Greeks as the official means of execution."</div>
+      <div class="passage-note">Hemlock is the institutionally sanctioned death-pharmakon — the Platonic context of the Phaedo realized in the pharmacological register.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">De Materia Medica 4.77 — Aconite (ἀκόνιτον) · Species: Aconitum napellus</div>
+      <div class="passage-trans">"Also called wolf-strangler (λυκοκτόνον). It is deadly (θανάσιμον). Some say it springs from the spittle of Cerberus... others that it grew from Hecate's drool."</div>
+      <div class="passage-note">The mythological frame places aconite at the intersection of Hecate and the underworld — a death-substance with a ritual genealogy.</div>
+    </div>
+  </section>
+
+  <!-- SECTION VIII -->
+  <section id="s8" class="pharmakon-section">
+    <h2><span class="section-num">Section VIII</span>Mithridates VI and the Antidote Tradition</h2>
+    <p style="color:var(--text-dim);">Mithridates VI Eupator (~134–63 BCE), King of Pontus, synthesizes the death/antidote dyad into a royal mythological-pharmacological system. Pontus (the Black Sea coast of modern Turkey) was near Colchis — the mythological homeland of Medea. The pharmacological tradition of the Medea myths was geographically grounded in the Pontic region.</p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Pliny the Elder · Natural History 25.3 · ~77 CE</div>
+      <div class="passage-trans">"Mithridates, king of Pontus, the greatest king in the memory of our time... is said to have consumed poisons daily with antidotes (antidota), so that by custom and habit he made them harmless."</div>
+      <div class="passage-note">The mithridate recipe (Galen, <em>De Antidotis</em> 1.1–2) contained ~54 ingredients including opium prominently. When Pompey defeated him and he wished to commit suicide, he could NOT poison himself — he had to order a soldier to run him through.<br><br>This is the pharmacological death/resurrection enacted on the individual body. Mithridates was a man who had chemically conquered death — and then could not die when he wished to. The structural parallel to the resurrection narrative is impossible to miss.</div>
+    </div>
+  </section>
+
+  <!-- SECTION IX -->
+  <section id="s9" class="pharmakon-section">
+    <h2><span class="section-num">Section IX</span>Galen — Systematizing the Antidote</h2>
+    <p style="color:var(--text-dim);">Claudius Galenus (~129–216 CE), the most influential physician of antiquity, systematized the pharmacological tradition. <span class="tlg-tag">TLG 0057</span></p>
+
+    <div class="passage-block">
+      <div class="passage-ref">Galen · De Antidotis · <span class="tlg-tag">TLG 0057.077</span> · Lineage: Mithridates → Andromachus → Galen (for Marcus Aurelius)</div>
+      <div class="passage-trans">The theriac contained: opium (the active core), viper flesh (homeopathic principle — snake flesh counters snake venom), ~60 additional ingredients including castor, long pepper, cinnamon, saffron, various roots.</div>
+      <div class="passage-note">The opium in the theriac is calibrated to provide sedation and pain relief without causing death — the threshold dose. The antidote and the poison are the same substance in different doses.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Galen · De Theriaca ad Pisonem · <span class="tlg-tag">TLG 0057.081</span></div>
+      <div class="passage-trans">Galen argues that theriac provides near-universal protection against all poisons. He uses the language of resurrection: the theriac prevents the body from being "killed" (ἀναιρεῖσθαι) by poisons, making the body in a sense deathproof.</div>
+    </div>
+  </section>
+
+  <!-- SECTION X -->
+  <section id="s10" class="pharmakon-section">
+    <h2><span class="section-num">Section X</span>The Crucifixion Pharmacology — A Close Reading</h2>
+    <div class="callout callout-purple">
+      <div class="callout-label">Analytical Frame</div>
+      <p>The passion narratives contain a sequence of pharmacological events that has received insufficient philological attention. Read against the Greek pharmacological tradition documented above, they reveal a structured death/antidote pattern.</p>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Mark 15:23 · <span class="tlg-tag">TLG 0031.001</span> — Pre-crucifixion offer</div>
+      <div class="passage-greek">καὶ ἐδίδουν αὐτῷ ἐσμυρνισμένον οἶνον· ὃς δὲ οὐκ ἔλαβεν.</div>
+      <div class="passage-trans">"And they gave him myrrh-mixed wine; but he did not take it."</div>
+      <div class="passage-note"><span class="gk">ἐσμυρνισμένον</span> = myrrh-infused. Myrrh (σμύρνα, Commiphora myrrha) was: a standard component of anointing oils (χρίσμα, cf. Exod 30:23); a known narcotic analgesic; one of the gifts at Jesus's birth (Matt 2:11 — a strange gift for a newborn unless read pharmacologically); and used in embalming (John 19:39–40). The refusal of myrrh-wine is notable: Jesus refuses what could be read as a death-inducer or analgesic preparation.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Matthew 27:34 · <span class="tlg-tag">TLG 0031.002</span> — Second pre-crucifixion offer</div>
+      <div class="passage-greek">ἔδωκαν αὐτῷ πιεῖν οἶνον μετὰ χολῆς μεμιγμένον· καὶ γευσάμενος οὐκ ἤθελεν πίειν.</div>
+      <div class="passage-trans">"They gave him wine mixed with gall (χολή) to drink; and having tasted it, he would not drink."</div>
+      <div class="passage-note"><span class="gk">χολή</span> = bile, but also used for bitter substances. In LXX usage, "water of gall" is associated with death and punishment (Jer 8:14, 9:15). He tasted it (<span class="gk">γευσάμενος</span>) and then refused — he recognized what it was.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">John 19:29–30 · <span class="tlg-tag">TLG 0031.004</span> — The sponge episode</div>
+      <div class="passage-greek">σκεῦος ἔκειτο ὄξους μεστόν· σπόγγον οὖν μεστὸν τοῦ ὄξους ὑσσώπῳ περιθέντες προσήνεγκαν αὐτοῦ τῷ στόματι. ὅτε οὖν ἔλαβεν τὸ ὄξος ὁ Ἰησοῦς εἶπεν· τετέλεσται, καὶ κλίνας τὴν κεφαλὴν παρέδωκεν τὸ πνεῦμα.</div>
+      <div class="passage-trans">"A vessel full of sour wine (ὄξος) was standing there. So they placed a sponge full of the sour wine on a hyssop branch and brought it to his mouth. When Jesus had received the sour wine, he said 'It is finished,' and bowing his head, he gave up his spirit."</div>
+      <div class="passage-note">ὄξος = sour wine / posca (Roman soldiers' drink). Key observations:<br>
+      — The SEQUENCE: first the death-inducing/analgesic preparations are offered and refused; then ὄξος is accepted; death immediately follows.<br>
+      — Hyssop (ὕσσωπος): in the LXX, hyssop is the purification plant par excellence (Ps 51:7 "purge me with hyssop"; Exod 12:22 — hyssop used to apply the Passover blood). Its use here is liturgically freighted.<br>
+      — If the sponge contained a pharmacological preparation masked by vinegar (as mandrake wine or opium tincture could be), the sequence would be: [refuse death-inducer A] → [refuse death-inducer B] → [accept substance C → die immediately].<br>
+      — This reading does not require a pharmacological conspiracy to be meaningful. Even at a symbolic level, Jesus participates in the death/pharmakon pattern at the moment of his death.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">John 19:39–40 — The burial spices</div>
+      <div class="passage-trans">Nicodemus brings "a mixture of myrrh and aloe, about a hundred litrai" (33 kg — far more than needed for simple embalming). Aloe (ἀλόη) in antiquity refers to both Aloe vera (anesthetic properties) and Aquilaria agallocha (agarwood, used in incense).</div>
+    </div>
+  </section>
+
+  <!-- SECTION XI -->
+  <section id="s11" class="pharmakon-section">
+    <h2><span class="section-num">Section XI</span>Josephus, the Essenes, and Jewish Sectarian Pharmacology</h2>
+
+    <div class="passage-block">
+      <div class="passage-ref">Josephus · Jewish War 2.8.6 · <span class="tlg-tag">TLG 0526.003</span> — The Essenes</div>
+      <div class="passage-trans">"They are forbidden to taste anything of which has not been prepared by their curators. They do not eat or drink anything from outside the community."</div>
+      <div class="passage-note">The Essene control of food and drink — nothing consumed from outside — speaks to a community acutely aware of pharmacological vulnerability. Their strict purity rules and initiatory structure (three-year probationary period, gradual access to community meals) parallel mystery cult initiation.</div>
+    </div>
+
+    <div class="passage-block">
+      <div class="passage-ref">Josephus · Jewish War 7.8.7 — Eleazar's speech at Masada</div>
+      <div class="passage-trans">"Every night the soul, bearing no chains, departs from the body and... having a taste of death, returns to us." (comparison to drunkenness: <span class="gk">ὥσπερ ἐκ μέθης... ἐπανέρχεται</span>)</div>
+      <div class="passage-note">The comparison to drunkenness (μέθη) and sleep as death-simulations echoes the pharmacological-initiatory logic precisely — within a Jewish sectarian context.</div>
+    </div>
+  </section>
+
+  <!-- SECTION XII -->
+  <section id="s12" class="pharmakon-section">
+    <h2><span class="section-num">Section XII</span>Synthesis — The Chemical Lineage, ~800 BCE to ~216 CE</h2>
+
+    <div class="table-wrap">
+      <table class="timeline-table">
+        <thead>
+          <tr><th>Date</th><th>Development</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>~800–700 BCE</td><td>Homer: Circe's pharmaka; moly as antidote (Od. 10); Helen's nepenthes from Egypt (Od. 4). Primal death/antidote dyad established in Greek literature.</td></tr>
+          <tr><td>~650–550 BCE</td><td>Homeric Hymn to Demeter: kykeon formalized as Eleusinian initiatory drink. Barley + pennyroyal; ergot hypothesis.</td></tr>
+          <tr><td>~600–500 BCE</td><td>Medea myths in lyric poetry (Pindar, Simonides): mandrake, aconite, Hecate's pharmaka as mythological charter. <em>Polypharmakos</em> as honorific.</td></tr>
+          <tr><td>~484–425 BCE</td><td>Herodotus: Scythian cannabis vapor ritual — first documented psychoactive ritual in Western historiography.</td></tr>
+          <tr><td>~450–400 BCE</td><td>Euripides Bacchae, Medea: dramaturgical institutionalization of pharmacological death themes. Sophocles Trachiniae.</td></tr>
+          <tr><td>~380–360 BCE</td><td>Plato Phaedo: hemlock death as philosophical initiation; Charmides: pharmakon + incantation as a unit.</td></tr>
+          <tr><td>~300 BCE</td><td>Theophrastus HP 9: rhizotomoi; ritual mandrake harvest; aconite from Hecate; first description of surgical anesthesia.</td></tr>
+          <tr><td>~250 BCE</td><td>Apollonius Argonautica: Medea's Promethean drug — blood-red flower harvested at midnight; anointed on Jason as χρίσμα.</td></tr>
+          <tr><td>~134–63 BCE</td><td>Mithridates VI: systematic daily self-poisoning and antidote use; mithridate/theriac tradition; opium as central component. A king who chemically conquered death — and could not die.</td></tr>
+          <tr><td>~63–30 BCE</td><td>Theriac spreads across Mediterranean. Opium widely traded. Pontus/Medea geography folded into Roman medical knowledge.</td></tr>
+          <tr><td>~4 BCE–30 CE</td><td>Jesus of Nazareth: ministry in Galilee (Hellenistically saturated — "Galilee of the Gentiles," Isa 9:1/Matt 4:15); crucifixion. Sponge episode at death (John 19:29–30).</td></tr>
+          <tr><td>~50–70 CE</td><td>Dioscorides De Materia Medica: systematizes all relevant substances (mandrake, opium, henbane, hemlock, aconite, hellebore). Documents wine of mandrake as surgical anesthetic.</td></tr>
+          <tr><td>~100 CE</td><td>Plutarch De Iside et Osiride: cross-cultural death/resurrection pattern recognized; Osiris = Dionysus = mystery template.</td></tr>
+          <tr><td>~129–216 CE</td><td>Galen: theriac for emperors; systematic antidote theory; death/antidote dyad now fully medicalized.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Substance Crosswalk: Key Pharmaka Across Contexts</h3>
+    <div class="table-wrap">
+      <table class="substance-crosswalk">
+        <thead>
+          <tr><th>Substance</th><th>Greek Name</th><th>Ritual / Religious Attestation</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cannabis</td><td>κάνναβις</td><td>Scythian funerary vapor rite (Herodotus 4.73–75)</td></tr>
+          <tr><td>Ergot (on barley)</td><td>(unnamed)</td><td>Eleusinian kykeon (entheogenic hypothesis — Wasson, Hofmann, Ruck)</td></tr>
+          <tr><td>Mandrake</td><td>μανδραγόρας</td><td>Rhizotomoi harvest ritual; surgical anesthesia; "wine of mandrake"</td></tr>
+          <tr><td>Opium</td><td>ὄπιον / μηκώνιον</td><td>Theriac; Helen's nepenthes; burial preparation; threshold-dose rite</td></tr>
+          <tr><td>Henbane</td><td>ὑοσκύαμος</td><td>Narcotic/hallucinogenic; possible Dionysiac use</td></tr>
+          <tr><td>Aconite</td><td>ἀκόνιτον</td><td>Hecate's substance; underworld origin (Cerberus's spittle)</td></tr>
+          <tr><td>Hemlock</td><td>κώνειον</td><td>Athenian execution; Socratic initiatory death (Phaedo)</td></tr>
+          <tr><td>White hellebore</td><td>ἐλλέβορος λευκός</td><td>Cure for madness (Melampus tradition); death-like threshold state</td></tr>
+          <tr><td>Wine</td><td>οἶνος</td><td>Dionysiac sacrament; Eleusinian foil (refused by Demeter); military weaponization</td></tr>
+          <tr><td>Myrrh</td><td>σμύρνα</td><td>Anointing oil (χρίσμα); burial preparation; crucifixion (Mark 15:23)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION XIII -->
+  <section id="s13" class="pharmakon-section">
+    <h2><span class="section-num">Section XIII</span>The <span class="gk">χριστός / χρίω</span> Connection — Anointing as Pharmacological Act</h2>
+
+    <div class="callout callout-purple">
+      <div class="callout-label">Core Argument</div>
+      <p>The word <span class="gk">χριστός</span> derives from <span class="gk">χρίω</span> (to anoint, to smear) via the verbal adjective: "the one who has been smeared/anointed." In the LXX it renders Hebrew מָשִׁיחַ (mashiach, "anointed one") where anointing designates royal or priestly consecration with olive oil mixed with aromatic substances. But <span class="gk">χρίω</span> and its cognates appear throughout the pharmacological literature in physical, non-religious senses.</p>
+    </div>
+
+    <ul style="color:var(--text-dim);margin:0.5rem 0 1rem 1.5rem;line-height:1.8;">
+      <li>Dioscorides uses <span class="gk">ἐπιχρίω</span> and <span class="gk">ἐπαλείφω</span> interchangeably for applying drug preparations to skin surfaces.</li>
+      <li>Apollonius uses <span class="gk">χρίω</span> for the application of Medea's Promethean drug to Jason.</li>
+      <li>The anointment of the dying and the anointment of the dead are both <span class="gk">χριστικαί</span> acts that involve pharmaka.</li>
+    </ul>
+
+    <div class="callout callout-note">
+      <div class="callout-label">Synthesis</div>
+      <p>If Jesus understood himself as <span class="gk">χριστός</span> in the full Greek semantic field — including the physical sense of "one who has been smeared with a substance" — then his role intersects with the pharmacological tradition at the lexical root. The anointed one is, in Greek, also the smeared one. And in Greek religious practice, to be smeared with a powerful substance (Medea's Promethean ointment; the warrior-hero's protective chrism; the initiate's ritual anointing) is to enter the pharmacological-sacred zone where death and life are held in tension.</p>
+    </div>
+  </section>
+
+  <!-- BIBLIOGRAPHY -->
+  <section id="bib">
+    <h2>Bibliography</h2>
+    <h3>Primary TLG Sources</h3>
+    <p class="bib-entry">TLG 0012.002 — Homer, Odyssey</p>
+    <p class="bib-entry">TLG 0012.003 — Homeric Hymns</p>
+    <p class="bib-entry">TLG 0033.002 — Pindar, Epinicia</p>
+    <p class="bib-entry">TLG 0006.003 — Euripides, Medea</p>
+    <p class="bib-entry">TLG 0006.016 — Euripides, Bacchae</p>
+    <p class="bib-entry">TLG 0011.007 — Sophocles, Trachiniae</p>
+    <p class="bib-entry">TLG 0016.001 — Herodotus, Historiae</p>
+    <p class="bib-entry">TLG 0059.005 — Plato, Charmides</p>
+    <p class="bib-entry">TLG 0059.008 — Plato, Phaedo</p>
+    <p class="bib-entry">TLG 0085.001 — Theophrastus, Historia Plantarum</p>
+    <p class="bib-entry">TLG 0001.001 — Apollonius Rhodius, Argonautica</p>
+    <p class="bib-entry">TLG 0058.001 — Dioscorides, De Materia Medica</p>
+    <p class="bib-entry">TLG 0057.070/077/081 — Galen, pharmacological treatises</p>
+    <p class="bib-entry">TLG 0007.062 — Plutarch, De Iside et Osiride</p>
+    <p class="bib-entry">TLG 0555.001 — Clement of Alexandria, Protrepticus</p>
+    <p class="bib-entry">TLG 0525.001 — Pausanias, Periegesis</p>
+    <p class="bib-entry">TLG 0526.003 — Josephus, Bellum Judaicum</p>
+    <p class="bib-entry">TLG 0031.001–004 — NT: Mark, Matthew, Luke, John</p>
+
+    <h3>Secondary Scholarship</h3>
+    <p class="bib-entry">Wasson, R.G., Hofmann, A., Ruck, C.A.P. <em>The Road to Eleusis</em> (1978)</p>
+    <p class="bib-entry">Burkert, W. <em>Ancient Mystery Cults</em> (1987)</p>
+    <p class="bib-entry">Burkert, W. <em>Greek Religion</em> (1985)</p>
+    <p class="bib-entry">Scarborough, J. "The Pharmacology of Sacred Plants, Herbs, and Roots" in <em>Magika Hiera</em> (1991)</p>
+    <p class="bib-entry">Rätsch, C. <em>Encyclopedia of Psychoactive Plants</em> (2005)</p>
+    <p class="bib-entry">Majno, G. <em>The Healing Hand: Man and Wound in the Ancient World</em> (1975)</p>
+    <p class="bib-entry">Nunn, J.F. <em>Ancient Egyptian Medicine</em> (1996)</p>
+    <p class="bib-entry">Totelin, L. <em>Hippocratic Recipes</em> (2009)</p>
+    <p class="bib-entry">Derrida, J. "La pharmacie de Platon" in <em>La Dissémination</em> (1972)</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>Christ-TLG Pharmakon Research Branch · <a href="index.html">Home</a> · <a href="pharmakon_hypothesis.html">Hypothesis →</a> · 2026-03-06</p>
+  </footer>
+
+</div>
+</body>
+</html>

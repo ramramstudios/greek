@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>χριστός Diachronic Analysis — Christ-TLG</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .audit-section { margin: 1.25rem 0; }
+    .audit-item { border-left: 3px solid var(--gold); padding: 0.7rem 1.1rem; margin: 1rem 0; background: rgba(200,168,75,0.05); border-radius: 0 6px 6px 0; }
+    .audit-item.correction { border-color: #e0a86b; background: rgba(224,168,107,0.06); }
+    .audit-item.gap { border-color: var(--purple); background: rgba(152,120,208,0.06); }
+    .audit-item.open { border-color: var(--teal); background: rgba(86,180,176,0.05); }
+    .audit-item h4 { margin: 0 0 0.4rem 0; font-size: 0.95rem; color: var(--gold-light); }
+    .audit-item.correction h4 { color: #e0a86b; }
+    .audit-item.gap h4 { color: var(--purple); }
+    .audit-item.open h4 { color: var(--teal); }
+    .stage-header { background: rgba(200,168,75,0.08); border: 1px solid rgba(200,168,75,0.2); border-radius: 8px; padding: 0.9rem 1.3rem; margin: 2rem 0 0.75rem 0; }
+    .stage-header h3 { margin: 0 0 0.3rem 0; color: var(--gold); font-size: 1.1rem; }
+    .stage-header .date-range { font-size: 0.82rem; color: var(--muted); }
+    .stage-header .note-new { display: inline-block; font-size: 0.75rem; background: rgba(152,120,208,0.2); color: var(--purple); padding: 0.1rem 0.45rem; border-radius: 3px; margin-left: 0.5rem; }
+    .stage-body { color: var(--text-dim); font-size: 0.93rem; line-height: 1.7; margin-bottom: 0.75rem; }
+    .attestation { font-family: monospace; font-size: 0.88rem; color: var(--text-dim); margin: 0.2rem 0 0.2rem 1rem; }
+    .attestation .gk-mono { color: var(--gold-light); font-style: italic; }
+    .source-ref { font-size: 0.82rem; color: var(--muted); font-family: monospace; }
+    .evidence-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 1rem 0 2rem 0; }
+    .evidence-table th { background: rgba(200,168,75,0.12); color: var(--gold); padding: 0.55rem 0.75rem; text-align: left; border-bottom: 2px solid rgba(200,168,75,0.25); }
+    .evidence-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); vertical-align: top; color: var(--text-dim); }
+    .evidence-table td:first-child { color: var(--gold-light); font-weight: 700; white-space: nowrap; }
+    .evidence-table td:nth-child(2) { font-style: italic; color: var(--gold-light); font-size: 0.92rem; }
+    .evidence-table .why-row td { background: rgba(255,255,255,0.02); color: var(--muted); font-size: 0.82rem; border-top: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding-top: 0.2rem; padding-bottom: 0.6rem; }
+    .why-row td:first-child { color: var(--muted); font-weight: normal; }
+    .q-block { border-left: 4px solid var(--purple); padding: 0.8rem 1.3rem; margin: 1.5rem 0; background: rgba(152,120,208,0.05); border-radius: 0 8px 8px 0; }
+    .q-block h3 { color: var(--purple); margin: 0 0 0.6rem 0; font-size: 1rem; }
+    .component-head { color: var(--gold-light); font-weight: 700; font-size: 0.9rem; margin: 0.8rem 0 0.2rem 0; }
+    .verdict { background: rgba(200,168,75,0.08); border: 1px solid rgba(200,168,75,0.2); border-radius: 6px; padding: 0.7rem 1rem; margin: 0.75rem 0; font-size: 0.92rem; color: var(--gold-light); }
+    .label-correct { color: #6ec97f; font-weight: 700; }
+    .label-wrong { color: #e07070; font-weight: 700; }
+    .label-caution { color: #e0a86b; font-weight: 700; }
+    .narrowing-list li { color: var(--text-dim); font-size: 0.92rem; margin: 0.2rem 0; }
+    .narrowing-list li::marker { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<nav class="nav-bar">
+  <a href="index.html">Home</a>
+  <a href="christos_tlg_report.html">TLG Report</a>
+  <a href="christos_occurrences.html">Occurrences DB</a>
+  <a href="christos_sources.html">Source Registry</a>
+  <a href="lsj_christos_entry.html">LSJ Entry</a>
+  <a href="christos_semantic_flowchart.html">Flowchart</a>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <h1><span class="gk">χριστός</span> — Diachronic Semantic History</h1>
+      <div class="page-meta">Philological Analysis · Research Audit · Stage Map · Evidence Table · Analytical Conclusion · 2026-03-06</div>
+    </div>
+  </div>
+
+  <nav class="toc">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#audit">I. Research Audit of Project Files</a>
+        <ol>
+          <li><a href="#audit-right">What the files get right</a></li>
+          <li><a href="#audit-correction">What needs correction</a></li>
+          <li><a href="#audit-open">What remains open</a></li>
+        </ol>
+      </li>
+      <li><a href="#map">II. Diachronic Stage Map</a></li>
+      <li><a href="#table">III. Evidence Table</a></li>
+      <li><a href="#conclusion">IV. Analytical Conclusion</a></li>
+    </ol>
+  </nav>
+
+  <!-- SECTION I: AUDIT -->
+  <section id="audit">
+    <h2>I. Research Audit of Project Files</h2>
+
+    <div class="callout callout-note">
+      <div class="callout-label">Source Notation Key</div>
+      <p><code>[PF: filename]</code> = Project file · <code>[PT: author, work, citation]</code> = Primary ancient text · <code>[Lex: source s.v.]</code> = Lexicon · <code>[Infer: source]</code> = Scholarly inference · <code>[Disputed: note]</code> = Textually or historically contested</p>
+    </div>
+
+    <section id="audit-right">
+      <h3>A. What the Files Get Right</h3>
+
+      <div class="audit-item">
+        <h4>1. The Tripartite Semantic Structure</h4>
+        <p>The three project files correctly identify three distinct semantic phases: (1) pharmaceutical/literal adjective in Classical Greek, (2) institutional title in LXX Greek, (3) proper name in NT/early Christian Greek. This tripartite structure maps directly onto the LSJ entry (I, II, III).</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>2. The Two Classical Witnesses</h4>
+        <p>Correctly identified as the only two Classical authors in LSJ s.v.: Aeschylus PV 480 (<span class="gk">χριστά</span> neut. pl., opposed to <span class="gk">πιστά</span>) and Euripides Hipp. 516 (<span class="gk">χριστόν</span> neut. sg., opposed to <span class="gk">ποτόν</span>). Both correctly described as pharmaceutical vocabulary with zero religious resonance.</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>3. LXX Evidence</h4>
+        <p>The LXX analysis is the strongest section: priestly title in Leviticus correctly documented; royal formula <span class="gk">χριστὸς κυρίου</span> in Samuel and Psalms well attested; plural <span class="gk">χριστούς</span> at Hab 3:13 correctly flagged; Isaiah 45:1 (Cyrus as <span class="gk">χριστός</span>) correctly identified; Daniel 9:25–26 Theodotion/LXX variant (<span class="gk">χριστός</span> vs. <span class="gk">χρῖσμα</span>) correctly noted.</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>4. Josephus Handling</h4>
+        <p>Files correctly distinguish: Ant. 18.63 (Testimonium Flavianum) marked as disputed; Ant. 20.200 marked as more secure, <span class="gk">τοῦ λεγομένου Χριστοῦ</span> correctly analyzed as a distancing formula.</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>5. John 1:41 as Translational Bridge</h4>
+        <p>Correctly identified as the most explicit bilingual gloss in the NT. The grammatical point — <span class="gk">Μεσσίαν</span> = transliterated Aramaic מְשִׁיחָא; <span class="gk">ὁ Χριστός</span> = Greek title — is correctly drawn.</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>6. Paul's Article/No-Article Distinction</h4>
+        <p>The shift from title (<span class="gk">ὁ Χριστός</span>) to proper name (<span class="gk">Χριστός</span> without article) in the Pauline letters is correctly identified with representative passages (1 Cor 1:23–24; 15:3–4; Gal 3:28).</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>7. ψευδόχριστοι as Confirmatory Evidence</h4>
+        <p>The compound <span class="gk">ψευδόχριστοι</span> (Matt 24:24 / Mark 13:22) is correctly noted as confirming that <span class="gk">Χριστός</span> had become sufficiently technical by the time of the Synoptic Apocalypse to generate the category of "false claimants."</p>
+      </div>
+
+      <div class="audit-item">
+        <h4>8. Inflected Forms Coverage</h4>
+        <p>The table of inflected forms is comprehensive for the attested forms, with appropriate caveat that <span class="gk">χριστῶν</span> and <span class="gk">χριστοῖς</span> were not separately confirmed in the open sources reviewed.</p>
+      </div>
+    </section>
+
+    <section id="audit-correction">
+      <h3>B. What Needs Correction or Qualification</h3>
+
+      <div class="audit-item correction">
+        <h4>1. Hippocrates Entry — Morphological Error (Occurrence 3) ⚠ CORRECTION REQUIRED</h4>
+        <p>The passage cited is: <span class="gk">"τοῖσι δὲ ἐν θέρει μὲν καὶ χειμῶνι, ἐλαίῳ χρηστέον ἐπὶ τὰ ἕλκεα"</span> [PT: Hippocrates, <em>De ulceribus</em> 18 (Perseus:text:1999.01.0248)]</p>
+        <p>The form <span class="gk">χρηστέον</span> is a verbal adjective (gerundive) from <span class="gk">χράομαι</span> ("to use, employ, treat"), NOT from <span class="gk">χρίω</span> ("to anoint/smear"). These are distinct verbs with distinct roots. The Hippocratic corpus does use genuine <span class="gk">χριστ-</span> forms (from <span class="gk">χρίω</span>) in surgical contexts, but the specific passage quoted is morphologically distinct.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>2. Aeschylus Prometheus Vinctus — Authorship Caveat Insufficient ⚠ QUALIFICATION REQUIRED</h4>
+        <p>The file notes "date debated; possibly post-Aeschylean" but does not adequately flag that the authorship of the <em>Prometheus Vinctus</em> is a substantive scholarly dispute. Mark Griffith (Cambridge, 1983) and M.L. West (<em>JHS</em> 99, 1979) have argued the play is not by Aeschylus but by a later imitator. The form is still Classical (5th–4th century BCE) but the authorial authority is reduced. The LSJ citation of "Aesch. Pr. 480" reflects the traditional attribution and remains valid as a corpus citation.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>3. Leviticus 4:3 — Form Distinction Not Consistently Maintained ⚠ MINOR CORRECTION</h4>
+        <p>Lev 4:3 uses the PERFECT PASSIVE PARTICIPLE <span class="gk">κεχρισμένος</span> ("having been anointed"), while Lev 4:5, 4:16, 6:22 use the ADJECTIVE <span class="gk">χριστός</span>. Both render Hebrew הַמָּשִׁיחַ; the LXX translators' alternation reflects stylistic variation rather than semantic distinction, but the morphological forms are grammatically distinct.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>4. "First Messianic Use" at 1 Sam 2:10 — Overconfident Wording ⚠ QUALIFICATION REQUIRED</h4>
+        <p>"Messianic" is anachronistic if it means "referring to a future deliverer figure." At 1 Sam 2:10, Hannah's prayer closes with a reference to the future Israelite king within royal ideology — it is not yet eschatological in a Second Temple sense. The qualification "arguably" in the original text appropriately hedges.</p>
+      </div>
+
+      <div class="audit-item gap">
+        <h4>5. Psalms of Solomon Entirely Absent from Files ⚠ SIGNIFICANT GAP</h4>
+        <p>The Psalms of Solomon (c. 50 BCE) contain the most important extra-LXX, pre-NT use of <span class="gk">χριστός</span> as a title for a FUTURE messianic king. The files do not mention this text at all. Its absence is a substantial lacuna — see Stage 3 in the Diachronic Map below for full documentation.</p>
+      </div>
+
+      <div class="audit-item gap">
+        <h4>6. Early Church Sources Entirely Absent from Files ⚠ GAP</h4>
+        <p>The files acknowledge that "post-NT Christian literature (Ignatius, Justin, Origen, etc.)" contains thousands of occurrences but document none. The research goal specifically requires Stage 5: "Early church Greek: stabilization, expansion, and theological narrowing." This section is entirely missing — see Stage 5 below.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>7. John 4:25 Missing from Documentation</h4>
+        <p>John 4:25 provides a second bilingual gloss in the voice of the Samaritan woman: <span class="gk">"Μεσσίας ἔρχεται, ὁ λεγόμενος Χριστός"</span>. Here <span class="gk">Μεσσίας</span> is glossed by <span class="gk">ὁ λεγόμενος Χριστός</span> — using the same distancing formula as Josephus 20.200, but in a Christian text as a narratorial explanation for Greek-speaking readers.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>8. 1 Cor 15:3–4 Pre-Pauline Claim Lacks Source Notation</h4>
+        <p>The dating "c. 35–40 CE" for the underlying tradition is widely accepted in NT scholarship (cf. J.D.G. Dunn, <em>The Theology of Paul the Apostle</em>, 1998, pp. 235–238) but must be labeled as inference from the transmission formula (<span class="gk">παρέδωκα…ὃ καὶ παρέλαβον</span>), not a textual fact.</p>
+      </div>
+
+      <div class="audit-item correction">
+        <h4>9. Josephus Ant. 18.63 — "Neutral Original" is Speculation</h4>
+        <p>Reconstructions of a neutral Josephan original (proposed by Meier, Crossan, Whealey) are modern editorial hypotheses — there is no surviving neutral Greek text. The only extant Greek manuscript tradition has <span class="gk">ὁ χριστὸς οὗτος ἦν</span>. Any reference to a "reconstructed neutral original" should be clearly labeled as modern scholarly speculation.</p>
+      </div>
+    </section>
+
+    <section id="audit-open">
+      <h3>C. What Remains Open</h3>
+
+      <div class="audit-item open">
+        <h4>1. Hippocratic Corpus TLG Query</h4>
+        <p>Genuine <span class="gk">χριστά φάρμακα</span> / <span class="gk">χριστέον</span> (from <span class="gk">χρίω</span>, not <span class="gk">χράομαι</span>) in the Hippocratic corpus would benefit from a direct TLG credential query to confirm specific passage locations.</p>
+      </div>
+
+      <div class="audit-item open">
+        <h4>2. χριστοί Nominative Plural</h4>
+        <p>LSJ s.v. cites Hab 3:13 (acc. pl. <span class="gk">χριστούς</span>) and implies nom. pl. exists; full TLG corpus would confirm or deny nom. pl. attestations.</p>
+      </div>
+
+      <div class="audit-item open">
+        <h4>3. LXX Total Occurrence Count</h4>
+        <p>The estimated "40–50" in the project files is slightly high; scholarly catalogs suggest approximately 38–40 distinct occurrences in the Rahlfs LXX.</p>
+      </div>
+
+      <div class="audit-item open">
+        <h4>4. Psalms of Solomon and 1 Clement Critical Editions</h4>
+        <p>Psalms of Solomon (R.B. Wright in OTP; Greek text ed. Rahlfs) and 1 Clement require fuller documentation for Stage 5.</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- SECTION II: DIACHRONIC MAP -->
+  <section id="map">
+    <h2>II. Diachronic Stage Map</h2>
+    <p style="color:var(--text-dim);font-size:0.92rem;">A corrected and supplemented timeline from Classical Greek through early church Greek. Each stage is attested; the mechanism of change between stages is analyzed in Section IV.</p>
+
+    <!-- STAGE 1 -->
+    <div class="stage-header">
+      <h3>Stage 1 — Classical Greek: Pure Pharmaceutical Adjective</h3>
+      <div class="date-range">c. 460–400 BCE (and continuing in medical prose through 1st century CE)</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">χριστός, -ή, -όν</span> — verbal adjective of <span class="gk">χρίω</span><br>
+      Meaning: "that which is/has been/is to be smeared on, applied (as an ointment/unguent), topical"<br>
+      Paradigmatic opposition: <span class="gk">χριστά ≠ πιστά / ποτά / ποτόν</span> ("drinkable")</p>
+      <p class="attestation"><span class="gk-mono">φάρμακα … χριστά τε καὶ πιστά</span> — Aeschylus, <em>PV</em> 480 [PT: TLG 0085.003]</p>
+      <p class="attestation"><span class="gk-mono">πότερα δὲ χριστὸν ἢ ποτὸν τὸ φάρμακον;</span> — Euripides, <em>Hipp.</em> 516 [PT: TLG 0006.005]</p>
+      <p class="attestation"><span class="gk-mono">χριστά φάρμακα, χριστέον</span> (from <span class="gk">χρίω</span>) — Hippocratic corpus, passim [Lex: LSJ s.v. χριστός I]</p>
+      <p>No ritual, religious, or royal connotation. The word describes PHYSICAL APPLICATION of a substance. The semantic space is identical to English "applied/topical."</p>
+    </div>
+
+    <!-- STAGE 2a -->
+    <div class="stage-header">
+      <h3>Stage 2a — LXX Hellenistic: Priestly Anointing Title</h3>
+      <div class="date-range">Translation c. 250–200 BCE (Pentateuch)</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">χριστός</span> now renders Hebrew הַמָּשִׁיחַ (ha-māšîaḥ) in institutional/ritual contexts.<br>
+      Morphological status: Attributive adjective in a frozen title: <span class="gk">ὁ ἱερεὺς ὁ χριστός</span> (article + noun + article + adjective = definitized/nominalized title).</p>
+      <p><strong style="color:var(--gold-light);">Key change from Stage 1:</strong> The adjective now modifies persons, not things. It marks a specific institutional status conferred by a ritual act. The article (<span class="gk">ὁ</span>) is essential: it signals "the anointed priest" as a designated role, not a quality.</p>
+      <p class="attestation"><span class="gk-mono">ὁ ἱερεὺς ὁ χριστὸς ὁ τετελειωμένος τὰς χεῖρας</span> — LXX Lev 4:5 [PT: Rahlfs-Hanhart]</p>
+      <p class="attestation"><span class="gk-mono">ὁ ἱερεὺς ὁ χριστός</span> — LXX Lev 4:16; 6:22</p>
+      <p class="attestation"><span class="gk-mono">τὸ ἔλαιον τὸ χριστόν</span> — LXX Lev 21:10 (bridge: ritual oil — neut. sg.)</p>
+      <p class="source-ref">Translation mechanism: STRUCTURAL CALQUE (parallel morphology: māšîaḥ [qal passive ptcp. of מָשַׁח] ≈ χριστός [verbal adj. of χρίω])</p>
+    </div>
+
+    <!-- STAGE 2b -->
+    <div class="stage-header">
+      <h3>Stage 2b — LXX Hellenistic: Royal Davidic Title</h3>
+      <div class="date-range">Translation c. 200–150 BCE (Historical books, Psalms)</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">χριστός</span> now renders מְשִׁיחַ יְהוָה (mešîaḥ YHWH) as a royal title for the reigning Davidic king.<br>
+      Formula: <span class="gk">ὁ χριστὸς κυρίου</span> = "the LORD's anointed" — nearly formulaic (stereotyped).</p>
+      <p><strong style="color:var(--gold-light);">Key change from Stage 2a:</strong> Shifts from priestly to royal domain. Still refers to LIVING individuals, not future figures.</p>
+      <p class="attestation"><span class="gk-mono">τῷ χριστῷ κυρίου … χριστὸς κυρίου ἐστὶν οὗτος</span> — LXX 1 Sam 24:7 (David refuses to harm Saul)</p>
+      <p class="attestation"><span class="gk-mono">χριστὸς κυρίου συνελήμφθη</span> — LXX Lam 4:20 (King Zedekiah captured, 586 BCE)</p>
+      <p class="attestation"><span class="gk-mono">τῷ χριστῷ μου Κύρῳ</span> — LXX Isa 45:1 (Cyrus — unique extension to a non-Israelite)</p>
+      <p class="attestation"><span class="gk-mono">τοὺς χριστούς σου</span> — LXX Hab 3:13 (acc. pl. — the only plural in the whole LXX corpus per LSJ)</p>
+    </div>
+
+    <!-- STAGE 2c -->
+    <div class="stage-header">
+      <h3>Stage 2c — LXX Hellenistic / Transition: Proto-Messianic Use</h3>
+      <div class="date-range">Translation c. 150–100 BCE (Psalms, Daniel)</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">χριστός</span> begins to carry eschatological / future referent. Ps 2:2 is in a "royal" psalm but was read in Jewish and early Christian tradition as referring to a future anointed king (cited in NT at Acts 4:25–26).</p>
+      <p class="attestation"><span class="gk-mono">ἕως χριστοῦ ἡγουμένου ἑβδομάδες ἑπτά</span> — Dan 9:25 (Theodotion) — ANARTHROUS; future referent in "70 weeks" schema</p>
+      <p class="attestation">Dan 9:26: LXX reads <span class="gk-mono">χρῖσμα</span> ("anointing"), Theodotion reads <span class="gk-mono">χριστός</span> ("anointed one") — the variant itself shows translators navigating the title/abstract-noun boundary.</p>
+    </div>
+
+    <!-- STAGE 3 -->
+    <div class="stage-header">
+      <h3>Stage 3 — Second Temple Jewish: Explicitly Eschatological Messianic Title <span class="note-new">NOT IN ORIGINAL PROJECT FILES — new evidence</span></h3>
+      <div class="date-range">Psalms of Solomon c. 50 BCE</div>
+    </div>
+    <div class="stage-body">
+      <p>This stage is THE CRITICAL MISSING LINK between LXX royal usage (Stage 2b) and NT messianic title (Stage 4). It is absent from all three original project files.</p>
+      <p>The Psalms of Solomon are Jewish pseudepigraphical poems written originally in Hebrew c. 50 BCE (following the Pompey invasion of Jerusalem, 63 BCE), preserved in Greek. They are NOT part of the LXX but circulated in the same Greek Jewish literary milieu.</p>
+      <p class="attestation"><span class="gk-mono">βασιλεὺς αὐτῶν χριστὸς κυρίου</span> — PsSol 17:32 [PT: ed. Rahlfs]</p>
+      <p class="attestation">"their king, the Lord's anointed" — the king is FUTURE; no Davidic king currently reigns</p>
+      <p class="attestation"><span class="gk-mono">ὑπὸ ῥάβδον παιδείας χριστοῦ κυρίου</span> — PsSol 18:7 [PT: ed. Rahlfs]</p>
+      <p>Why this stage is critical: (1) The "king" in PsSol 17 is a FUTURE figure — genuine eschatological messianism. (2) The formula <span class="gk">χριστὸς κυρίου</span> WITHOUT article has begun to shed the article = moving toward name-status. (3) PsSol 17 is the closest parallel to NT messianic language and almost certainly represents the type of Jewish messianic expectation into which Jesus was inserted by his followers.</p>
+      <p class="source-ref">[Infer: J.J. Collins, <em>The Scepter and the Star</em>, 2nd ed. (Eerdmans, 2010), pp. 49–73]</p>
+    </div>
+
+    <!-- STAGE 4a -->
+    <div class="stage-header">
+      <h3>Stage 4a — NT Paul: Title → Proper Name</h3>
+      <div class="date-range">c. 49–55 CE (earliest layer)</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">Χριστός</span> is predominantly ANARTHROUS (without article) = proper name. <span class="gk">ὁ Χριστός</span> is retained in explicitly theological/titular passages. Formula <span class="gk">Ἰησοῦς Χριστός</span> is fully established.</p>
+      <p class="attestation"><span class="gk-mono">ἐν θεῷ πατρὶ καὶ κυρίῳ Ἰησοῦ Χριστῷ</span> — 1 Thess 1:1 (c. 49–51 CE) — earliest datable Christian document</p>
+      <p class="attestation"><span class="gk-mono">Χριστὸς ἀπέθανεν ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν</span> — 1 Cor 15:3 (c. 53–55 CE) — pre-Pauline creedal tradition; anarthrous subject = name</p>
+      <p class="attestation"><span class="gk-mono">εἷς ἐστε ἐν Χριστῷ Ἰησοῦ</span> — Gal 3:28 — <span class="gk">ἐν Χριστῷ</span> formula (~164 times in Pauline corpus); locative with person's name = name</p>
+    </div>
+
+    <!-- STAGE 4b -->
+    <div class="stage-header">
+      <h3>Stage 4b — NT Synoptic Gospels</h3>
+      <div class="date-range">c. 70–90 CE</div>
+    </div>
+    <div class="stage-body">
+      <p><span class="gk">ὁ Χριστός</span> retained as a live messianic TITLE in narrative contexts. The Gospels narrate the historical process of identifying Jesus as <span class="gk">χριστός</span>, so the article is more common than in Paul.</p>
+      <p class="attestation"><span class="gk-mono">Βίβλος γενέσεως Ἰησοῦ Χριστοῦ, υἱοῦ Δαυίδ</span> — Matt 1:1 (incipit — no article = proper name)</p>
+      <p class="attestation"><span class="gk-mono">Σὺ εἶ ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ τοῦ ζῶντος</span> — Matt 16:16 (Peter's confession — WITH article = title)</p>
+      <p class="attestation"><span class="gk-mono">ψευδόχριστοι καὶ ψευδοπροφῆται</span> — Matt 24:24 — COMPOUND proves title formation complete</p>
+    </div>
+
+    <!-- STAGE 4c -->
+    <div class="stage-header">
+      <h3>Stage 4c — NT Johannine Literature</h3>
+      <div class="date-range">c. 90–100 CE</div>
+    </div>
+    <div class="stage-body">
+      <p class="attestation"><span class="gk-mono">Εὑρήκαμεν τὸν Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον ὁ Χριστός</span> — John 1:41 — THE KEY PASSAGE: only NT explicit bilingual gloss</p>
+      <p class="attestation"><span class="gk-mono">Μεσσίας ἔρχεται, ὁ λεγόμενος Χριστός</span> — John 4:25 — second bilingual gloss (Samaritan woman's voice)</p>
+      <p class="attestation"><span class="gk-mono">ἵνα πιστεύ[σ]ητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ</span> — John 20:31 — the Gospel's stated organizing purpose</p>
+    </div>
+
+    <!-- STAGE 4d -->
+    <div class="stage-header">
+      <h3>Stage 4d — External Attestation / Acts</h3>
+      <div class="date-range">c. 90–94 CE</div>
+    </div>
+    <div class="stage-body">
+      <p class="attestation"><span class="gk-mono">καὶ Κύριον αὐτὸν καὶ Χριστὸν ἐποίησεν ὁ θεός</span> — Acts 2:36 — the anointing is by RESURRECTION, not oil (adoptionist-sounding formula)</p>
+      <p class="attestation"><span class="gk-mono">χρηματίσαι τε πρῶτον ἐν Ἀντιοχείᾳ τοὺς μαθητὰς Χριστιανούς</span> — Acts 11:26 — derived appellative <span class="gk-mono">Χριστιανοί</span> confirms full onomastic status</p>
+      <p class="attestation"><span class="gk-mono">τὸν ἀδελφὸν Ἰησοῦ τοῦ λεγομένου Χριστοῦ</span> — Josephus, <em>Ant.</em> 20.200 — <span class="label-correct">✓ AUTHENTIC</span>; distancing formula confirms name-status by 93 CE</p>
+    </div>
+
+    <!-- STAGE 4e -->
+    <div class="stage-header">
+      <h3>Stage 4e — NT Hebrews: Etymological Revitalization</h3>
+      <div class="date-range">c. 70 CE composition (debated)</div>
+    </div>
+    <div class="stage-body">
+      <p>A unique theological move: <span class="gk">Χριστός</span> is re-connected to its priestly LXX background (Stage 2a). The author of Hebrews explicitly identifies Jesus as a HIGH PRIEST, simultaneously using the name <span class="gk">Χριστός</span> and exploiting its earlier meaning as the anointed priest — a deliberate ETYMOLOGICAL REVITALIZATION.</p>
+      <p class="attestation"><span class="gk-mono">Χριστὸς δὲ παραγενόμενος ἀρχιερεὺς τῶν γενομένων ἀγαθῶν</span> — Heb 9:11</p>
+    </div>
+
+    <!-- STAGE 5a -->
+    <div class="stage-header">
+      <h3>Stage 5a — 1 Clement: Fixed Proper Name <span class="note-new">NOT IN ORIGINAL PROJECT FILES — new evidence</span></h3>
+      <div class="date-range">c. 96 CE</div>
+    </div>
+    <div class="stage-body">
+      <p>Formulaic use of <span class="gk">Ἰησοῦς Χριστός</span> throughout: fully a proper name. The messianic titular force has become formulaic/liturgical — no messianic explanation offered or needed.</p>
+      <p class="attestation"><span class="gk-mono">…κλητοῖς ἡγιασμένοις ἐν θελήματι θεοῦ διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ</span> — 1 Clem 1:1 [PT: TLG 1271.001]</p>
+    </div>
+
+    <!-- STAGE 5b -->
+    <div class="stage-header">
+      <h3>Stage 5b — Ignatius of Antioch: Neologism as Proof <span class="note-new">NOT IN ORIGINAL PROJECT FILES</span></h3>
+      <div class="date-range">c. 107–115 CE</div>
+    </div>
+    <div class="stage-body">
+      <p>Systematic use of <span class="gk">Ἰησοῦς Χριστός</span> throughout all seven letters. The Pauline formulaic patterns are fully reproduced.</p>
+      <p class="attestation"><span class="gk-mono">Χριστιανισμός</span> (contrast with <span class="gk-mono">Ἰουδαϊσμός</span>) — Ign. Phld. 6:1; Magn. 10:1–3 — NEOLOGISM THAT SEALS STAGE 5</p>
+      <p>The <span class="gk">-ισμός</span> abstract suffix can ONLY be attached to proper names, never to titles. <span class="gk">Χριστιανισμός</span> is impossible unless <span class="gk">Χριστός</span> is a stable proper name. Compare: <span class="gk">Ἡρωδιανοί</span> (followers of Herod = proper name), <span class="gk">Καισαριανοί</span> (followers of Caesar = proper name).</p>
+      <p>Ignatius also uses <span class="gk">θεὸς ἡμῶν Ἰησοῦς Χριστός</span> (Ign. Eph. 18:2) — applying <span class="gk">ὁ Χριστός</span> as an appositive to <span class="gk">θεός</span>, a theological step Paul never makes explicitly.</p>
+    </div>
+
+    <!-- STAGE 5c -->
+    <div class="stage-header">
+      <h3>Stage 5c — Justin Martyr: Opacity as Evidence <span class="note-new">NOT IN ORIGINAL PROJECT FILES</span></h3>
+      <div class="date-range">c. 155–165 CE</div>
+    </div>
+    <div class="stage-body">
+      <p>Justin's works provide the clearest evidence that <span class="gk">Χριστός</span> has become a proper name whose etymological meaning is no longer self-evident to Greek-speaking audiences — which is precisely why he must EXPLAIN it.</p>
+      <p><strong style="color:var(--gold-light);">1 Apol. 4</strong>: Justin defends Christians against persecution based on their NAME (<span class="gk">Χριστιανοί</span>). He plays on phonological similarity: <span class="gk">Χριστιανοί</span> (from <span class="gk">Χριστός</span>) vs. <span class="gk">χρηστοί / Χρηστιανοί</span> (from <span class="gk">χρηστός</span> = "good"). Tacitus (Ann. 15.44) calls the founder "Chrestus" — reflecting the same phonological ambiguity.</p>
+      <p><strong style="color:var(--gold-light);">Dial. Tryph. 86</strong>: Justin explicitly explains why Jesus is called <span class="gk">χριστός</span> — he is "anointed" (<span class="gk">κεχρισμένος</span>) as priest, king, and prophet. This ETYMOLOGICAL RECOVERY proves the word is an opaque proper name for his audience.</p>
+      <p class="source-ref">KEY INFERENCE: Justin's need to explain the etymology is the strongest evidence that <span class="gk">Χριστός</span> is no longer a transparent Greek adjective, recognized Jewish messianic title, or translation term — it is a proper name requiring philological unpacking. [Infer: M.J. Edwards, JECS 3 (1995)]</p>
+    </div>
+  </section>
+
+  <!-- SECTION III: EVIDENCE TABLE -->
+  <section id="table">
+    <h2>III. Evidence Table</h2>
+    <div class="table-wrap">
+      <table class="evidence-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Greek Form</th>
+            <th>Meaning / Function</th>
+            <th>Representative Text</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="gk">χριστά (neut. pl.)</td>
+            <td>"smearable medicines" — pharmaceutical adj. opposed to "drinkable"</td>
+            <td>Aesch. <em>PV</em> 480 [TLG 0085.003]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Establishes pre-religious semantic ground; zero religious content. [Lex: LSJ I]</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="gk">χριστόν (neut. sg.)</td>
+            <td>"is the drug a salve?" — pharmaceutical adj.; topical vs. oral</td>
+            <td>Eur. <em>Hipp.</em> 516 [TLG 0006.005]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Confirms the opposition paradigm; zero ritual meaning. [Lex: LSJ I]</td>
+          </tr>
+          <tr>
+            <td>2a</td>
+            <td class="gk">χριστός (masc. sg.) — ὁ ἱερεὺς ὁ χριστός</td>
+            <td>Priestly title: "the anointed priest" = H. הַכֹּהֵן הַמָּשִׁיחַ</td>
+            <td>LXX Lev 4:5; 4:16 [Rahlfs LXX]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: FIRST use as a quasi-title for a PERSON; marks transition from thing-predicate to person-predicate; still adjectival. [Lex: LSJ IIa]</td>
+          </tr>
+          <tr>
+            <td>2a</td>
+            <td class="gk">χριστόν (neut. sg.) — τὸ ἔλαιον τὸ χ.</td>
+            <td>"anointing oil" — adj. modifying oil (bridge Stage 1 → 2a)</td>
+            <td>LXX Lev 21:10 [Rahlfs LXX]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Shows χριστός in Lev still modifies objects (Stage 1 pattern) even as it also modifies persons — two uses coexist in same book.</td>
+          </tr>
+          <tr>
+            <td>2b</td>
+            <td class="gk">χριστὸς κυρίου (nom. sg.)</td>
+            <td>Royal title: "the LORD's anointed" = H. מְשִׁיחַ יְהוָה</td>
+            <td>LXX 1 Sam 24:7; 2 Sam 1:14; Lam 4:20 [Rahlfs LXX]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Formula crystallizes; χριστός + κυρίου is a stereotyped royal designation — first step from adjective toward frozen title. [Lex: LSJ IIb]</td>
+          </tr>
+          <tr>
+            <td>2b</td>
+            <td class="gk">τῷ χριστῷ μου Κύρῳ (dat. sg.)</td>
+            <td>"to my anointed, Cyrus" — applied to Persian king</td>
+            <td>LXX Isa 45:1 [Rahlfs LXX]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Proves χριστός ≠ "Israelite" or "Davidic" in LXX — it is a functional title for any divinely authorized agent. Crucial for showing "anointing" is about function, not ethnicity.</td>
+          </tr>
+          <tr>
+            <td>2b</td>
+            <td class="gk">τοὺς χριστούς σου (masc. acc. pl.)</td>
+            <td>Plural: "your anointed ones" — collective royal/national</td>
+            <td>LXX Hab 3:13 [Rahlfs LXX]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: ONLY plural acc. in the whole LXX corpus (per LSJ); NT NEVER uses plural — it singularizes exclusively onto Jesus. [Lex: LSJ IIc]</td>
+          </tr>
+          <tr>
+            <td>2c</td>
+            <td class="gk">χριστοῦ ἡγουμένου (gen. sg. — NO article)</td>
+            <td>Gen. partitive: "of an anointed leader" — future / numerical schema</td>
+            <td>LXX/Th. Dan 9:25 [Rahlfs Th. text]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: ANARTHROUS χριστοῦ in temporal formula — absence of article begins trajectory toward name-usage. Future referent in "70 weeks" schema. [Lex: LSJ IIe]</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="gk">χριστὸς κυρίου (nom. sg. — NO article)</td>
+            <td>FUTURE messianic king: "their king, the LORD's anointed" (expected deliverer)</td>
+            <td>PsSol 17:32 [ed. Rahlfs]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: GENUINELY ESCHATOLOGICAL — no current king exists; χριστὸς κυρίου is a FUTURE figure; proves the title was in use as an eschatological designation BEFORE the NT. [Infer: J.J. Collins, Scepter and Star, 2010, pp. 49–73]</td>
+          </tr>
+          <tr>
+            <td>4a</td>
+            <td class="gk">Χριστὸς ἀπέθανεν (nom. sg. — NO article)</td>
+            <td>Proper name (subject); creedal formula</td>
+            <td>1 Cor 15:3 [NA28]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Anarthrous subject of a main verb = proper name. Compare: "Caesar died" — Caesar is not a title here, it is a name. Pre-Pauline tradition c. 35–40 CE. [Infer: J.D.G. Dunn, Theology of Paul, 1998, pp. 235–238]</td>
+          </tr>
+          <tr>
+            <td>4a</td>
+            <td class="gk">ἐν Χριστῷ Ἰησοῦ (dat. sg. — no art.) — ~164 occurrences</td>
+            <td>Locative formula: "in Christ Jesus" — participatory sphere</td>
+            <td>Gal 3:28; Eph 2:13 [NA28]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: ἐν Χριστῷ is THE most characteristic Pauline formula. Locative ἐν with a person's name = name (not title). The formula is impossible if Χριστός still means "anointed."</td>
+          </tr>
+          <tr>
+            <td>4b</td>
+            <td class="gk">Ἰησοῦς Χριστός (nom./gen./dat.) — compound proper name</td>
+            <td>Incipit formula; compound proper name</td>
+            <td>Matt 1:1; Mark 1:1; Rom 1:1 [NA28]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Compound proper name (praenomen + cognomen). Ἰησοῦς Χριστός is never Ἰησοῦς ὁ Χριστός in these formulaic contexts — the article has been shed; both elements are names. [Lex: LSJ III]</td>
+          </tr>
+          <tr>
+            <td>4c</td>
+            <td class="gk">Μεσσίας … ὁ Χριστός (gloss formula)</td>
+            <td>Bilingual gloss: Aramaic = Greek</td>
+            <td>John 1:41; 4:25 [NA28]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: ONLY NT passage with explicit translation equation. Two terms coexisted; ὁ Χριστός is still felt as the GREEK TRANSLATION, not yet fully opaque.</td>
+          </tr>
+          <tr>
+            <td>4d</td>
+            <td class="gk">τοῦ λεγομένου Χριστοῦ (gen. sg. ptcp.)</td>
+            <td>"the one called Christ" — reportorial distancing formula</td>
+            <td>Josephus <em>Ant.</em> 20.200 [Niese ed.]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Josephus assumes readers KNOW what "Christ" refers to; λεγόμενος signals non-endorsement, not translation of an obscure term. Confirms name-status by 93 CE. ✓ AUTHENTIC</td>
+          </tr>
+          <tr>
+            <td>4d</td>
+            <td class="gk">Χριστιανοί (masc. pl. nom.) — derived from Χριστός</td>
+            <td>Derived appellative: "Christians"</td>
+            <td>Acts 11:26 [NA28]; Josephus <em>Ant.</em> 18.64; Tacitus <em>Ann.</em> 15.44</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: DEFINITIVE TEST. Once followers are named from a word (Χριστ- + -ιανοί), that word functions as a PROPER NAME. Compare: Καισαριανοί, Ἡρωδιανοί — formation is onomastic, not adjectival.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="gk">Χριστιανισμός (masc. sg. nom.) — abstract noun</td>
+            <td>The religion named from the proper name</td>
+            <td>Ign. Phld. 6:1; Magn. 10:1–3 [Schoedel ed.]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: NEOLOGISM. You cannot form an abstract "-ισμός" word from a title; only from a name. Χριστιανισμός (parallel: Ἰουδαϊσμός) seals Stage 5: Χριστός is fully onomastic.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td class="gk">Χριστός — explained as ἀπὸ τοῦ χρίειν</td>
+            <td>Proper name explained etymologically to non-Christian audience</td>
+            <td>Justin, 1 Apol. 4; Dial. Tryph. 86 [TLG 0645.001]</td>
+          </tr>
+          <tr class="why-row">
+            <td colspan="4">WHY: Justin's NEED to explain the etymology proves that for his c.155 CE Greco-Roman audience, Χριστός is an OPAQUE PROPER NAME — its adjectival, translational, and titular meanings are no longer accessible without philological recovery.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- SECTION IV: ANALYTICAL CONCLUSION -->
+  <section id="conclusion">
+    <h2>IV. Analytical Conclusion</h2>
+
+    <div class="q-block">
+      <h3>Q1: "Borrowing into Hebrew and back into Greek"?</h3>
+      <div class="verdict"><span class="label-wrong">INACCURATE.</span> This formulation rests on a false model. The correct model has three distinct components:</div>
+
+      <p class="component-head">Component A — Independent Native Development</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Greek <span class="gk">χριστός</span> existed as a native Greek verbal adjective (from <span class="gk">χρίω</span>) with purely pharmacological meaning centuries before any Jewish Greek translation. Hebrew מָשִׁיחַ existed as a native Hebrew nominal derivation (from מָשַׁח) within Israelite tradition. These two words developed independently. <strong>Hebrew NEVER borrowed the Greek word χριστός.</strong></p>
+
+      <p class="component-head">Component B — Semantic Calque in the LXX</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">LXX translators chose <span class="gk">χριστός</span> based on STRUCTURAL EQUIVALENCE: both words derive from verbs meaning "to anoint/smear" and both function as verbal adjectives meaning "anointed one." This is a SEMANTIC CALQUE (loan-translation), not a borrowing: a calque takes the meaning/structure and expresses it in native vocabulary. Through repeated use as the translation equivalent of מָשִׁיחַ, <span class="gk">χριστός</span> ACCUMULATED the semantic field of מָשִׁיחַ. Direction of transfer: Hebrew → Greek.</p>
+
+      <p class="component-head">Component C — Transliteration as a Separate Channel</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Aramaic מְשִׁיחָא was BORROWED into Greek as <span class="gk">Μεσσίας</span> — this IS a genuine loanword. <span class="gk">Μεσσίας</span> and <span class="gk">ὁ Χριστός</span> are two separate channels for the same underlying Hebrew concept. John 1:41 explicitly presents <span class="gk">ὁ Χριστός</span> as the TRANSLATION of <span class="gk">Μεσσίας</span>, confirming the two-channel system was still recognized c. 90 CE.</p>
+
+      <div class="verdict"><strong>Correct model:</strong> (a) <span class="gk">χριστός</span> = Greek verbal adjective used as SEMANTIC CALQUE for Hebrew מָשִׁיחַ. (b) Semantic content of מָשִׁיחַ migrated INTO <span class="gk">χριστός</span> through LXX translation — direction is Hebrew → Greek. (c) <span class="gk">Μεσσίας</span> = genuine Greek loanword from Aramaic — a separate channel. (d) "Borrowing into Hebrew" is a false description: Hebrew never borrowed <span class="gk">χριστός</span>.</div>
+    </div>
+
+    <div class="q-block">
+      <h3>Q2: Semantic Continuity vs. Narrowing / Reinterpretation</h3>
+
+      <p class="component-head">Continuity</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">The physical semantic base (anointing with oil) is maintained as a referential anchor throughout all stages. Even in the NT, the connection is theologically activated: Acts 10:38 (<span class="gk">"ἔχρισεν αὐτὸν ὁ θεὸς πνεύματι ἁγίῳ"</span> — "God anointed him with the Holy Spirit"), citing Isa 61:1. The anointing is spiritualized, but <span class="gk">χρίω</span> remains the interpretive key.</p>
+
+      <p class="component-head">Narrowing</p>
+      <ol class="narrowing-list">
+        <li>Stage 1: any substance smeared onto any surface or person</li>
+        <li>Stage 2a: any anointed priest of Israel</li>
+        <li>Stage 2b: any reigning Davidic king</li>
+        <li>Stage 3: THE expected future Davidic deliverer (Psalms of Solomon)</li>
+        <li>Stage 4: Jesus of Nazareth, specifically</li>
+        <li>Stage 5: Jesus as a fixed proper name</li>
+      </ol>
+      <p style="color:var(--text-dim);font-size:0.92rem;margin-top:0.5rem;">The trajectory is one of PROGRESSIVE SINGULARIZATION: plural → collective → specific individual → proper name.</p>
+
+      <p class="component-head">Reinterpretation</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">The one significant theological reinterpretation occurs between Stage 3 (PsSol — the future Davidic king who will defeat Rome militarily) and Stage 4 (NT — a <span class="gk">χριστός</span> who is crucified). Paul explicitly acknowledges this tension: <span class="gk">"Χριστὸν ἐσταυρωμένον, Ἰουδαίοις μὲν σκάνδαλον"</span> (1 Cor 1:23) — "Christ crucified — a stumbling block to Jews." [Infer: N.T. Wright, <em>The Climax of the Covenant</em> (T&T Clark, 1991), ch. 2]</p>
+    </div>
+
+    <div class="q-block">
+      <h3>Q3: Lexical Translation / Title Formation / Resemanticization</h3>
+
+      <p class="component-head">Lexical Translation (Stage 2a–b)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">LXX Leviticus: <span class="gk">χριστός</span> as direct translation of מָשִׁיחַ in fixed priestly and royal contexts. Meaning is transparent.</p>
+
+      <p class="component-head">Title Formation (Stage 2b–c and PsSol)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">When <span class="gk">ὁ χριστὸς κυρίου</span> becomes a recognized formula, it solidifies from a descriptive adjective into a quasi-title. Formal criteria: (a) stereotyped collocation, (b) definite article as title marker, (c) referential stability. PsSol 17:32 shows the title beginning to detach from its article — becoming more name-like.</p>
+
+      <p class="component-head">Theological Resemanticization (Stage 4)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Acts 2:36 ("God has MADE him both Lord and Christ") and 1 Cor 1:23 ("Christ crucified — scandal to Jews") are the two textual moments where the semantic content is most explicitly renegotiated: (a) the anointing is by RESURRECTION, not oil; (b) the criteria for identifying the "anointed" are inverted (crucifixion ≠ victory). This is genuine RESEMANTICIZATION.</p>
+    </div>
+
+    <div class="q-block">
+      <h3>Q4: Strongest Evidence for Adjective → Title → Name Transition</h3>
+
+      <p class="component-head">Adjective → Title</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Best evidence: LXX Lev 4:5 — the triple-article construction <span class="gk">ὁ ἱερεὺς ὁ χριστὸς ὁ τετελειωμένος</span> shows <span class="gk">χριστός</span> in a FROZEN TITLE SLOT. Compare: ordinary adjective (<span class="gk">ἱερεὺς χριστός</span> = "an anointed priest") vs. title (<span class="gk">ὁ ἱερεὺς ὁ χριστός</span> = "the anointed priest" — a specific role). The article's repetition signals <span class="gk">χριστός</span> has entered the nominal sphere.</p>
+
+      <p class="component-head">Title → Quasi-Proper Name (proto-stage)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Best evidence: Dan 9:25 (Theodotion): <span class="gk">ἕως χριστοῦ ἡγουμένου</span> — ANARTHROUS. Absence of article in a temporal formula shows <span class="gk">χριστός</span> beginning to behave like a name: names take no article. Also: PsSol 17:32 (<span class="gk">χριστὸς κυρίου</span> without article).</p>
+
+      <p class="component-head">Quasi-Name → Proper Name (three simultaneous criteria)</p>
+      <ul style="color:var(--text-dim);font-size:0.92rem;margin:0.4rem 0;">
+        <li>(a) Paul's anarthrous formula <span class="gk">"Χριστὸς ἀπέθανεν"</span> (1 Cor 15:3): anarthrous subject of a main verb = name.</li>
+        <li>(b) Derived appellative <span class="gk">"Χριστιανοί"</span> (Acts 11:26): follower-names derive only from proper names.</li>
+        <li>(c) Justin's need to EXPLAIN the etymology (1 Apol. 4; Dial. 86): when speakers must recover a word's meaning philologically, it is a name.</li>
+      </ul>
+      <p style="color:var(--text-dim);font-size:0.92rem;">All three criteria point to full name-status no later than c. 50–55 CE in Paul, confirmed externally by c. 96 CE (1 Clement, Ignatius), and lexicographically confirmed by c. 155 CE (Justin's explanations).</p>
+    </div>
+
+    <div class="q-block">
+      <h3>Q5: Early Church Evidence that Χριστός is No Longer a Translation</h3>
+
+      <p style="color:var(--text-dim);font-size:0.92rem;"><strong style="color:var(--gold-light);">Criterion:</strong> If <span class="gk">Χριστός</span> were still felt as a translation of מָשִׁיחַ, writers would not need to explain its meaning to Greek-speaking audiences.</p>
+
+      <p class="component-head">Evidence 1 — Ignatius, Phld. 6:1 (c. 107–115 CE)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;"><span class="gk">Χριστιανισμός</span> vs. <span class="gk">Ἰουδαϊσμός</span> — "Christianity" as a proper-noun abstract system named from the name <span class="gk">Χριστός</span>. This naming practice treats <span class="gk">Χριστός</span> as a FOUNDER'S NAME, not as a translation term.</p>
+
+      <p class="component-head">Evidence 2 — Justin, 1 Apol. 4 (c. 155 CE)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Justin distinguishes <span class="gk">Χριστιανοί</span> (from <span class="gk">Χριστός</span>) vs. <span class="gk">χρηστοί</span> (from <span class="gk">χρηστός</span>, "good/useful"). If <span class="gk">Χριστός</span> were still transparent as "the anointed one," Justin would explain its messianic Jewish content. Instead he must explain the WORD FORM — its similarity to another Greek word that sounds similar. This phonological confusion is only possible if <span class="gk">χριστός</span> has become OPAQUE as a name.</p>
+
+      <p class="component-head">Evidence 3 — Tacitus, <em>Annals</em> 15.44 (c. 116 CE, Latin)</p>
+      <p style="color:var(--text-dim);font-size:0.92rem;">Tacitus writes "Christus" as a proper name for his Latin audience without explanation or translation — confirms the name required no decoding in educated circles by c. 116 CE.</p>
+
+      <div class="verdict"><strong>Conclusion:</strong> By c. 107–115 CE (Ignatius), <span class="gk">Χριστός</span> is a FIXED CHRISTIAN IDENTIFIER — it names a religion, defines identity, and generates new vocabulary without invoking its Hebrew/Aramaic background. By c. 155 CE (Justin), even its adjectival etymology ("anointed") has become non-transparent. The transition from adjective to title to opaque proper name is COMPLETE by the mid-2nd century CE.</div>
+    </div>
+  </section>
+
+  <div class="callout callout-note" style="margin-top:2rem;">
+    <div class="callout-label">Related Documents</div>
+    <p>See the <a href="christos_sources.html">Source Registry</a> for structured key-text data, the <a href="christos_occurrences.html">Occurrences Database</a> for all 38 attested forms, the <a href="lsj_christos_entry.html">LSJ Entry Reconstruction</a> for the full lexicon article, and the <a href="christos_semantic_flowchart.html">Semantic Flowchart</a> for a visual overview.</p>
+  </div>
+
+  <footer class="site-footer">
+    <p>Christ-TLG Philological Research Project · <a href="index.html">Home</a> · 2026-03-06</p>
+  </footer>
+
+</div>
+</body>
+</html>

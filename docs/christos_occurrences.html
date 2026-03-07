@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occurrences Database — χριστός</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .filter-btn { background: var(--surface2); border: 1px solid var(--border); color: var(--text-dim); padding: 0.25rem 0.75rem; border-radius: 3px; font-size: 0.78rem; cursor: pointer; font-family: 'Courier New', monospace; }
+    .col-narrow { width: 3rem; white-space: nowrap; }
+    .col-date { width: 5rem; white-space: nowrap; }
+    .col-form { font-style: italic; color: var(--gold-light); }
+    .col-sem { font-size: 0.75rem; color: var(--text-dim); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-home">☩ CHRIST-TLG</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-branch">christos_migration/</span>
+  <span class="nav-sep">|</span>
+  <a href="christos_tlg_report.html">TLG Report</a>
+  <span class="nav-sep">|</span>
+  <a href="christos_sources.html">Sources Registry</a>
+  <span class="nav-sep">|</span>
+  <a href="christos_semantic_flowchart.html">Flowchart</a>
+</nav>
+
+<div class="page-wrapper-wide">
+
+  <div class="page-header">
+    <div class="branch-tag">christos_migration/ &nbsp;|&nbsp; Occurrences Database &nbsp;|&nbsp; CSV · 38 rows</div>
+    <h1>Occurrences Database: <span class="gk">χριστός</span></h1>
+    <p class="subtitle">38 word-form instances across the corpus, with full metadata: author, TLG canon, date, period, grammatical case, semantic category, Greek text, translation, and lexicon notes.</p>
+    <div class="page-meta">
+      <span>38 rows · 14 columns</span>
+      <span>Source: christos_occurrences.csv</span>
+      <span>Branch: christos_migration</span>
+    </div>
+  </div>
+
+  <div class="summary-grid" style="margin-bottom: 2rem;">
+    <div class="stat-box">
+      <span class="stat-num">38</span>
+      <div class="stat-label">Total word-form instances documented</div>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">3</span>
+      <div class="stat-label">Classical instances (Aeschylus, Euripides, Hippocrates)</div>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">17</span>
+      <div class="stat-label">Hellenistic LXX instances</div>
+    </div>
+    <div class="stat-box">
+      <span class="stat-num">18</span>
+      <div class="stat-label">Roman period (Josephus + NT)</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-narrow">ID</th>
+          <th>Author</th>
+          <th>Work</th>
+          <th class="col-date">Date (CE)</th>
+          <th>Period</th>
+          <th>Reference</th>
+          <th>Word Form</th>
+          <th>Case</th>
+          <th>Semantic Category</th>
+          <th>Greek Text</th>
+          <th>Translation</th>
+          <th>Lexicon Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- CLASSICAL -->
+        <tr>
+          <td class="td-mono col-narrow">1</td>
+          <td>Aeschylus</td>
+          <td class="td-dim">Prometheus Vinctus</td>
+          <td class="td-dim">–460</td>
+          <td><span class="badge badge-classical">Classical</span></td>
+          <td class="td-mono">Line 480</td>
+          <td class="col-form">χριστά</td>
+          <td class="col-sem">Neut. pl. nom.</td>
+          <td class="col-sem">Literal/pharmaceutical</td>
+          <td class="td-greek">φάρμακα χριστά τε καὶ πιστά</td>
+          <td class="td-dim">smearable medicines and drinkable medicines</td>
+          <td class="td-dim">LSJ I: 'to be rubbed on, used as ointment or salve, opp. πιστός'</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">2</td>
+          <td>Euripides</td>
+          <td class="td-dim">Hippolytus</td>
+          <td class="td-dim">–428</td>
+          <td><span class="badge badge-classical">Classical</span></td>
+          <td class="td-mono">Line 516</td>
+          <td class="col-form">χριστόν</td>
+          <td class="col-sem">Neut. sg. acc.</td>
+          <td class="col-sem">Literal/pharmaceutical</td>
+          <td class="td-greek">πότερα δὲ χριστὸν ἢ ποτὸν τὸ φάρμακον;</td>
+          <td class="td-dim">Is the drug a smearable [salve] or a drinkable [potion]?</td>
+          <td class="td-dim">LSJ I: same entry; contrasted with ποτόν</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">3</td>
+          <td>Hippocrates</td>
+          <td class="td-dim">De ulceribus</td>
+          <td class="td-dim">–400</td>
+          <td><span class="badge badge-classical">Classical</span></td>
+          <td class="td-mono">Ulc. 18+</td>
+          <td class="col-form">χριστά φάρμακα</td>
+          <td class="col-sem">Neut. pl. / verbal adj.</td>
+          <td class="col-sem">Literal/pharmaceutical</td>
+          <td class="td-greek">ἐλαίῳ χρηστέον ἐπὶ τὰ ἕλκεα</td>
+          <td class="td-dim">one must apply oil to ulcers that require such medicines</td>
+          <td class="td-dim">Primary locus of χριστά vs. πιστά distinction in medical prose</td>
+        </tr>
+        <!-- HELLENISTIC LXX -->
+        <tr>
+          <td class="td-mono col-narrow">4</td>
+          <td>LXX — Leviticus</td>
+          <td class="td-dim">Leuitikon</td>
+          <td class="td-dim">–250</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Lev 4:3</td>
+          <td class="col-form">κεχρισμένος</td>
+          <td class="col-sem">Masc. sg. nom. (perf. ptcp.)</td>
+          <td class="col-sem">Jewish ritual/priestly title</td>
+          <td class="td-greek">ὁ ἀρχιερεὺς ὁ κεχρισμένος ἁμάρτῃ</td>
+          <td class="td-dim">if the anointed high priest sins</td>
+          <td class="td-dim">LSJ IIa: anointed priestly title</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">5</td>
+          <td>LXX — Leviticus</td>
+          <td class="td-dim">Leuitikon</td>
+          <td class="td-dim">–250</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Lev 4:5</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (attr. adj.)</td>
+          <td class="col-sem">Jewish ritual/priestly title</td>
+          <td class="td-greek">ὁ ἱερεὺς ὁ χριστὸς ὁ τετελειωμένος τὰς χεῖρας</td>
+          <td class="td-dim">the anointed priest who has been ordained</td>
+          <td class="td-dim">LSJ IIa. ὁ χριστός = frozen title for anointed priest</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">6</td>
+          <td>LXX — Leviticus</td>
+          <td class="td-dim">Leuitikon</td>
+          <td class="td-dim">–250</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Lev 4:16</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (attr. adj.)</td>
+          <td class="col-sem">Jewish ritual/priestly title</td>
+          <td class="td-greek">ὁ ἱερεὺς ὁ χριστὸς εἰσοίσει ἀπὸ τοῦ αἵματος</td>
+          <td class="td-dim">the anointed priest shall bring some of the blood</td>
+          <td class="td-dim">LSJ IIa</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">7</td>
+          <td>LXX — Leviticus</td>
+          <td class="td-dim">Leuitikon</td>
+          <td class="td-dim">–250</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Lev 6:22</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (attr. adj.)</td>
+          <td class="col-sem">Jewish ritual/priestly title</td>
+          <td class="td-greek">ὁ ἱερεὺς ὁ χριστὸς ἀντ' αὐτοῦ</td>
+          <td class="td-dim">the anointed priest who succeeds him</td>
+          <td class="td-dim">LSJ IIa</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">8</td>
+          <td>LXX — 1 Samuel</td>
+          <td class="td-dim">A' Basileion</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">1 Sam 2:10</td>
+          <td class="col-form">χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen.</td>
+          <td class="col-sem">Jewish royal/messianic title</td>
+          <td class="td-greek">ὑψώσει κέρας χριστοῦ αὐτοῦ</td>
+          <td class="td-dim">will exalt the horn of his anointed</td>
+          <td class="td-dim">LSJ IIb: Kings of Israel. Hannah's prayer — prospective reference</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">9</td>
+          <td>LXX — 1 Samuel</td>
+          <td class="td-dim">A' Basileion</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">1 Sam 24:7</td>
+          <td class="col-form">χριστῷ / χριστός</td>
+          <td class="col-sem">Dat. sg. + Nom. sg. pred.</td>
+          <td class="col-sem">Jewish royal title</td>
+          <td class="td-greek">τῷ χριστῷ κυρίου … χριστὸς κυρίου ἐστίν</td>
+          <td class="td-dim">to the LORD's anointed … this is the LORD's anointed</td>
+          <td class="td-dim">Paradigmatic χριστὸς κυρίου formula; Saul as current anointed king</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">10</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 2:2 LXX</td>
+          <td class="col-form">χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen.</td>
+          <td class="col-sem">Jewish messianic title (proto-eschatological)</td>
+          <td class="td-greek">κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ</td>
+          <td class="td-dim">against the LORD and against his anointed</td>
+          <td class="td-dim">Most-cited LXX messianic verse; applied to Jesus in Acts 4:26</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">11</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 17:51 LXX</td>
+          <td class="col-form">χριστῷ</td>
+          <td class="col-sem">Masc. sg. dat.</td>
+          <td class="col-sem">Jewish royal title</td>
+          <td class="td-greek">ποιῶν ἔλεος τῷ χριστῷ αὐτοῦ τῷ Δαυίδ</td>
+          <td class="td-dim">showing loving-kindness to his anointed — to David</td>
+          <td class="td-dim">LSJ IIb explicitly cites this verse. Davidic covenant</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">12</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 88:38 LXX</td>
+          <td class="col-form">χριστόν</td>
+          <td class="col-sem">Masc. sg. acc.</td>
+          <td class="col-sem">Jewish royal title (lament)</td>
+          <td class="td-greek">ἀνεβάλου τὸν χριστόν σου</td>
+          <td class="td-dim">you have spurned your anointed</td>
+          <td class="td-dim">Lament over abandoned Davidic covenant</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">13</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 88:51 LXX</td>
+          <td class="col-form">χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen.</td>
+          <td class="col-sem">Jewish royal title (lament)</td>
+          <td class="td-greek">τὴν ἀνταλλαγὴν τοῦ χριστοῦ σου</td>
+          <td class="td-dim">the footsteps of your anointed</td>
+          <td class="td-dim">LSJ IIb</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">14</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 131:10 LXX</td>
+          <td class="col-form">χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen.</td>
+          <td class="col-sem">Jewish royal/messianic title</td>
+          <td class="td-greek">μὴ ἀποστρέψῃς τὸ πρόσωπον τοῦ χριστοῦ σου</td>
+          <td class="td-dim">do not turn away the face of your anointed</td>
+          <td class="td-dim">Davidic covenant; early Christian exegesis</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">15</td>
+          <td>LXX — Psalms</td>
+          <td class="td-dim">Psalmoi</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Ps 131:17 LXX</td>
+          <td class="col-form">χριστῷ</td>
+          <td class="col-sem">Masc. sg. dat.</td>
+          <td class="col-sem">Jewish royal/messianic title</td>
+          <td class="td-greek">ἡτοίμασα λύχνον τῷ χριστῷ μου</td>
+          <td class="td-dim">I have prepared a lamp for my anointed</td>
+          <td class="td-dim">Davidic dynasty promise. LSJ IIb</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">16</td>
+          <td>LXX — Isaiah</td>
+          <td class="td-dim">Esaias</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Isa 45:1</td>
+          <td class="col-form">χριστῷ</td>
+          <td class="col-sem">Masc. sg. dat.</td>
+          <td class="col-sem">Non-Jewish royal usage (Cyrus)</td>
+          <td class="td-greek">τῷ χριστῷ μου Κύρῳ</td>
+          <td class="td-dim">to my anointed — Cyrus</td>
+          <td class="td-dim">Only LXX text where χριστός is applied to a non-Israelite</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">17</td>
+          <td>LXX — Habakkuk</td>
+          <td class="td-dim">Ambakoum</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Hab 3:13</td>
+          <td class="col-form">χριστούς</td>
+          <td class="col-sem">Masc. pl. acc.</td>
+          <td class="col-sem">Jewish royal title (collective plural)</td>
+          <td class="td-greek">τοῦ σῷσαι τοὺς χριστούς σου</td>
+          <td class="td-dim">to save your anointed ones</td>
+          <td class="td-dim">Only pl. acc. occurrence of χριστός in LXX noted by LSJ</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">18</td>
+          <td>LXX — Lamentations</td>
+          <td class="td-dim">Threni Ieremiae</td>
+          <td class="td-dim">–200</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Lam 4:20</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate)</td>
+          <td class="col-sem">Jewish royal title (elegiac)</td>
+          <td class="td-greek">χριστὸς κυρίου συνελήμφθη</td>
+          <td class="td-dim">the LORD's anointed was caught in their traps</td>
+          <td class="td-dim">χριστὸς κυρίου formula mourning captured king Zedekiah</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">19</td>
+          <td>LXX — Daniel (Theodotion)</td>
+          <td class="td-dim">Danihel (Theod.)</td>
+          <td class="td-dim">–100</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Dan 9:25</td>
+          <td class="col-form">χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. — anarthrous</td>
+          <td class="col-sem">Jewish messianic/eschatological title</td>
+          <td class="td-greek">ἕως χριστοῦ ἡγουμένου ἑβδομάδες ἑπτά</td>
+          <td class="td-dim">until an anointed leader, seven weeks</td>
+          <td class="td-dim">'Seventy weeks' prophecy; foundational for Second Temple messianic chronology</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">20</td>
+          <td>LXX — Daniel (Theodotion)</td>
+          <td class="td-dim">Danihel (Theod.)</td>
+          <td class="td-dim">–100</td>
+          <td><span class="badge badge-hellenistic">Hellenistic</span></td>
+          <td class="td-mono">Dan 9:26</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom.</td>
+          <td class="col-sem">Jewish messianic/eschatological title</td>
+          <td class="td-greek">ἐξολοθρευθήσεται χριστός</td>
+          <td class="td-dim">an anointed one will be cut off</td>
+          <td class="td-dim">LXX variant reads χρῖσμα; Theodotion χριστός = standard in Christian citation</td>
+        </tr>
+        <!-- ROMAN — JOSEPHUS -->
+        <tr>
+          <td class="td-mono col-narrow">21</td>
+          <td>Josephus</td>
+          <td class="td-dim">Ant. Jud. 18</td>
+          <td class="td-dim">93</td>
+          <td><span class="badge badge-roman">Roman</span></td>
+          <td class="td-mono">18.63</td>
+          <td class="col-form">χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate)</td>
+          <td class="col-sem">Christian title / journalistic reference</td>
+          <td class="td-greek">ὁ χριστὸς οὗτος ἦν</td>
+          <td class="td-dim">He was the Christ</td>
+          <td class="td-dim">Testimonium Flavianum — authenticity debated; probable Christian interpolation</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">22</td>
+          <td>Josephus</td>
+          <td class="td-dim">Ant. Jud. 20</td>
+          <td class="td-dim">93</td>
+          <td><span class="badge badge-roman">Roman</span></td>
+          <td class="td-mono">20.200</td>
+          <td class="col-form">Χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. (participial attr.)</td>
+          <td class="col-sem">Journalistic/neutral reference</td>
+          <td class="td-greek">τοῦ λεγομένου Χριστοῦ Ἰάκωβος</td>
+          <td class="td-dim">of Jesus who was called Christ — James by name</td>
+          <td class="td-dim">λεγόμενος = distancing formula; widely considered authentic Josephus</td>
+        </tr>
+        <!-- ROMAN — NT -->
+        <tr>
+          <td class="td-mono col-narrow">23</td>
+          <td>Matthew</td>
+          <td class="td-dim">Gospel of Matthew</td>
+          <td class="td-dim">85</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Matt 1:1</td>
+          <td class="col-form">Χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. (proper name)</td>
+          <td class="col-sem">Christian proper name</td>
+          <td class="td-greek">Βίβλος γενέσεως Ἰησοῦ Χριστοῦ</td>
+          <td class="td-dim">The book of the genealogy of Jesus Christ</td>
+          <td class="td-dim">Without article = proper name usage. LSJ III. First word of Gospel</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">24</td>
+          <td>Matthew</td>
+          <td class="td-dim">Gospel of Matthew</td>
+          <td class="td-dim">85</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Matt 2:4</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate/title)</td>
+          <td class="col-sem">Christian theological title (messianic context)</td>
+          <td class="td-greek">ποῦ ὁ Χριστὸς γεννᾶται</td>
+          <td class="td-dim">where the Christ was to be born</td>
+          <td class="td-dim">With article = definite title. Herod's inquiry</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">25</td>
+          <td>Matthew</td>
+          <td class="td-dim">Gospel of Matthew</td>
+          <td class="td-dim">85</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Matt 16:16</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate with article)</td>
+          <td class="col-sem">Christian confessional title</td>
+          <td class="td-greek">Σὺ εἶ ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ</td>
+          <td class="td-dim">You are the Christ the Son of the living God</td>
+          <td class="td-dim">Peter's confession — climactic identification. LSJ III</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">26</td>
+          <td>Mark</td>
+          <td class="td-dim">Gospel of Mark</td>
+          <td class="td-dim">70</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Mark 1:1</td>
+          <td class="col-form">Χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. (proper name)</td>
+          <td class="col-sem">Christian proper name / title</td>
+          <td class="td-greek">Ἀρχὴ τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ</td>
+          <td class="td-dim">The beginning of the gospel of Jesus Christ</td>
+          <td class="td-dim">Incipit; without article = proper name. Earliest canonical gospel</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">27</td>
+          <td>Luke</td>
+          <td class="td-dim">Gospel of Luke</td>
+          <td class="td-dim">85</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Luke 2:11</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate compound)</td>
+          <td class="col-sem">Christian theological title</td>
+          <td class="td-greek">ὅς ἐστιν Χριστὸς κύριος</td>
+          <td class="td-dim">who is Christ the Lord</td>
+          <td class="td-dim">Two titles combined: Χριστός + κύριος. Nativity announcement</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">28</td>
+          <td>John</td>
+          <td class="td-dim">Gospel of John</td>
+          <td class="td-dim">95</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">John 1:41</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (gloss)</td>
+          <td class="col-sem">Bilingual gloss (Μεσσίας = ὁ Χριστός)</td>
+          <td class="td-greek">Εὑρήκαμεν τὸν Μεσσίαν ὅ ἐστιν μεθερμηνευόμενον ὁ Χριστός</td>
+          <td class="td-dim">We have found the Messiah (which is translated: the Christ)</td>
+          <td class="td-dim">Only NT bilingual translation gloss. LSJ III</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">29</td>
+          <td>John</td>
+          <td class="td-dim">Gospel of John</td>
+          <td class="td-dim">95</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">John 20:31</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate with article)</td>
+          <td class="col-sem">Christian confessional title (Gospel purpose)</td>
+          <td class="td-greek">ἵνα πιστεύητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστός</td>
+          <td class="td-dim">that you may believe that Jesus is the Christ</td>
+          <td class="td-dim">Gospel's stated purpose. ὁ Χριστός = definite title. LSJ III</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">30</td>
+          <td>Paul of Tarsus</td>
+          <td class="td-dim">Letter to the Romans</td>
+          <td class="td-dim">57</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Rom 1:1</td>
+          <td class="col-form">Χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. (proper name)</td>
+          <td class="col-sem">Christian proper name</td>
+          <td class="td-greek">δοῦλος Ἰησοῦ Χριστοῦ</td>
+          <td class="td-dim">a slave of Jesus Christ</td>
+          <td class="td-dim">Pauline letter opening formula. ~36 occurrences in Romans</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">31</td>
+          <td>Paul of Tarsus</td>
+          <td class="td-dim">1 Corinthians</td>
+          <td class="td-dim">54</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">1 Cor 1:23</td>
+          <td class="col-form">Χριστόν</td>
+          <td class="col-sem">Masc. sg. acc. (object)</td>
+          <td class="col-sem">Christian proper name / title</td>
+          <td class="td-greek">κηρύσσομεν Χριστὸν ἐσταυρωμένον</td>
+          <td class="td-dim">we preach Christ crucified</td>
+          <td class="td-dim">Retains titular force; ~65 occurrences in 1 Cor</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">32</td>
+          <td>Paul of Tarsus</td>
+          <td class="td-dim">1 Corinthians</td>
+          <td class="td-dim">54</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">1 Cor 15:3</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (subject)</td>
+          <td class="col-sem">Christian creedal formula</td>
+          <td class="td-greek">Χριστὸς ἀπέθανεν ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν</td>
+          <td class="td-dim">Christ died for our sins according to the scriptures</td>
+          <td class="td-dim">Pre-Pauline creedal formula (c.35–40 CE, inferred)</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">33</td>
+          <td>Paul of Tarsus</td>
+          <td class="td-dim">Letter to the Galatians</td>
+          <td class="td-dim">55</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Gal 3:28</td>
+          <td class="col-form">Χριστῷ</td>
+          <td class="col-sem">Masc. sg. dat. (ἐν Χριστῷ)</td>
+          <td class="col-sem">Christian theological proper name</td>
+          <td class="td-greek">εἷς ἐστε ἐν Χριστῷ Ἰησοῦ</td>
+          <td class="td-dim">you are all one in Christ Jesus</td>
+          <td class="td-dim">ἐν Χριστῷ formula (~164 occurrences in Pauline corpus)</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">34</td>
+          <td>Paul of Tarsus</td>
+          <td class="td-dim">Letter to the Philippians</td>
+          <td class="td-dim">62</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Phil 1:21</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (predicate nominative)</td>
+          <td class="col-sem">Christian theological proper name</td>
+          <td class="td-greek">ἐμοὶ γὰρ τὸ ζῆν Χριστὸς</td>
+          <td class="td-dim">For to me to live is Christ</td>
+          <td class="td-dim">Χριστός as the content of life itself — maximum onomastic integration</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">35</td>
+          <td>Acts of the Apostles</td>
+          <td class="td-dim">Praxeis</td>
+          <td class="td-dim">90</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Acts 2:36</td>
+          <td class="col-form">Χριστόν</td>
+          <td class="col-sem">Masc. sg. acc. (double accusative)</td>
+          <td class="col-sem">Christian confessional title (Petrine sermon)</td>
+          <td class="td-greek">καὶ Κύριον αὐτὸν καὶ Χριστὸν ἐποίησεν ὁ θεός</td>
+          <td class="td-dim">God has made him both Lord and Christ</td>
+          <td class="td-dim">ἐποίησεν = God "makes" Jesus Χριστός — adoptionist-sounding formula</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">36</td>
+          <td>Acts of the Apostles</td>
+          <td class="td-dim">Praxeis</td>
+          <td class="td-dim">90</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Acts 11:26</td>
+          <td class="col-form">Χριστιανούς</td>
+          <td class="col-sem">Masc. pl. acc. (derived proper noun)</td>
+          <td class="col-sem">Christian theological title (derivative)</td>
+          <td class="td-greek">τοὺς μαθητὰς Χριστιανούς</td>
+          <td class="td-dim">the disciples were first called Christians in Antioch</td>
+          <td class="td-dim">Χριστιανοί confirms Χριστός had become proper name (c.40–50 CE)</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">37</td>
+          <td>Revelation</td>
+          <td class="td-dim">Apokalypsis Ioannou</td>
+          <td class="td-dim">95</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Rev 11:15</td>
+          <td class="col-form">Χριστοῦ</td>
+          <td class="col-sem">Masc. sg. gen. (proper name compound)</td>
+          <td class="col-sem">Christian eschatological title</td>
+          <td class="td-greek">τοῦ κυρίου ἡμῶν καὶ τοῦ Χριστοῦ αὐτοῦ</td>
+          <td class="td-dim">the kingdom of our Lord and of his Christ</td>
+          <td class="td-dim">Both κύριος and Χριστός retain full titular force in apocalyptic context</td>
+        </tr>
+        <tr>
+          <td class="td-mono col-narrow">38</td>
+          <td>Hebrews (epistle)</td>
+          <td class="td-dim">Pros Ebraious</td>
+          <td class="td-dim">70</td>
+          <td><span class="badge badge-nt">NT</span></td>
+          <td class="td-mono">Heb 9:11</td>
+          <td class="col-form">Χριστός</td>
+          <td class="col-sem">Masc. sg. nom. (subject)</td>
+          <td class="col-sem">Christian high-priestly Christology</td>
+          <td class="td-greek">Χριστὸς δὲ παραγενόμενος ἀρχιερεύς</td>
+          <td class="td-dim">Christ, having appeared as high priest</td>
+          <td class="td-dim">Reinterprets Χριστός through LXX priestly stage — etymological revitalization</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+  <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center;">
+    christ-tlg/christos_migration/christos_occurrences.csv &nbsp;|&nbsp; 38 rows &nbsp;|&nbsp; 14 columns &nbsp;|&nbsp; 2026-03-06
+  </p>
+
+</div>
+
+<footer>
+  christ-tlg research archive &nbsp;|&nbsp; generated 2026-03-07 &nbsp;|&nbsp; philological research project
+</footer>
+
+</body>
+</html>
