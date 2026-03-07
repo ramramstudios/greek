@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semantic Migration Flowchart — χριστός</title>
+  <title>Semantic Migration Flowchart — χριστός | Pagan Roots of Monotheism</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){var t=localStorage.getItem('prm-theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();
+    function toggleTheme(){var n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('prm-theme',n);}
+  </script>
   <style>
     .flowchart-section {
       margin: 2rem 0;
@@ -56,15 +60,14 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-home">☩ CHRIST-TLG</a>
-  <span class="nav-sep">|</span>
-  <span class="nav-branch">christos_migration/</span>
+  <a href="index.html" class="nav-brand">&#9737; Pagan Roots of Monotheism</a>
   <span class="nav-sep">|</span>
   <a href="christos_tlg_report.html">TLG Report</a>
   <span class="nav-sep">|</span>
   <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
   <span class="nav-sep">|</span>
   <a href="lsj_christos_entry.html">LSJ Entry</a>
+  <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
 </nav>
 
 <div class="page-wrapper-wide">

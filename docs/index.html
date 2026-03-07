@@ -1,259 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christ-TLG Research Archive</title>
+  <title>Pagan Roots of Monotheism — Philological Research Archive</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      var t = localStorage.getItem('prm-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+    function toggleTheme() {
+      var n = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', n);
+      localStorage.setItem('prm-theme', n);
+    }
+  </script>
   <style>
-    .hero {
-      padding: 3rem 0 2.5rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 3rem;
-    }
-    .hero .project-id {
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      font-family: 'Courier New', monospace;
-      margin-bottom: 0.8rem;
-    }
-    .hero h1 {
-      font-size: 2.4rem;
-      color: var(--gold-light);
-      margin-bottom: 0.6rem;
-      line-height: 1.2;
-    }
-    .hero .hero-sub {
-      font-size: 1.1rem;
-      color: var(--text-dim);
-      font-style: italic;
-      max-width: 640px;
-      margin-bottom: 1.5rem;
-      line-height: 1.65;
-    }
-    .hero .hero-meta {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      font-family: 'Courier New', monospace;
-    }
-    .hero .hero-meta span { margin-right: 2rem; }
-    .branch-intro {
+    /* Index-page only overrides */
+    .branch-intro-text {
       background: var(--surface2);
       border: 1px solid var(--border);
       border-radius: 6px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 1rem;
+      padding: 1.1rem 1.35rem;
+      margin-bottom: 1.25rem;
     }
-    .branch-intro p { margin-bottom: 0; font-size: 0.9rem; color: var(--text-dim); }
-    .branch-label {
-      font-size: 0.7rem;
+    .branch-intro-text p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+    .branch-intro-text .bi-label {
+      font-size: 0.68rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       margin-bottom: 0.4rem;
       font-weight: bold;
+      font-family: 'Courier New', monospace;
     }
-    .bl-christos { color: var(--gold); }
-    .bl-pharmakon { color: var(--purple); }
-    .bl-jason { color: var(--teal); }
-    .branch-section-title {
-      font-size: 1.3rem;
-      margin: 2.5rem 0 0.5rem;
-      padding-bottom: 0.4rem;
-      border-bottom: 1px solid var(--border);
+    .bi-christos { color: var(--gold); }
+    .bi-pharmakon { color: var(--purple); }
+    .bi-jason { color: var(--teal); }
+    .pull-quote {
+      border-left: 3px solid var(--gold-dim);
+      padding: 0.5rem 1.2rem;
+      margin: 1.5rem 0;
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
-    .branch-section-title.christos { color: var(--gold); }
-    .branch-section-title.pharmakon { color: var(--purple); }
-    .branch-section-title.jason { color: var(--teal); }
-    .quick-links {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 1.25rem 1.5rem;
-      margin-bottom: 3rem;
-    }
-    .quick-links h4 { color: var(--gold); font-style: normal; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.8rem; }
-    .quick-links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.4rem; }
-    .quick-links-grid a { font-size: 0.82rem; color: var(--link); padding: 0.2rem 0; display: block; }
-    .quick-links-grid a:hover { color: var(--gold-light); }
+    .pull-quote.pq-pharmakon { border-color: var(--purple-dim); }
+    .pull-quote.pq-jason { border-color: var(--teal-dim); }
   </style>
 </head>
 <body>
 
 <nav>
-  <span class="nav-home">☩ CHRIST-TLG</span>
+  <span class="nav-brand">&#9737; Pagan Roots of Monotheism</span>
   <span class="nav-sep">|</span>
-  <span class="nav-branch">Philological Research Archive</span>
+  <span class="nav-section">Research Archive</span>
+  <button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark theme">&#9680;</button>
 </nav>
 
-<div class="page-wrapper">
+<div class="page-wrapper-article">
 
-  <div class="hero">
-    <div class="project-id">project: christ-tlg &nbsp;|&nbsp; TLG Philological Research &nbsp;|&nbsp; 2026-03-07</div>
-    <h1>Christ-TLG<br>Research Archive</h1>
-    <p class="hero-sub">
-      A philological and cultural-historical investigation of <span class="gk">χριστός</span> (christos)
-      across the Greek corpus — from its earliest pharmaceutical usage in Classical tragedy
-      through its transformation into a messianic title and proper name in the New Testament,
-      and into the pharmacological and mythological substrates that shaped early Christian practice.
+  <!-- HERO -->
+  <div class="site-hero">
+    <div class="site-label">philological research archive &nbsp;|&nbsp; Greek corpus studies &nbsp;|&nbsp; est. 2026</div>
+    <h1>Pagan Roots<br>of Monotheism</h1>
+    <p class="site-tagline">
+      A philological and cultural-historical investigation of the Greek and Mediterranean substrates
+      underlying early Christian practice — from the pharmaceutical origins of <span class="gk">χριστός</span>
+      to the pharmacological lineage of the mystery religions to the mythological grammar shared between
+      the Argonautica and the Gospels.
     </p>
     <div class="hero-meta">
-      <span>Source: TLG Free Modules + Perseus Digital Library</span>
-      <span>Branch: main</span>
+      <span>Sources: TLG Free Modules &amp; Perseus Digital Library</span>
       <span>Status: Active Research</span>
+      <span>Branch: main</span>
     </div>
   </div>
 
-  <div class="quick-links">
-    <h4>Quick Access</h4>
-    <div class="quick-links-grid">
-      <a href="christos_tlg_report.html">TLG Philological Report</a>
-      <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
-      <a href="lsj_christos_entry.html">LSJ Entry Reconstruction</a>
-      <a href="christos_semantic_flowchart.html">Semantic Flowchart</a>
-      <a href="christos_occurrences.html">Occurrences Database</a>
-      <a href="christos_sources.html">Sources Registry (JSON)</a>
-      <a href="pharmakon_chemical_lineage.html">Chemical Lineage Report</a>
-      <a href="pharmakon_hypothesis.html">Pharmakon Hypothesis</a>
-      <a href="pharmakon_sources.html">Pharmakon Sources (50)</a>
-      <a href="pharmakon_full_sources.html">Full Sources (63)</a>
-      <a href="jason_jesus_sidequest.html">Jason / Jesus Sidequest</a>
+  <!-- ─── ARTICLE I ─── -->
+  <article class="article-preview">
+
+    <span class="article-category cat-christos">&#967;&#961;&#953;&#963;&#964;&#972;&#962; Migration Research</span>
+
+    <h2 class="art-christos">The Word That Became God</h2>
+    <p class="article-byline">Diachronic Semantic History &nbsp;&#183;&nbsp; 460 BCE &ndash; 155 CE &nbsp;&#183;&nbsp; TLG Corpus Analysis</p>
+
+    <div class="article-body">
+
+      <p>
+        The Greek word <span class="gk">&#967;&#961;&#953;&#963;&#964;&#972;&#962;</span> began its documented life in the 5th century BCE as a pharmaceutical adjective.
+        In Aeschylus's <em>Prometheus Bound</em> (c.&nbsp;460&nbsp;BCE), <span class="gk">&#967;&#961;&#953;&#963;&#964;&#940;</span> (neuter plural) appears in direct opposition to
+        <span class="gk">&#960;&#953;&#963;&#964;&#940;</span> &mdash; substances "to be rubbed on" versus substances "to be drunk." In Euripides' <em>Hippolytus</em>
+        (428&nbsp;BCE), <span class="gk">&#967;&#961;&#953;&#963;&#964;&#972;&#957;</span> similarly designates a medicinal compound applied externally.
+        These are the oldest attested uses in the Greek corpus, and they carry zero religious
+        resonance. The word means, precisely, "that which is smeared."
+      </p>
+
+      <p>
+        The word's transformation begins with the Septuagint &mdash; the Greek translation of the Hebrew Bible,
+        produced between roughly 250 and 100&nbsp;BCE in Alexandria. Here <span class="gk">&#967;&#961;&#953;&#963;&#964;&#972;&#962;</span> becomes the standard Greek
+        rendering of the Hebrew &#x05DE;&#x05B8;&#x05E9;&#x05B4;&#x05D9;&#x05D7;&#x05B7; (<em>m&#257;&#353;&#238;a&#7717;</em>, "anointed one"), applied first to consecrated priests
+        (Leviticus 4:5: <span class="gk">&#8001; &#7985;&#949;&#961;&#949;&#8058;&#962; &#8001; &#967;&#961;&#953;&#963;&#964;&#972;&#962;</span>, "the anointed priest") and then to Israelite kings in the formula
+        <span class="gk">&#967;&#961;&#953;&#963;&#964;&#8056;&#962; &#954;&#965;&#961;&#943;&#959;&#965;</span> ("the Lord's anointed," 1&nbsp;Samuel 24:7). The word has migrated from the
+        pharmacist's shelf to the priest's chamber.
+      </p>
+
+      <p>
+        The eschatological intensification comes in Daniel 9:25&ndash;26, where <span class="gk">&#967;&#961;&#953;&#963;&#964;&#972;&#962;</span> appears as a future
+        cosmic figure &mdash; a "prince" or "anointed one" whose arrival ends an age. By the time of the
+        Qumran Dead Sea Scrolls (2nd&ndash;1st century BCE), the expectation of one or two messianic
+        figures saturates Second Temple Judaism. When the NT writers arrive at the word, they are heirs
+        to six centuries of accumulated semantic weight: from salve to priest to king to cosmic deliverer.
+        The transition from title (<span class="gk">&#8001; &#935;&#961;&#953;&#963;&#964;&#972;&#962;</span>, "the Messiah") to proper name (<span class="gk">&#935;&#961;&#953;&#963;&#964;&#972;&#962;</span> without article,
+        "Christ") happens within the Pauline letters themselves, visible in real time.
+      </p>
+
+      <div class="pull-quote">
+        "The compound <span class="gk">&#968;&#949;&#965;&#948;&#972;&#967;&#961;&#953;&#963;&#964;&#959;&#953;</span> (false Christs) at Matthew 24:24 confirms that
+        <span class="gk">&#935;&#961;&#953;&#963;&#964;&#972;&#962;</span> had become sufficiently technical by the time of the Synoptic Apocalypse
+        to generate the category of false claimants. A word invented by nobody can have no
+        false versions. The category only exists once the title has hardened into a role."
+      </div>
+
+      <p>
+        The Josephus evidence is forensically important: <em>Antiquities</em> 20.200 &mdash; the most
+        philologically secure reference &mdash; calls Jesus <span class="gk">&#964;&#959;&#8166; &#955;&#949;&#947;&#959;&#956;&#941;&#957;&#959;&#965; &#935;&#961;&#953;&#963;&#964;&#959;&#8166;</span> ("so-called Christ"),
+        using the verb <span class="gk">&#955;&#949;&#947;&#972;&#956;&#949;&#957;&#959;&#962;</span> as a deliberate distancing formula. Josephus was a Jewish
+        historian writing for a Roman audience. His use of "so-called" reveals that the title had
+        already become technical enough &mdash; and controversial enough &mdash; that a skeptical outsider
+        needed to bracket it.
+      </p>
+
+      <p>
+        This research branch documents fifteen attested occurrences from Aeschylus through Josephus
+        and the New Testament, with full Greek texts, grammatical analysis, a diachronic semantic
+        map in five stages, an LSJ lexicon reconstruction, and a structured database of 38 word-form
+        instances. The question it pursues is simple and the answer is not: how does a word for
+        "smeared substance" become the most consequential title in Western civilization?
+      </p>
+
     </div>
-  </div>
 
-  <!-- BRANCH 1: χριστός MIGRATION -->
-  <h2 class="branch-section-title christos">Branch I — <span class="gk">χριστός</span> Migration</h2>
+    <div class="article-links">
+      <a href="christos_tlg_report.html" class="article-link primary">TLG Philological Report</a>
+      <a href="christos_diachronic_analysis.html" class="article-link">Diachronic Analysis</a>
+      <a href="lsj_christos_entry.html" class="article-link">LSJ Entry Reconstruction</a>
+      <a href="christos_semantic_flowchart.html" class="article-link">Semantic Flowchart</a>
+      <a href="christos_occurrences.html" class="article-link">Occurrences Database</a>
+      <a href="christos_sources.html" class="article-link">Sources Registry</a>
+    </div>
 
-  <div class="branch-intro">
-    <div class="branch-label bl-christos">christos_migration/</div>
-    <p>Philological investigation of the word <span class="gk">χριστός</span> across the TLG corpus: from its earliest
-    attestation as a pharmaceutical adjective in Classical Greek tragedy (Aeschylus, Euripides, c.460–428 BCE)
-    through its use as a Jewish ritual title in the LXX Septuagint, its eschatological intensification in
-    Second Temple literature, and its crystallization into both a messianic title and a proper name
-    in the New Testament. Includes a complete diachronic semantic map and the full LSJ lexicon entry.</p>
-  </div>
+  </article>
 
-  <div class="research-grid">
-    <a href="christos_tlg_report.html" class="doc-card branch-christos">
-      <div class="doc-type">Report · TXT · 866 lines</div>
-      <div class="doc-title">TLG Philological Report</div>
-      <div class="doc-desc">15 documented occurrences from Aeschylus (c.460 BCE) through Josephus and the NT. Full Greek texts, translations, grammatical analysis, and lexicon notes. Includes summary statistics and inflected forms catalog.</div>
-    </a>
-    <a href="christos_diachronic_analysis.html" class="doc-card branch-christos">
-      <div class="doc-type">Analysis · TXT · 63KB</div>
-      <div class="doc-title">Diachronic Semantic Analysis</div>
-      <div class="doc-desc">Comprehensive audit and correction of the project files against primary sources. Five-stage semantic map: pharmaceutical adjective → priestly title → royal title → messianic title → proper name. Identifies gaps and open questions.</div>
-    </a>
-    <a href="lsj_christos_entry.html" class="doc-card branch-christos">
-      <div class="doc-type">Lexicon · TXT · 142 lines</div>
-      <div class="doc-title">LSJ Entry Reconstruction</div>
-      <div class="doc-desc">Full reconstruction of the Liddell–Scott–Jones entry for <span class="gk">χριστός</span> from open sources: three divisions (I–III), all cited texts, related words, Josephus attestations, and Thayer's NT supplement.</div>
-    </a>
-    <a href="christos_semantic_flowchart.html" class="doc-card branch-christos">
-      <div class="doc-type">Visualization · HTML · SVG</div>
-      <div class="doc-title">Semantic Migration Flowchart</div>
-      <div class="doc-desc">Interactive SVG diagram tracing the semantic migration of <span class="gk">χριστός</span> from pharmaceutical adjective to opaque proper name, c.460 BCE–155 CE. Shows the parallel Μεσσίας loanword channel and five developmental stages.</div>
-    </a>
-    <a href="christos_occurrences.html" class="doc-card branch-christos">
-      <div class="doc-type">Database · CSV · 38 rows</div>
-      <div class="doc-title">Occurrences Database</div>
-      <div class="doc-desc">Structured spreadsheet of 38 word-form instances across the corpus: author, TLG canon, date, period, grammatical case, semantic category, Greek text snippet, English translation, and source reference.</div>
-    </a>
-    <a href="christos_sources.html" class="doc-card branch-christos">
-      <div class="doc-type">Registry · JSON · Structured</div>
-      <div class="doc-title">Sources Registry</div>
-      <div class="doc-desc">Annotated source database in JSON format: lexica (LSJ, Thayer, BDB), all five semantic stages with primary texts, grammatical data, authorship notes, disputed readings, and open scholarly questions.</div>
-    </a>
-  </div>
+  <!-- ─── ARTICLE II ─── -->
+  <article class="article-preview">
 
-  <!-- BRANCH 2: PHARMAKON RESEARCH -->
-  <h2 class="branch-section-title pharmakon">Branch II — Pharmakon Research</h2>
+    <span class="article-category cat-pharmakon">Pharmakon Research</span>
 
-  <div class="branch-intro">
-    <div class="branch-label bl-pharmakon">pharmakon_research/</div>
-    <p>Investigation of the pharmacological tradition embedded in Greek mystery religion
-    (Eleusinian, Bacchic, Orphic) as a neglected cultural substrate for understanding the
-    ministry and passion of Jesus. The hypothesis argues that the physical act of anointing
-    (<span class="gk">χρίω</span>) with pharmacologically active substances connects the Greek pharmakological
-    lineage from Medea and Hecate through Galen's theriac to the anointing oils, death-drugs,
-    and sacred meals of early Christianity. Includes a 63-entry master sources database.</p>
-  </div>
+    <h2 class="art-pharmakon">The Sacred Pharmacy</h2>
+    <p class="article-byline"><span class="gk">&#966;&#940;&#961;&#956;&#945;&#954;&#959;&#957;</span>, Mystery Religion, and the Origins of Christianity &nbsp;&#183;&nbsp; Homer through Galen &nbsp;&#183;&nbsp; 63 Primary Sources</p>
 
-  <div class="research-grid">
-    <a href="pharmakon_chemical_lineage.html" class="doc-card branch-pharmakon">
-      <div class="doc-type">Report · TXT · 13 sections</div>
-      <div class="doc-title">Chemical Lineage Report</div>
-      <div class="doc-desc">Philological-pharmacological research narrative tracing the tradition of ritual drug use from Homer and Medea through the Eleusinian Mysteries, Socrates's hemlock, and Galen's theriac. Documents the full φάρμακον lineage.</div>
-    </a>
-    <a href="pharmakon_hypothesis.html" class="doc-card branch-pharmakon">
-      <div class="doc-type">Hypothesis · TXT · 15 sections · 776 lines</div>
-      <div class="doc-title">The Pharmakon Hypothesis</div>
-      <div class="doc-desc">Cumulative probabilistic case for Jesus as mystery-cult initiate and initiator. 10 evidence streams: Talmud 43a narcotic wine, Tel Arad cannabis discovery, Gethsemane as mystery vigil, Transfiguration as ἐποπτεία, hostile witnesses (Celsus, Julian, Tertullian).</div>
-    </a>
-    <a href="pharmakon_sources.html" class="doc-card branch-pharmakon">
-      <div class="doc-type">Database · CSV · 50 rows</div>
-      <div class="doc-title">Pharmakon Sources (Original)</div>
-      <div class="doc-desc">50-entry annotated source table: Homer, Pindar, Euripides, Apollonius, Plato, Theophrastus, Dioscorides, Galen, Plutarch, Orphic tablets, Josephus, NT Passion narrative, and Talmudic evidence.</div>
-    </a>
-    <a href="pharmakon_full_sources.html" class="doc-card branch-pharmakon">
-      <div class="doc-type">Database · CSV · 63 rows · Master</div>
-      <div class="doc-title">Full Sources Database</div>
-      <div class="doc-desc">Master 63-entry table with expanded hypothesis-relevance column (H1/H2/H3). Adds: b.Sanhedrin 43a (death narcotic), Gospel of Philip (chrism=resurrection), Acts of John (circle dance), 1QS Dead Sea Scrolls, Tel Arad archaeology, Apuleius, Wisdom of Solomon.</div>
-    </a>
-  </div>
+    <div class="article-body">
 
-  <!-- BRANCH 3: JASON/JESUS -->
-  <h2 class="branch-section-title jason">Branch III — Jason / Jesus Sidequest</h2>
+      <p>
+        The Greek word <span class="gk">&#966;&#940;&#961;&#956;&#945;&#954;&#959;&#957;</span> is irreducibly ambivalent. It designates a medicine, a poison, a magical
+        charm, and a dye or pigment &mdash; all with the same word. This is not lexical accident. It
+        encodes a Greek metaphysical assumption: that all powerful substances occupy a threshold
+        between life and death, and that the distinction between healer and poisoner depends entirely
+        on dosage, intent, and ritual context. The same root that gives us "pharmacy" is cognate with
+        <span class="gk">&#967;&#961;&#943;&#969;</span> (to smear, to anoint), the verbal root from which <span class="gk">&#967;&#961;&#953;&#963;&#964;&#972;&#962;</span> derives. The pharmacist and
+        the anointer share an ancestor.
+      </p>
 
-  <div class="branch-intro">
-    <div class="branch-label bl-jason">jason-jesus/</div>
-    <p>Research sidequest documenting the etymological and structural relationship between
-    <span class="gk">Ἰάσων</span> (Jason) and <span class="gk">Ἰησοῦς</span> (Jesus), historically documented in
-    2 Maccabees 4:7 where a Jewish high priest named Joshua/Yeshua adopts the Greek name Jason.
-    Develops the hypothesis that the Argonautica (Apollonius Rhodius, c.250 BCE) is a literary
-    proto-Gospel, with Medea as a literary ancestor of Mary Magdalene, through seven structural
-    parallels including the dove at the threshold, the woman's pharmacological anointing, and the
-    exile of the female resurrection-figure.</p>
-  </div>
+      <p>
+        At the center of the Greek mystery religions &mdash; Eleusinian, Bacchic, Orphic &mdash; was a
+        pharmacological act. The Eleusinian initiates drank the <span class="gk">&#954;&#965;&#954;&#949;&#974;&#957;</span>, a ritual mixed drink whose
+        psychoactive properties have been debated since antiquity. The Bacchic rites involved wine
+        augmented with substances that ancient sources call <span class="gk">&#966;&#940;&#961;&#956;&#945;&#954;&#945;</span>. Orphic initiates carried gold
+        tablets inscribed with instructions for navigating the underworld &mdash; instructions that
+        presuppose a death-like initiatory experience. The primal pharmacological dyad is established
+        in Homer: Circe administers "baneful pharmaka" (<em>Odyssey</em> 10.234&ndash;236) and
+        Hermes supplies the antidote, the herb moly, called <span class="gk">&#7936;&#957;&#964;&#943;&#966;&#945;&#961;&#956;&#945;&#954;&#959;&#957;</span> &mdash; counter-pharmakon.
+        Death-inducer and antidote. This dyad recurs across a thousand years of Greek ritual.
+      </p>
 
-  <div class="research-grid">
-    <a href="jason_jesus_sidequest.html" class="doc-card branch-jason">
-      <div class="doc-type">Research Document · TXT · 6 sections · 423 lines</div>
-      <div class="doc-title">Jason / Jesus — A Literary Resurrection</div>
-      <div class="doc-desc">Full research direction document: name etymology and 2 Maccabees documentation, 6 structural parallels (Ἰάσων as proto-Jesus), 5 axes of Medea–Magdalene typology, the Literary Resurrection hypothesis, 7 specific textual parallels for future research, and a roadmap for 6 planned sub-studies.</div>
-    </a>
-  </div>
-
-  <hr>
-
-  <div style="margin-top: 2rem;">
-    <h3 style="color: var(--text-dim); font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem;">Research Methodology</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.8rem; font-size: 0.82rem;">
-      <div class="card" style="padding: 1rem;">
-        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Primary Sources</div>
-        <p style="color: var(--text-dim); margin: 0;">TLG Free Modules, Perseus Digital Library, Rahlfs-Hanhart LXX, NA28 NT, Niese Josephus</p>
+      <div class="pull-quote pq-pharmakon">
+        "Every 'Messiah' was literally smeared with a pharmacologically active compound.
+        The sacred anointing oil of the Jewish Temple (Exodus 30:22&ndash;25) contains myrrh,
+        sweet calamus, and cassia in olive oil. The Tel Arad shrine (excavated 2020) yielded
+        confirmed cannabis residue on an 8th-century BCE Jewish altar. The physical act never
+        left the substance behind."
       </div>
-      <div class="card" style="padding: 1rem;">
-        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Lexica</div>
-        <p style="color: var(--text-dim); margin: 0;">LSJ 9th ed. (lsj.gr), Thayer NT Lexicon, Brown-Driver-Briggs Hebrew Lexicon</p>
+
+      <p>
+        The hypothesis pursued in this branch of the archive argues that early Christianity's
+        ritual vocabulary was legible to the Hellenized Roman world because it had already absorbed
+        the structural grammar of Graeco-Roman mystery religion. The sacred meal, the initiatory
+        death and return, the anointing woman with pharmacological knowledge, the resurrection as
+        re-emergence from the death-rite &mdash; these are not Christian inventions. They are
+        Christian deployments of a grammar already six centuries deep in Mediterranean religious
+        culture. The Babylonian Talmud (<em>b.Sanhedrin</em> 43a) records a narcotic wine offered
+        to condemned prisoners before execution. The Passion narrative involves the wine with myrrh
+        refused by Jesus at the cross (Mark 15:23), the vinegar-soaked sponge at death, and the
+        aromatic spices (<span class="gk">&#7936;&#961;&#974;&#956;&#945;&#964;&#945;</span>) brought by the women to the tomb.
+      </p>
+
+      <p>
+        The cumulative case across ten independent evidence streams argues not that Jesus was a
+        fraud but that his ritual vocabulary came from somewhere, and that somewhere is
+        recoverable. The barriers to the hypothesis are weaker than they appear. The hostility
+        of ancient critics &mdash; Celsus, Julian the Apostate, Tertullian &mdash; specifically
+        attacks Christianity's relationship to the mysteries, which presupposes that relationship
+        was visible to contemporaries. This research branch includes the full 63-entry master
+        sources database, the chemical lineage report from Medea through Galen's theriac,
+        and a systematic defense of the hypothesis against the strongest scholarly objections.
+      </p>
+
+    </div>
+
+    <div class="article-links">
+      <a href="pharmakon_hypothesis.html" class="article-link primary">The Pharmakon Hypothesis</a>
+      <a href="pharmakon_chemical_lineage.html" class="article-link">Chemical Lineage Report</a>
+      <a href="pharmakon_sources.html" class="article-link">Sources Database (50)</a>
+      <a href="pharmakon_full_sources.html" class="article-link">Full Sources (63)</a>
+    </div>
+
+  </article>
+
+  <!-- ─── ARTICLE III ─── -->
+  <article class="article-preview">
+
+    <span class="article-category cat-jason">Mythological Analysis</span>
+
+    <h2 class="art-jason">Two Names, One Myth</h2>
+    <p class="article-byline">Jason, Jesus, and the Argonautica as Proto-Gospel &nbsp;&#183;&nbsp; 2 Maccabees through Apollonius Rhodius &nbsp;&#183;&nbsp; Research Direction Document</p>
+
+    <div class="article-body">
+
+      <p>
+        In 175&nbsp;BCE, a Jewish high priest named Joshua walked into the Temple in Jerusalem
+        and emerged as Jason. This is not metaphor: 2&nbsp;Maccabees 4:7 records that the brother
+        of Onias "<span class="gk">Ἰάσων δὲ ὁ ἀδελφὸς Ὀνίου</span>" obtained the high priesthood under a
+        Greek name he adopted as the functional equivalent of his Hebrew name Yeshua. The
+        Hellenizing Jewish world of the 2nd century BCE had a naming convention: Yeshua became
+        Jason. The root of Yeshua is <em>yasha'</em> (to save, to deliver); the root of Jason is
+        <span class="gk">&#953;&#940;&#959;&#956;&#945;&#953;</span> (to heal). Different etymologies, same semantic field: the one who restores
+        the broken. Paul's companion in Thessalonica (Acts 17:5&ndash;9) and his kinsman greeted in
+        Romans 16:21 are both named Jason &mdash; Diaspora Jews bearing the Greek form of Yeshua.
+        These are the same name in different linguistic registers.
+      </p>
+
+      <p>
+        The oldest surviving extended narrative about a hero named Jason is Apollonius Rhodius's
+        <em>Argonautica</em> (c.&nbsp;250&nbsp;BCE) &mdash; a text read throughout the Hellenized world as part of
+        standard literary education. This research branch documents six structural parallels
+        between the Argonautica and the Gospels: the gathering of companions specifically called
+        and chosen for a divine mission; the sacred object at the cosmic center whose recovery
+        vindicates the hero's claim; the dove at the threshold (the Symplegades at Argonautica
+        2.536; the Jordan at Mark 1:10); the hero's persistent passivity while the woman provides
+        pharmacological agency; the betrayal and flight of the companions while the woman remains;
+        and the woman as the resurrection-figure of the myth.
+      </p>
+
+      <div class="pull-quote pq-jason">
+        "Both Medea and Mary Magdalene carry pharmacological knowledge toward the male hero.
+        Both are the first witnesses of the central transformative event. Both are subsequently
+        erased by the male tradition that canonizes the hero's story. They may be earlier and
+        later drafts of the same character."
       </div>
-      <div class="card" style="padding: 1rem;">
-        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">TLG Access</div>
-        <p style="color: var(--text-dim); margin: 0;">Abridged corpus (open access): NT, classical prose/poetry. Full corpus requires institutional subscription.</p>
-      </div>
-      <div class="card" style="padding: 1rem;">
-        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Citation Format</div>
-        <p style="color: var(--text-dim); margin: 0;">TLG canonical conventions. All Greek cited from standard critical editions.</p>
-      </div>
+
+      <p>
+        Medea &mdash; foreign, pharmacologically skilled, devoted to the hero, eventually exiled
+        and written out of the tradition that follows him &mdash; maps onto Mary Magdalene across
+        five axes of comparison. The hypothesis is not that the Gospels consciously imitated
+        the Argonautica, but that both texts draw from the same deep mythological grammar of the
+        Mediterranean world: a grammar in which the healer-hero, the pharmacological woman, the
+        dove at the threshold, the deserting companions, and the female resurrection-witness are
+        not inventions but types. Jason/Jesus is a mythological figure with a history older than
+        either text that names him. This research direction identifies seven specific textual
+        parallels for future close-reading and maps six planned sub-studies.
+      </p>
+
+    </div>
+
+    <div class="article-links">
+      <a href="jason_jesus_sidequest.html" class="article-link primary">Full Research Document</a>
+    </div>
+
+  </article>
+
+  <!-- ─── METHODOLOGY ─── -->
+  <div class="section-label">Research Methodology</div>
+
+  <div class="methodology-grid" style="margin-top: 1.5rem;">
+    <div class="methodology-item">
+      <div class="mi-label">Primary Sources</div>
+      <p>TLG Free Modules, Perseus Digital Library, Rahlfs&ndash;Hanhart LXX, NA28 NT, Niese Josephus</p>
+    </div>
+    <div class="methodology-item">
+      <div class="mi-label">Lexica</div>
+      <p>LSJ 9th ed. (lsj.gr), Thayer NT Lexicon, Brown&ndash;Driver&ndash;Briggs Hebrew Lexicon</p>
+    </div>
+    <div class="methodology-item">
+      <div class="mi-label">TLG Access</div>
+      <p>Abridged corpus (open access): NT, classical prose and poetry. Full corpus requires institutional subscription.</p>
+    </div>
+    <div class="methodology-item">
+      <div class="mi-label">Citation Format</div>
+      <p>TLG canonical conventions throughout. All Greek cited from standard critical editions.</p>
     </div>
   </div>
 
 </div>
 
 <footer>
-  christ-tlg research archive &nbsp;|&nbsp; generated 2026-03-07 &nbsp;|&nbsp; philological research project
+  <div class="footer-main">
+    <span>Pagan Roots of Monotheism</span>
+    <span>|</span>
+    <span>Philological Research Archive</span>
+    <span>|</span>
+    <span>Generated 2026-03-07</span>
+    <span>|</span>
+    <span>Sources: TLG &amp; Perseus</span>
+  </div>
+  <div class="visitor-counter">
+    <span class="vc-icon">&#9632;</span>
+    <span>Sessions logged from this browser:</span>
+    <span class="vc-num" id="visit-count">0</span>
+  </div>
 </footer>
+
+<script>
+  // Visitor counter — tracks cumulative page loads from this browser
+  (function () {
+    var count = parseInt(localStorage.getItem('prm-visits') || '0') + 1;
+    localStorage.setItem('prm-visits', count);
+    var el = document.getElementById('visit-count');
+    if (el) el.textContent = count.toLocaleString();
+  })();
+</script>
 
 </body>
 </html>

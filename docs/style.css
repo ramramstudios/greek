@@ -1,5 +1,7 @@
-/* Christ-TLG Research Archive — Shared Dark Mode Stylesheet */
+/* Pagan Roots of Monotheism — Shared Stylesheet */
+/* Dark theme (default) + Light theme toggle support */
 
+/* ─── DARK THEME (default) ─── */
 :root {
   --bg: #0d0d11;
   --surface: #14141a;
@@ -22,6 +24,35 @@
   --blue: #5890c8;
   --link: #88aad4;
   --link-hover: #e2c878;
+  --nav-bg: #14141a;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* ─── LIGHT THEME ─── */
+[data-theme="light"] {
+  --bg: #faf9f6;
+  --surface: #f3f1ed;
+  --surface2: #ede9e2;
+  --surface3: #e5e0d8;
+  --border: #cdc8be;
+  --border-light: #b8b2a6;
+  --text: #2c2820;
+  --text-dim: #5a5248;
+  --text-muted: #8a8278;
+  --gold: #7a5c18;
+  --gold-light: #5a4010;
+  --gold-dim: #c8a048;
+  --teal: #2a7070;
+  --teal-dim: #4a9090;
+  --purple: #5a3890;
+  --purple-dim: #8060c0;
+  --red: #b02020;
+  --green: #287040;
+  --blue: #1a60a0;
+  --link: #1a5080;
+  --link-hover: #7a5c18;
+  --nav-bg: #f3f1ed;
+  --shadow: rgba(0, 0, 0, 0.08);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -32,39 +63,48 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Georgia', 'Times New Roman', serif;
-  line-height: 1.75;
-  font-size: 16px;
+  line-height: 1.85;
+  font-size: 17px;
   min-height: 100vh;
+  transition: background 0.2s, color 0.2s;
 }
 
 /* ─── NAVIGATION ─── */
 nav {
-  background: var(--surface);
+  background: var(--nav-bg);
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
+  gap: 0.4rem 1.2rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 4px var(--shadow);
 }
 
+/* Brand / home link */
+nav .nav-brand,
 nav .nav-home {
   color: var(--gold);
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
+nav .nav-brand:hover,
+nav .nav-home:hover { color: var(--gold-light); text-decoration: none; }
+
+nav .nav-section,
 nav .nav-branch {
-  color: var(--text-dim);
-  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-size: 0.78rem;
 }
 
-nav .nav-sep { color: var(--border-light); }
+nav .nav-sep { color: var(--border-light); font-size: 0.85rem; }
 
 nav a {
   color: var(--link);
@@ -74,17 +114,45 @@ nav a {
 
 nav a:hover { color: var(--gold-light); }
 
+/* Theme toggle button */
+.theme-btn {
+  margin-left: auto;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+
+.theme-btn:hover {
+  background: var(--surface3);
+  color: var(--gold);
+  border-color: var(--gold-dim);
+}
+
 /* ─── PAGE WRAPPER ─── */
 .page-wrapper {
-  max-width: 1000px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 2.5rem 1.5rem 5rem;
 }
 
 .page-wrapper-wide {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 4rem;
+  padding: 2.5rem 1.5rem 5rem;
+}
+
+/* Blog-style article wrapper (narrower for comfortable reading) */
+.page-wrapper-article {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
 }
 
 /* ─── PAGE HEADER ─── */
@@ -94,7 +162,8 @@ nav a:hover { color: var(--gold-light); }
   margin-bottom: 2.5rem;
 }
 
-.page-header .branch-tag {
+.page-header .branch-tag,
+.page-header .page-header-inner .branch-tag {
   font-size: 0.72rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -107,7 +176,7 @@ nav a:hover { color: var(--gold-light); }
   color: var(--gold-light);
   letter-spacing: 0.02em;
   margin-bottom: 0.5rem;
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 .page-header .subtitle {
@@ -115,50 +184,236 @@ nav a:hover { color: var(--gold-light); }
   color: var(--text-dim);
   font-style: italic;
   margin-bottom: 0.75rem;
+  line-height: 1.65;
 }
 
 .page-meta {
   font-size: 0.78rem;
   color: var(--text-muted);
   font-family: 'Courier New', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.5rem;
+  align-items: center;
 }
 
-.page-meta span { margin-right: 1.5rem; }
+.page-meta span { white-space: nowrap; }
+
+/* ─── HERO (index page) ─── */
+.site-hero {
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+.site-hero .site-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1rem;
+}
+
+.site-hero h1 {
+  font-size: 2.8rem;
+  color: var(--gold-light);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.site-hero .site-tagline {
+  font-size: 1.15rem;
+  color: var(--text-dim);
+  font-style: italic;
+  max-width: 640px;
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+.site-hero .hero-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 2rem;
+}
+
+/* ─── ARTICLE PREVIEW (blog-style home cards) ─── */
+.article-preview {
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0;
+}
+
+.article-preview:last-of-type {
+  border-bottom: none;
+}
+
+.article-category {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.cat-christos {
+  color: var(--gold);
+  background: rgba(200, 168, 75, 0.1);
+  border: 1px solid rgba(200, 168, 75, 0.25);
+}
+
+.cat-pharmakon {
+  color: var(--purple);
+  background: rgba(152, 120, 208, 0.1);
+  border: 1px solid rgba(152, 120, 208, 0.25);
+}
+
+.cat-jason {
+  color: var(--teal);
+  background: rgba(86, 180, 176, 0.1);
+  border: 1px solid rgba(86, 180, 176, 0.25);
+}
+
+.article-preview h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+
+.article-preview h2.art-christos { color: var(--gold-light); }
+.article-preview h2.art-pharmakon { color: var(--purple); }
+.article-preview h2.art-jason { color: var(--teal); }
+
+.article-byline {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 1.75rem;
+}
+
+.article-body p {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  max-width: 720px;
+}
+
+.article-body p .gk {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.article-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.article-link {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  color: var(--link);
+  text-decoration: none;
+  background: var(--surface);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.article-link:hover {
+  border-color: var(--gold-dim);
+  color: var(--gold-light);
+  background: var(--surface2);
+  text-decoration: none;
+}
+
+.article-link.primary {
+  background: rgba(200, 168, 75, 0.08);
+  border-color: var(--gold-dim);
+  color: var(--gold);
+}
+
+.article-link.primary:hover {
+  background: rgba(200, 168, 75, 0.15);
+  color: var(--gold-light);
+}
+
+/* ─── VISITOR COUNTER ─── */
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: 'Courier New', monospace;
+}
+
+.visitor-counter .vc-icon { opacity: 0.6; }
+.visitor-counter .vc-num { color: var(--text-dim); }
+
+/* ─── SECTION DIVIDERS ─── */
+.section-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 4rem 0 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Courier New', monospace;
+}
 
 /* ─── TYPOGRAPHY ─── */
-h1 { font-size: 2rem; color: var(--gold-light); letter-spacing: 0.02em; margin-bottom: 0.5rem; }
+h1 { font-size: 2rem; color: var(--gold-light); letter-spacing: 0.02em; margin-bottom: 0.5rem; line-height: 1.25; }
 
 h2 {
-  font-size: 1.35rem;
+  font-size: 1.4rem;
   color: var(--gold);
-  margin: 2.5rem 0 0.8rem;
+  margin: 2.5rem 0 0.9rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border);
   letter-spacing: 0.01em;
+  line-height: 1.3;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.12rem;
   color: var(--teal);
-  margin: 1.8rem 0 0.5rem;
+  margin: 2rem 0 0.6rem;
+  line-height: 1.35;
 }
 
 h4 {
   font-size: 0.95rem;
   color: var(--text);
-  margin: 1.2rem 0 0.3rem;
+  margin: 1.3rem 0 0.4rem;
   font-style: italic;
 }
 
-p { margin-bottom: 1rem; }
+p { margin-bottom: 1.1rem; line-height: 1.85; }
 
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); text-decoration: underline; }
 
-ul, ol { margin: 0.5rem 0 1rem 1.5rem; }
-li { margin-bottom: 0.3rem; }
+ul, ol { margin: 0.5rem 0 1.1rem 1.5rem; }
+li { margin-bottom: 0.35rem; line-height: 1.7; }
 
-hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 
 /* ─── GREEK TEXT ─── */
 .gk {
@@ -177,8 +432,8 @@ hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 /* ─── BLOCKQUOTES ─── */
 blockquote {
   border-left: 3px solid var(--gold-dim);
-  padding: 0.75rem 1.25rem;
-  margin: 1rem 0;
+  padding: 0.85rem 1.4rem;
+  margin: 1.25rem 0;
   background: var(--surface2);
   border-radius: 0 4px 4px 0;
 }
@@ -222,7 +477,7 @@ blockquote p:last-child { margin-bottom: 0; }
   border-left: 4px solid var(--gold-dim);
   border-radius: 0 6px 6px 0;
   padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .occurrence-num {
@@ -235,9 +490,7 @@ blockquote p:last-child { margin-bottom: 0; }
 
 .occurrence h3 { margin-top: 0; color: var(--gold-light); }
 
-.field {
-  margin-top: 0.8rem;
-}
+.field { margin-top: 0.9rem; }
 
 .field-label {
   font-size: 0.7rem;
@@ -267,20 +520,27 @@ blockquote p:last-child { margin-bottom: 0; }
 .badge-pharmakon { background: #100830; color: #9878d0; border: 1px solid #201050; }
 .badge-nt { background: #201010; color: #e08080; border: 1px solid #401818; }
 
+[data-theme="light"] .badge-classical { background: #dde8f5; color: #1a4080; border-color: #aac0e0; }
+[data-theme="light"] .badge-hellenistic { background: #f5ead0; color: #7a5010; border-color: #d0a040; }
+[data-theme="light"] .badge-roman { background: #f5dede; color: #901010; border-color: #d08080; }
+[data-theme="light"] .badge-early-church { background: #d8f0e0; color: #186030; border-color: #80c898; }
+[data-theme="light"] .badge-pharmakon { background: #ede0f8; color: #5030a0; border-color: #c0a0e0; }
+[data-theme="light"] .badge-nt { background: #f5e0e0; color: #801010; border-color: #d09090; }
+
 /* ─── TABLES ─── */
 .table-wrap { overflow-x: auto; margin-bottom: 1.5rem; }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.82rem;
+  font-size: 0.83rem;
   min-width: 600px;
 }
 
 th {
   background: var(--surface2);
   color: var(--gold);
-  padding: 0.6rem 0.75rem;
+  padding: 0.65rem 0.8rem;
   text-align: left;
   border-bottom: 2px solid var(--border-light);
   white-space: nowrap;
@@ -290,14 +550,17 @@ th {
 }
 
 td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.55rem 0.8rem;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
 tr:hover td { background: rgba(200,168,75,0.04); }
+
+[data-theme="light"] tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+[data-theme="light"] tr:hover td { background: rgba(122,92,24,0.05); }
 
 .td-greek { font-style: italic; color: var(--gold-light); }
 .td-dim { color: var(--text-dim); }
@@ -315,7 +578,7 @@ tr:hover td { background: rgba(200,168,75,0.04); }
   background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 1rem;
+  padding: 1.1rem;
   text-align: center;
 }
 
@@ -332,7 +595,7 @@ tr:hover td { background: rgba(200,168,75,0.04); }
   margin-top: 0.3rem;
 }
 
-/* ─── HOME PAGE GRID ─── */
+/* ─── HOME PAGE GRID (legacy, keep for compat) ─── */
 .research-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -373,9 +636,9 @@ tr:hover td { background: rgba(200,168,75,0.04); }
 }
 
 .doc-card .doc-desc {
-  font-size: 0.82rem;
+  font-size: 0.83rem;
   color: var(--text-dim);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .doc-card.branch-christos .doc-title { color: var(--gold-light); }
@@ -402,11 +665,11 @@ pre {
   overflow-x: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-size: 0.82rem;
+  font-size: 0.83rem;
   color: var(--teal);
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   font-family: 'Courier New', monospace;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 code {
@@ -420,17 +683,23 @@ code {
 
 /* ─── FOOTER ─── */
 footer {
-  margin-top: 4rem;
-  padding: 1.5rem 0 1rem;
+  margin-top: 5rem;
+  padding: 2rem 1.5rem 1.5rem;
   border-top: 1px solid var(--border);
   text-align: center;
   font-size: 0.75rem;
   color: var(--text-muted);
   font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 footer a { color: var(--text-dim); }
 footer a:hover { color: var(--gold); }
+
+.footer-main { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.5rem; }
 
 /* ─── FLOWCHART CONTAINER ─── */
 .flowchart-wrap {
@@ -447,7 +716,7 @@ footer a:hover { color: var(--gold); }
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 1.25rem 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 0.88rem;
 }
 
@@ -458,9 +727,9 @@ footer a:hover { color: var(--gold); }
 
 /* ─── CALLOUT BOXES ─── */
 .callout {
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.4rem;
   border-radius: 4px;
-  margin: 1.5rem 0;
+  margin: 1.75rem 0;
   border-left: 4px solid;
 }
 
@@ -468,6 +737,11 @@ footer a:hover { color: var(--gold); }
 .callout-warn { background: #201808; border-color: var(--gold); }
 .callout-critical { background: #1a0808; border-color: var(--red); }
 .callout-key { background: #0a1e18; border-color: var(--green); }
+
+[data-theme="light"] .callout-note { background: #ddeaf8; }
+[data-theme="light"] .callout-warn { background: #f8f0dd; }
+[data-theme="light"] .callout-critical { background: #f8dddd; }
+[data-theme="light"] .callout-key { background: #ddf0e8; }
 
 .callout-label {
   font-size: 0.7rem;
@@ -482,11 +756,43 @@ footer a:hover { color: var(--gold); }
 .callout-critical .callout-label { color: var(--red); }
 .callout-key .callout-label { color: var(--green); }
 
+/* ─── METHODOLOGY GRID (index) ─── */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+.methodology-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+}
+
+.methodology-item .mi-label {
+  color: var(--gold);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+  font-family: 'Courier New', monospace;
+}
+
+.methodology-item p { color: var(--text-dim); margin: 0; font-size: 0.82rem; line-height: 1.55; }
+
 /* ─── RESPONSIVE ─── */
-@media (max-width: 640px) {
-  .page-header h1 { font-size: 1.5rem; }
+@media (max-width: 680px) {
+  body { font-size: 16px; }
+  .site-hero h1 { font-size: 2rem; }
+  .article-preview h2 { font-size: 1.4rem; }
+  .page-header h1 { font-size: 1.55rem; }
   h2 { font-size: 1.2rem; }
   .research-grid { grid-template-columns: 1fr; }
   .summary-grid { grid-template-columns: 1fr 1fr; }
-  nav { padding: 0.5rem 1rem; gap: 0.4rem 1rem; }
+  nav { padding: 0.5rem 1rem; gap: 0.3rem 0.8rem; }
+  .page-wrapper, .page-wrapper-article { padding: 1.5rem 1rem 4rem; }
+  .methodology-grid { grid-template-columns: 1fr; }
 }
