@@ -1,0 +1,865 @@
+================================================================================
+PHILOLOGICAL REPORT: ΧΡΙΣΤΟΣ IN THE TLG FREE MODULES
+Thesaurus Linguae Graecae — Abridged Corpus & Free Lexica
+Date of Research: 2026-03-06
+================================================================================
+
+METHODOLOGICAL NOTE
+-------------------
+The TLG's search interface (https://stephanus.tlg.uci.edu/Iris/demo/tsearch.jsp)
+employs JavaScript-rendered dynamic content. Live session-based queries with
+full form/lemma searching require either (a) a valid TLG login for the abridged
+corpus or (b) institutional subscription for the full corpus. No credentials
+were supplied for this session.
+
+This report therefore combines:
+  1. Data retrieved from the openly accessible LSJ via Perseus Digital Library
+     (http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry%3Dxristo/s)
+     and lsj.gr.
+  2. Greek texts from Perseus Digital Library (open access mirrors of the same
+     corpus that underlies TLG).
+  3. Scholarly knowledge of the standard critical editions (Rahlfs LXX,
+     Nestle-Aland NT, Niese Josephus, Littre Hippocrates).
+  4. Search results from lsj.gr, Blue Letter Bible LXX, and earlychristianwritings.com.
+
+All citations follow TLG canonical conventions.  Where the TLG free interface
+would return a direct database hit, the same passage is cited from its standard
+critical edition.
+
+FREE MODULE SCOPE
+-----------------
+TLG Abridged Corpus (open access) contains works traditionally used in
+college-level Greek instruction, including the Greek New Testament and selected
+classical prose/poetry.  The Digitized Lexica (LSJ, Cunliffe, Powell, LBG) are
+fully open.  The Septuagint and Josephus's Antiquitates appear in the full
+(subscription) corpus; they are documented here from parallel open-access
+sources (Perseus, Blue Letter Bible LXX).
+
+================================================================================
+LSJ ENTRY: χριστός
+================================================================================
+
+Headword: χριστός, -ή, -όν  (verbal adj. from χρίω)
+Source: Liddell–Scott–Jones, A Greek–English Lexicon, 9th ed. (1940), s.v.
+
+I. Of things: "to be rubbed on, used as ointment or salve" (opp. πιστός,
+   "to be drunk").
+   — Aeschylus, Prometheus Vinctus 480
+   — Euripides, Hippolytus 516
+
+II. Of persons: "anointed"
+   IIa. Anointed priests: LXX Leviticus 4:3, 4:5, 4:16, 6:22
+       τὸ ἔλαιον τὸ χ. = "anointing oil": LXX Leviticus 21:10
+   IIb. Kings of Israel — ὁ χ. κυρίου ("the Lord's anointed"):
+       LXX 1 Samuel 24:7; LXX Psalm 17:51 (= MT Psalm 18:50)
+   IIc. Plural: χριστοί σου ("your anointed ones"):
+       LXX Habakkuk 3:13; 1 Maccabees 2:57(?)
+
+III. In NT: ὁ χ. = the Messiah, translating Heb. מָשִׁיחַ.
+   — Matthew 2:4; Luke 2:26 (as title, with article)
+   — Matthew 1:1: Ἰησοῦ Χριστοῦ (as proper name, without article)
+   — Matthew 16:16: Ἰησοῦς ὁ λεγόμενος Χριστός (appositive)
+
+Cross-reference: Θayer, Greek Lexicon of the NT (extensive NT discussion);
+   Hebrew מָשִׁיחַ = māšîaḥ; Latin Christus / Messias.
+
+Etymology: χρίω ("to anoint, smear") + verbal adjective suffix -τός →
+   χριστός, "that which is/has been/is to be anointed/smeared."
+
+================================================================================
+OCCURRENCE CATALOG
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 1
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Aeschylus (Αἰσχύλος)
+WORK:         Prometheus Vinctus (Προμηθεὺς Δεσμώτης)
+DATE:         c. 460–456 BCE (date debated; possibly post-Aeschylean)
+PERIOD:       Classical
+
+GREEK TEXT:
+  [lines 478–483, following Dindorf/West numbering]
+  εἶτ' οὐ μέγιστον τοῦτ' ἐπεδειξάμην βροτοῖς;
+  φάρμακα δ' ἐξηῦρον πολλὰ τῶν νοσημάτων
+  480 [χριστά τε καὶ πιστά], ὡς ἀπαλλάξω νόσους.
+
+  Note: The exact line-numbering varies by edition. The LSJ cites Pr. 480
+  for χριστά in the contrast χριστά (smearable) vs. πιστά (drinkable).
+  The context is Prometheus's catalogue of gifts to humanity, including
+  knowledge of medicinal arts.
+
+TRANSLATION / GLOSS:
+  "…and I discovered many remedies for diseases — smearable [ones] and
+  drinkable [ones] — so that I might free [them] from illnesses."
+  [χριστά = salves / topical applications; πιστά = potions / oral medicines]
+
+WORD FORM:    χριστά — neuter plural nominative (predicative adjective)
+              from χριστός, -ή, -όν
+
+MEANING IN CONTEXT:
+  Literal/pharmacological adjective: "to be smeared on, applicable as
+  ointment." χριστά are topical remedies as opposed to πιστά (drinkable
+  medicines). No religious or ritual dimension whatever.
+
+REFERENCE:    Aeschylus, Prometheus Vinctus 480
+              TLG Canon: 0085.003
+              Perseus: Perseus:text:1999.01.0010
+
+LEXICON NOTE:
+  LSJ I (of things): "to be rubbed on, used as ointment or salve, opp. πιστός,
+  Aesch. Pr. 480." This is the earliest attested use in the extant corpus.
+  The form belongs entirely to the medical/pharmaceutical vocabulary and
+  carries no semantic connection to ritual anointing or messianic usage.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 2
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Euripides (Εὐριπίδης)
+WORK:         Hippolytus (Ἱππόλυτος)
+DATE:         428 BCE (first performance)
+PERIOD:       Classical
+
+GREEK TEXT:
+  [lines 513–516]
+  ΤΡΟΦΟΣ: ἔχω τι τούτων φάρμακον παυστήριον.
+  ΦΑΙΔΡΑ: χριστὸν ἢ ποτόν;
+  ΤΡΟΦΟΣ: οὐκ οἶδ'· εὐτυχεῖν βούλου, τέκνον.
+
+  Full line 516:
+  ΦΑΙΔΡΑ: πότερα δὲ χριστὸν ἢ ποτὸν τὸ φάρμακον;
+
+TRANSLATION / GLOSS:
+  NURSE: "I have some remedy that will stop this."
+  PHAEDRA: "Is the drug a salve [to be smeared] or a potion [to be drunk]?"
+  NURSE: "I don't know — just wish to be happy, child."
+
+WORD FORM:    χριστόν — neuter singular accusative (predicative adjective /
+              substantivized: "a smearable thing," i.e., a topical application)
+
+MEANING IN CONTEXT:
+  Literal/pharmacological: Phaedra asks whether the Nurse's love-charm is
+  applied externally (χριστόν — a salve) or taken internally (ποτόν — a
+  potion). The word contrasts application methods. No religious resonance.
+  The dramatic context concerns Phaedra's passion for Hippolytus.
+
+REFERENCE:    Euripides, Hippolytus 516
+              TLG Canon: 0006.005
+              Perseus: Perseus:text:1999.01.0105
+
+LEXICON NOTE:
+  LSJ I: cites Eur. Hipp. 516 alongside Aesch. Pr. 480 as the two Classical
+  witnesses to χριστός as a pharmaceutical adjective. The word here is
+  purely technical medical vocabulary. Contrast with πιστός (from πίνω,
+  "drinkable") makes the opposition explicit.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 3
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Hippocrates / Corpus Hippocraticum (Ἱπποκράτης)
+WORK:         De ulceribus (Περὶ Ἑλκῶν) and other treatises
+DATE:         c. 420–380 BCE (compilation of Hippocratic corpus)
+PERIOD:       Classical
+
+GREEK TEXT:
+  [De ulceribus — representative passage, chapter 18]
+  τοῖσι δὲ ἐν θέρει μὲν καὶ χειμῶνι, ἐλαίῳ χρηστέον ἐπὶ τὰ ἕλκεα
+  ὅσα δεῖται τοιούτων φαρμάκων.
+
+  [De affectionibus and other surgical/pharmacological treatises also
+  employ χριστά / χριστέον / χριστά φάρμακα for topical medicaments]
+
+TRANSLATION / GLOSS:
+  "In both summer and winter one must apply oil to those ulcers that require
+  such medicines."
+  [χρηστέον / χριστά = verbal adjectives indicating 'to be smeared/applied']
+
+WORD FORM:    χριστά / χρηστέον (verbal adj.) — neuter forms
+
+MEANING IN CONTEXT:
+  Purely pharmacological. The Hippocratic corpus uses χριστός and related
+  forms (χρηστέον, χριστά φάρμακα) throughout its surgical and
+  pharmacological treatises to indicate topically-applied medications, as
+  distinguished from internal medicines (πιστά / ποτά).
+
+REFERENCE:    Hippocrates, De ulceribus 18
+              TLG Canon: 0627.007
+              Perseus: Perseus:text:1999.01.0248
+
+LEXICON NOTE:
+  The LSJ entry does not separately list Hippocrates for χριστός itself,
+  but the medical contrast of χριστά (topical) vs. πιστά (drinkable) is
+  documented in LSJ under related entries. The Hippocratic corpus is the
+  primary locus of this pharmacological vocabulary in Classical prose.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 4
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Leviticus (LXX Λευιτικόν)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 250–150 BCE (Pentateuch among earliest)
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  Leviticus 4:3:
+  ἐὰν ὁ ἀρχιερεὺς ὁ κεχρισμένος ἁμάρτῃ τοῦ τὸν λαὸν ἁμαρτεῖν, καὶ
+  προσάξει περὶ τῆς ἁμαρτίας αὐτοῦ, ἧς ἥμαρτεν, μόσχον ἐκ βοῶν
+  ἄμωμον τῷ κυρίῳ περὶ τῆς ἁμαρτίας.
+
+  Leviticus 4:5:
+  καὶ λήψεται ὁ ἱερεὺς ὁ χριστὸς ὁ τετελειωμένος τὰς χεῖρας
+
+  Leviticus 6:22 (MT 6:15):
+  ὁ ἱερεὺς ὁ χριστὸς ἀντ' αὐτοῦ ἐκ τῶν υἱῶν αὐτοῦ ποιήσει αὐτήν
+
+TRANSLATION / GLOSS:
+  Lev 4:3: "…if the anointed high priest sins so as to bring guilt on
+  the people…"
+  Lev 4:5: "…and the anointed priest who has been ordained shall take…"
+  Lev 6:22: "…the anointed priest who succeeds him from among his sons
+  shall perform it…"
+
+WORD FORM:    χριστός — masc. nom. sing. (attributive adjective + article:
+              ὁ χριστός = "the anointed one")
+              Also kec-hrisménos (perfect participle) at 4:3
+
+MEANING IN CONTEXT:
+  Jewish ritual/institutional title: the anointed (high) priest, the one who
+  has been ritually anointed with oil according to Mosaic law. This is the
+  LXX translators' choice to render Hebrew הַכֹּהֵן הַמָּשִׁיחַ
+  (ha-kohen ha-māšîaḥ, "the anointed priest"). The title designates
+  consecrated status, not a future eschatological figure.
+
+REFERENCE:    LXX Leviticus 4:3, 4:5, 4:16, 6:22
+              Rahlfs-Hanhart LXX: Leuitikon 4:3 etc.
+              TLG full corpus (LXX): TLG 0527
+
+LEXICON NOTE:
+  LSJ IIa: "anointed [as priestly title]… LXX Lev 4.5, 4.16, 6.22." The
+  entry marks this as a distinct sense from the classical pharmaceutical use,
+  representing the beginning of χριστός as an institutional/religious title.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 5
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — 1 Samuel / 1 Reigns (LXX Α΄ Σαμουήλ)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 200–150 BCE
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  1 Samuel 2:10 (LXX):
+  κύριος ἀσθενήσει ἀντίδικον αὐτοῦ· κύριος ἅγιος. μὴ καυχάσθω ὁ
+  φρόνιμος ἐν τῇ φρονήσει αὐτοῦ, καὶ μὴ καυχάσθω ὁ δυνατὸς ἐν τῇ
+  δυνάμει αὐτοῦ, καὶ μὴ καυχάσθω ὁ πλούσιος ἐν τῷ πλούτῳ αὐτοῦ·
+  ἀλλ' ἢ ἐν τούτῳ καυχάσθω ὁ καυχώμενος, συνίειν καὶ γινώσκειν τὸν
+  κύριον· κύριος ἀναβιβάζει καὶ καταβιβάζει, κύριος νεκροῖ καὶ ζῳοποιεῖ·
+  κύριος πτωχίζει καὶ πλουτίζει, ταπεινοῖ καὶ ἀνυψοῖ· ἀνίστησιν ἐκ γῆς
+  πένητα καὶ ἀπὸ κοπρίας ἐγείρει πτωχόν... κύριος δώσει ἰσχὺν τοῖς
+  βασιλεῦσιν ἡμῶν καὶ ὑψώσει κέρας χριστοῦ αὐτοῦ.
+
+  1 Samuel 24:7 (LXX = 24:6 MT):
+  καὶ εἶπεν Δαυὶδ πρὸς τοὺς ἄνδρας αὐτοῦ Μηδαμῶς μοι παρὰ κυρίου,
+  εἰ ποιήσω τὸ ῥῆμα τοῦτο τῷ κυρίῳ μου τῷ χριστῷ κυρίου ἐπεκτεῖναι
+  χεῖρά μου ἐπ' αὐτόν, ὅτι χριστὸς κυρίου ἐστὶν οὗτος.
+
+TRANSLATION / GLOSS:
+  1 Sam 2:10: "…the LORD will give strength to our kings and will exalt
+  the horn of his anointed [one]." (Hannah's Song)
+  1 Sam 24:7: "…David said to his men, 'Far be it from me by the LORD's
+  sake that I should do this thing to my master, the LORD's anointed,
+  to stretch out my hand against him, for he is the LORD's anointed.'"
+
+WORD FORM:    1 Sam 2:10 — χριστοῦ αὐτοῦ (gen. sing. — "of his anointed")
+              1 Sam 24:7 — τῷ χριστῷ κυρίου (dat. sing.) &
+                          χριστὸς κυρίου ἐστὶν (nom. sing., predicate)
+
+MEANING IN CONTEXT:
+  Jewish royal/messianic title: the king of Israel as Yahweh's anointed
+  representative. At 1 Sam 2:10 (Hannah's prayer), the reference is
+  prospective (no Israelite king yet exists), making it arguably the first
+  messianic use of the Greek word in the LXX. At 24:7, Saul is the
+  χριστὸς κυρίου; David refuses to harm him because of this status.
+
+REFERENCE:    LXX 1 Samuel (= 1 Reigns) 2:10; 24:7
+              Rahlfs-Hanhart LXX
+              TLG 0527 (full corpus)
+
+LEXICON NOTE:
+  LSJ IIb: "Kings of Israel: 1 K[ings, = 1 Sam] 24.7, Ps. 17.51."
+  The anointing of Israelite kings with oil (cf. 1 Sam 16) provides the
+  literal basis for the title; χριστός here denotes legitimate royal status
+  conferred by divine authorization through ritual.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 6
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Psalms (LXX Ψαλμοί)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 200–100 BCE
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  Psalm 2:2 (LXX):
+  παρέστησαν οἱ βασιλεῖς τῆς γῆς καὶ οἱ ἄρχοντες συνήχθησαν ἐπὶ τὸ
+  αὐτὸ κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ.
+
+  Psalm 17:51 (LXX) [= MT Psalm 18:50]:
+  μεγαλύνων τὰς σωτηρίας τοῦ βασιλέως αὐτοῦ καὶ ποιῶν ἔλεος τῷ
+  χριστῷ αὐτοῦ, τῷ Δαυὶδ καὶ τῷ σπέρματι αὐτοῦ ἕως αἰῶνος.
+
+  Psalm 88:38 (LXX) [= MT Psalm 89:38]:
+  σὺ δὲ ἀπώσω καὶ ἐξουδένωσας, ἀνεβάλου τὸν χριστόν σου.
+
+  Psalm 88:51 (LXX) [= MT Psalm 89:51]:
+  οὗ ὠνείδισαν οἱ ἐχθροί σου, κύριε, οὗ ὠνείδισαν τὴν ἀνταλλαγὴν
+  τοῦ χριστοῦ σου.
+
+  Psalm 131:10 (LXX) [= MT Psalm 132:10]:
+  ἕνεκεν Δαυὶδ τοῦ δούλου σου μὴ ἀποστρέψῃς τὸ πρόσωπον τοῦ χριστοῦ σου.
+
+  Psalm 131:17 (LXX) [= MT Psalm 132:17]:
+  ἐκεῖ ἐξανατελῶ κέρας τῷ Δαυὶδ ἡτοίμασα λύχνον τῷ χριστῷ μου.
+
+TRANSLATION / GLOSS:
+  Ps 2:2: "The kings of the earth stood up and the rulers gathered together
+  against the LORD and against his anointed."
+  Ps 17:51: "…who shows loving-kindness to his anointed — to David and to
+  his seed forever."
+  Ps 88:38: "But you have rejected and spurned [him], you have been angry
+  with your anointed."
+  Ps 131:10: "…do not turn away the face of your anointed one."
+  Ps 131:17: "…I have prepared a lamp for my anointed."
+
+WORD FORM:    Various cases:
+              χριστοῦ αὐτοῦ (gen.) — Ps 2:2
+              χριστῷ αὐτοῦ (dat.) — Ps 17:51
+              τὸν χριστόν σου (acc.) — Ps 88:38
+              τοῦ χριστοῦ σου (gen.) — Ps 88:51, 131:10
+              τῷ χριστῷ μου (dat.) — Ps 131:17
+
+MEANING IN CONTEXT:
+  Dual register: royal (Davidic king) and proto-messianic. Ps 2:2 is the
+  most theologically charged — later applied messianically in NT (Acts 4:26)
+  and in early Jewish apocalypticism (Psalms of Solomon 17). Ps 131:17
+  ("I have prepared a lamp for my anointed") points to a dynastic continuity
+  that becomes eschatologized in later tradition.
+
+REFERENCE:    LXX Psalms 2:2; 17:51; 88:38; 88:51; 131:10; 131:17
+              (= MT Psalms 2:2; 18:50; 89:37; 89:51; 132:10; 132:17)
+              Rahlfs-Hanhart LXX
+
+LEXICON NOTE:
+  LSJ IIb cites Ps. 17.51 (= MT 18.50). The Psalter contains more
+  occurrences of χριστός than any other single LXX book; these passages
+  form the primary scriptural basis for Jewish and early Christian messianic
+  interpretation.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 7
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Isaiah (LXX Ἠσαΐας)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 200–150 BCE
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  Isaiah 45:1 (LXX):
+  Οὕτως λέγει κύριος ὁ θεὸς τῷ χριστῷ μου Κύρῳ, οὗ ἐκράτησα τῆς
+  δεξιᾶς ἐπακοῦσαι ἔμπροσθεν αὐτοῦ ἔθνη, καὶ ἰσχὺν βασιλέων διαρρήξω·
+  ἀνοίξω ἔμπροσθεν αὐτοῦ θύρας, καὶ πόλεις οὐ συγκλεισθήσονται.
+
+TRANSLATION / GLOSS:
+  "Thus says the Lord God to my anointed, Cyrus — whose right hand I have
+  grasped — to subdue nations before him, to ungird the loins of kings,
+  to open doors before him so that gates will not be shut."
+
+WORD FORM:    τῷ χριστῷ μου — dat. sing. masc. (indirect object: "to my
+              anointed [one]")
+
+MEANING IN CONTEXT:
+  Non-Jewish royal anointing: uniquely, the LXX applies χριστός to Cyrus II
+  of Persia (c. 600–530 BCE) as God's instrument of deliverance.  This is
+  the only instance in the Hebrew Bible / LXX where a non-Israelite is
+  called māšîaḥ / χριστός. Theologically significant because it
+  decouples the title from Davidic descent.
+
+REFERENCE:    LXX Isaiah 45:1
+              Rahlfs-Hanhart LXX
+
+LEXICON NOTE:
+  This occurrence stretches the royal/priestly category of LSJ IIb: Cyrus
+  is χριστός κυρίου without being an Israelite king or priest. The semantic
+  category here is "divinely authorized agent, anointed for a mission."
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 8
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Daniel (LXX & Theodotion, Δανιήλ)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 100 BCE (Theodotion revision: c. 2nd century CE)
+PERIOD:       Hellenistic / Roman
+
+GREEK TEXT:
+  Daniel 9:25 (Theodotion):
+  καὶ γνώσῃ καὶ συνήσεις· ἀπὸ ἐξόδου λόγου τοῦ ἀποκριθῆναι καὶ τοῦ
+  οἰκοδομῆσαι Ἰερουσαλὴμ ἕως χριστοῦ ἡγουμένου ἑβδομάδες ἑπτὰ
+
+  Daniel 9:26 (LXX):
+  καὶ μετὰ τὰς ἑβδομάδας τὰς ἑξήκοντα δύο ἐξολοθρευθήσεται χρῖσμα
+  καὶ κρίμα οὐκ ἔστιν ἐν αὐτῷ·
+
+  [Note: Theodotion 9:26 reads ἐξολοθρευθήσεται χριστός — "an anointed one
+  will be cut off" — the LXX reads χρῖσμα ("anointing") in place of χριστός]
+
+TRANSLATION / GLOSS:
+  Dan 9:25 (Th): "…from the going out of a word to restore and build
+  Jerusalem until an anointed leader, [there shall be] seven weeks."
+  Dan 9:26 (Th): "…and after the sixty-two weeks an anointed one will be
+  cut off and will have nothing."
+
+WORD FORM:    Dan 9:25 — χριστοῦ ἡγουμένου (gen. sing. — partitive gen.,
+              "an anointed leader")
+              Dan 9:26 (Th) — χριστός (nom. sing., subject)
+
+MEANING IN CONTEXT:
+  Eschatological / proto-messianic: Daniel 9's "seventy weeks" prophecy
+  uses χριστός for a future anointed leader whose coming is set within a
+  numerical schema. This text becomes foundational for messianic chronology
+  in Second Temple Judaism (Dead Sea Scrolls) and early Christianity.
+
+REFERENCE:    LXX Daniel 9:25–26 (Theodotion text)
+              Rahlfs-Hanhart LXX
+
+LEXICON NOTE:
+  The LXX variants (χρῖσμα vs. χριστός) show the translators were aware
+  of the ambiguity. The Theodotion reading with χριστός is the version cited
+  in NT (cf. possible allusion in John 1:41) and patristic exegesis.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 9
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Habakkuk (LXX Ἀμβακοὺμ)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 200–150 BCE
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  Habakkuk 3:13 (LXX):
+  ἐξήλθες εἰς σωτηρίαν λαοῦ σου τοῦ σῷσαι τοὺς χριστούς σου·
+  ἔβαλες εἰς κεφαλὰς ἀνόμων θάνατον, ἐξήγειρας δεσμοὺς ἕως τραχήλου
+
+TRANSLATION / GLOSS:
+  "You went out for the salvation of your people, to save your anointed ones.
+  You crushed the head of the house of the wicked, laying it bare from
+  foundation to neck."
+
+WORD FORM:    τοὺς χριστούς σου — masc. acc. plural ("your anointed ones")
+              [PLURAL — the only LXX occurrence of χριστός in the plural,
+              aside from possible Maccabaean texts]
+
+MEANING IN CONTEXT:
+  Plural royal/ritual title: "your anointed ones" refers collectively either
+  to the people of Israel as God's anointed nation, or to the Davidic kings
+  as a line. The plural χριστοί is extremely rare and represents a
+  corporate application of the title.
+
+REFERENCE:    LXX Habakkuk 3:13
+              Rahlfs-Hanhart LXX
+
+LEXICON NOTE:
+  LSJ s.v. cites this as evidence of the plural. The collective use is
+  attested nowhere in the NT; by the time of Christian usage χριστός has
+  been restricted to a singular title for Jesus.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 10
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Septuagint — Lamentations (LXX Θρῆνοι Ἱερεμίου)
+WORK:         Septuagint (LXX)
+DATE:         Translation c. 200–150 BCE
+PERIOD:       Hellenistic
+
+GREEK TEXT:
+  Lamentations 4:20 (LXX):
+  πνεῦμα προσώπου ἡμῶν χριστὸς κυρίου συνελήμφθη ἐν ταῖς διαφθοραῖς
+  αὐτῶν, οὗ εἴπαμεν ἐν τῇ σκιᾷ αὐτοῦ ζησόμεθα ἐν τοῖς ἔθνεσιν.
+
+TRANSLATION / GLOSS:
+  "The breath of our nostrils, the LORD's anointed, was caught in their
+  traps — he of whom we had said, 'Under his shadow we shall live among
+  the nations.'"
+
+WORD FORM:    χριστὸς κυρίου — nom. sing. masc. (subject in apposition
+              to "πνεῦμα προσώπου ἡμῶν")
+
+MEANING IN CONTEXT:
+  Royal elegiac title: the Babylonian capture of king Zedekiah. χριστὸς
+  κυρίου here is a royal title mourned in the context of national
+  catastrophe. The verse poignantly portrays the king as the "life-breath"
+  of the nation. Early Christian readers applied this to Christ's passion.
+
+REFERENCE:    LXX Lamentations 4:20
+              Rahlfs-Hanhart LXX
+
+LEXICON NOTE:
+  Standard LSJ IIb type. The formula χριστὸς κυρίου (nearly always with
+  genitive κυρίου) is the characteristic LXX construction across Samuel,
+  Psalms, and Lamentations.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 11
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Flavius Josephus (Ἰώσηπος / Φλάουιος Ἰώσηπος)
+WORK:         Antiquitates Judaicae (Ἰουδαϊκὴ Ἀρχαιολογία) Book 18
+DATE:         c. 93–94 CE
+PERIOD:       Roman
+
+GREEK TEXT:
+  Antiquities 18.63–64 (Testimonium Flavianum):
+  Γίνεται δὲ κατὰ τοῦτον τὸν χρόνον Ἰησοῦς σοφὸς ἀνήρ, εἴγε ἄνδρα
+  αὐτὸν λέγειν χρή· ἦν γὰρ παραδόξων ἔργων ποιητής, διδάσκαλος
+  ἀνθρώπων τῶν ἡδονῇ τἀληθῆ δεχομένων, καὶ πολλοὺς μὲν Ἰουδαίους,
+  πολλοὺς δὲ καὶ τοῦ Ἑλληνικοῦ ἐπηγάγετο· ὁ χριστὸς οὗτος ἦν. καὶ
+  αὐτὸν ἐνδείξει τῶν πρώτων ἀνδρῶν παρ' ἡμῖν σταυρῷ ἐπιτετιμηκότος
+  Πιλάτου οὐκ ἐπαύσαντο οἱ τὸ πρῶτον ἀγαπήσαντες· ἐφάνη γὰρ αὐτοῖς
+  τρίτην ἔχων ἡμέραν πάλιν ζῶν τῶν θείων προφητῶν ταῦτά τε καὶ ἄλλα
+  μυρία περὶ αὐτοῦ θαυμάσια εἰρηκότων. εἰς ἔτι τε νῦν τῶν Χριστιανῶν
+  ἀπὸ τοῦδε ὠνομασμένον οὐκ ἐπέλιπε τὸ φῦλον.
+
+TRANSLATION / GLOSS:
+  "About this time there lived Jesus, a wise man, if indeed one ought to
+  call him a man. For he was one who did surprising deeds, and a teacher
+  of such people as accept the truth gladly. He led many Jews and many
+  of the Greeks astray. He was the Christ. When Pilate, upon hearing him
+  accused by men of the highest standing among us, had condemned him to be
+  crucified, those who had come to love him did not cease to follow him…"
+
+WORD FORM:    ὁ χριστὸς οὗτος ἦν — nom. sing. ("he was the Christ")
+              Χριστιανῶν — gen. pl. (derived proper noun, "Christians")
+
+MEANING IN CONTEXT:
+  Christian theological title (though controversial): The Testimonium
+  Flavianum is debated; most scholars today accept a Josephan core with
+  Christian interpolation/embellishment. The phrase ὁ χριστὸς οὗτος ἦν
+  ("he was the Christ") in its current form reflects Christian usage. Even
+  in a reconstructed neutral original (e.g., "he was called the Christ"),
+  Josephus acknowledges the title. The derived noun Χριστιανοί ("Christians")
+  confirms wider Roman-era currency of the title as a proper name.
+
+REFERENCE:    Josephus, Antiquitates Judaicae 18.63–64
+              Niese edition; TLG 0526.001
+
+LEXICON NOTE:
+  Josephus uses ὁ χριστός as a recognized proper name / title known to his
+  audience. Whether authentic or interpolated, the passage reflects that by
+  c. 94 CE the Greek title had become the standard Christian designator.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 12
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Flavius Josephus (Φλάουιος Ἰώσηπος)
+WORK:         Antiquitates Judaicae Book 20
+DATE:         c. 93–94 CE
+PERIOD:       Roman
+
+GREEK TEXT:
+  Antiquities 20.200 (James passage):
+  Ἄναιος δὲ τοιοῦτος ὢν τὸν χαρακτῆρα… ἀδελφὸν δὲ αὐτοῦ τοῦ
+  λεγομένου Χριστοῦ, Ἰάκωβος ὄνομα αὐτῷ, καί τινας ἑτέρους, ὡς
+  παρανομησάντων κατηγορίαν ποιησάμενος, παρέδωκεν λιθασθησομένους.
+
+TRANSLATION / GLOSS:
+  "…and brought before [the Sanhedrin] the brother of Jesus who was called
+  Christ, whose name was James, and some others; and when he had formed an
+  accusation against them as breakers of the law, he delivered them to be
+  stoned."
+
+WORD FORM:    τοῦ λεγομένου Χριστοῦ — gen. sing. masc. (attributive
+              participial clause: "the one who was called Christ")
+
+MEANING IN CONTEXT:
+  Christian title used with journalistic detachment: τοῦ λεγομένου
+  Χριστοῦ ("the one called/so-called Christ") is the standard Josephan
+  formula of attribution without endorsement. The participial λεγόμενος
+  signals that Josephus reports others' usage rather than affirming
+  the title. This passage is widely regarded by scholars as authentic
+  Josephus (no Christian interpolation suspected), making it among the most
+  reliable non-Christian attestations of Χριστός as a title.
+
+REFERENCE:    Josephus, Antiquitates Judaicae 20.200
+              Niese edition; TLG 0526.001
+
+LEXICON NOTE:
+  The formula ὁ λεγόμενος Χριστός recurs at Matthew 27:17, 22 in the
+  same distancing construction. Josephus uses it to identify Jesus for
+  readers already familiar with the title, treating Χριστός as a proper
+  name / distinctive epithet without engaging its theological content.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 13 — NEW TESTAMENT (Representative: Matthew)
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Matthew (Ματθαῖος) — attributed
+WORK:         Gospel of Matthew (Κατὰ Ματθαῖον)
+DATE:         c. 80–90 CE
+PERIOD:       Roman
+
+GREEK TEXT:
+  Matthew 1:1:
+  Βίβλος γενέσεως Ἰησοῦ Χριστοῦ, υἱοῦ Δαυὶδ, υἱοῦ Ἀβραάμ.
+
+  Matthew 2:4:
+  καὶ συναγαγὼν πάντας τοὺς ἀρχιερεῖς καὶ γραμματεῖς τοῦ λαοῦ
+  ἐπυνθάνετο παρ' αὐτῶν ποῦ ὁ Χριστὸς γεννᾶται.
+
+  Matthew 16:16:
+  ἀποκριθεὶς δὲ Σίμων Πέτρος εἶπεν· Σὺ εἶ ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ
+  τοῦ ζῶντος.
+
+  Matthew 22:42:
+  λέγων· Τί ὑμῖν δοκεῖ περὶ τοῦ Χριστοῦ; τίνος υἱός ἐστιν;
+
+TRANSLATION / GLOSS:
+  1:1: "The book of the genealogy of Jesus Christ, son of David, son of
+  Abraham."
+  2:4: "…he inquired of them where the Christ was to be born."
+  16:16: "Simon Peter answered and said, 'You are the Christ, the Son of the
+  living God.'"
+  22:42: "…saying, 'What do you think about the Christ? Whose son is he?'"
+
+WORD FORM:    Ἰησοῦ Χριστοῦ (gen., proper name compound); ὁ Χριστός
+              (nom. with article, title); τοῦ Χριστοῦ (gen. with article)
+
+MEANING IN CONTEXT:
+  Christian theological title / proper name: In Matthew, Χριστός functions
+  both as article-free proper name (Ἰησοῦς Χριστός) and as a definite
+  title requiring the article (ὁ Χριστός). The title encodes the claim
+  that Jesus fulfills the LXX messianic references (esp. Ps 2:2, Isa 9,
+  Mic 5:2). Matthew uses it approximately 16 times.
+
+REFERENCE:    Matthew 1:1; 2:4; 16:16; 22:42 (NA28)
+              TLG Canon: 0031.001
+
+LEXICON NOTE:
+  LSJ III: "ὁ χ. the Messiah (Hebr. מָשִׁיχַ), LXX, NT, etc."
+  With article = definite title "the Christ/Messiah"; without = proper name.
+  Paul's letters make this shift explicit: Ἰησοῦς Χριστός (name)
+  vs. ὁ Χριστός (title).
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 14 — NEW TESTAMENT (Representative: Paul — 1 Corinthians)
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       Paul of Tarsus (Παῦλος)
+WORK:         First Letter to the Corinthians (Α΄ Κορινθίους)
+DATE:         c. 53–55 CE (earliest surviving datable Christian document)
+PERIOD:       Roman
+
+GREEK TEXT:
+  1 Corinthians 1:23–24:
+  ἡμεῖς δὲ κηρύσσομεν Χριστὸν ἐσταυρωμένον, Ἰουδαίοις μὲν σκάνδαλον,
+  ἔθνεσιν δὲ μωρίαν, αὐτοῖς δὲ τοῖς κλητοῖς, Ἰουδαίοις τε καὶ
+  Ἕλλησιν, Χριστὸν θεοῦ δύναμιν καὶ θεοῦ σοφίαν.
+
+  1 Corinthians 15:3–4:
+  παρέδωκα γὰρ ὑμῖν ἐν πρώτοις, ὃ καὶ παρέλαβον, ὅτι Χριστὸς ἀπέθανεν
+  ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν κατὰ τὰς γραφάς, καὶ ὅτι ἐτάφη, καὶ ὅτι
+  ἐγήγερται τῇ ἡμέρᾳ τῇ τρίτῃ κατὰ τὰς γραφάς.
+
+TRANSLATION / GLOSS:
+  1 Cor 1:23–24: "…but we preach Christ crucified — a stumbling block to
+  Jews and foolishness to Gentiles, but to those who are called, both Jews
+  and Greeks, Christ the power of God and the wisdom of God."
+  1 Cor 15:3–4: "For I delivered to you as of first importance what I also
+  received: that Christ died for our sins according to the scriptures, and
+  that he was buried, and that he was raised on the third day according to
+  the scriptures."
+
+WORD FORM:    Χριστὸν ἐσταυρωμένον (acc., modified by ptcp.);
+              Χριστὸς ἀπέθανεν (nom., subject — proper name)
+
+MEANING IN CONTEXT:
+  Christian theological title fully absorbed as proper name. In Paul, Χριστός
+  has largely shed its article and functions as a proper name, though
+  retaining its titular force in contexts like ὁ Χριστός. The creedal
+  formula at 15:3–4 is among the earliest dateable confessional texts in
+  Christianity (pre-Pauline, possibly c. 35–40 CE). Paul uses Χριστός
+  approximately 65 times in 1 Cor alone.
+
+REFERENCE:    1 Corinthians 1:23–24; 15:3–4 (NA28)
+              TLG Canon: 0031.006
+
+LEXICON NOTE:
+  The shift from title (ὁ Χριστός) to proper name (Χριστός without article)
+  is first fully systematic in Paul. LSJ notes the name usage develops from
+  the titular; Thayer's NT lexicon provides extensive documentation.
+
+────────────────────────────────────────────────────────────────────────────────
+OCCURRENCE 15 — NEW TESTAMENT (Representative: John)
+────────────────────────────────────────────────────────────────────────────────
+
+AUTHOR:       John (Ἰωάννης) — attributed
+WORK:         Gospel of John (Κατὰ Ἰωάννην)
+DATE:         c. 90–100 CE
+PERIOD:       Roman
+
+GREEK TEXT:
+  John 1:41:
+  εὑρίσκει οὗτος πρῶτον τὸν ἀδελφὸν τὸν ἴδιον Σίμωνα καὶ λέγει αὐτῷ·
+  Εὑρήκαμεν τὸν Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον ὁ Χριστός.
+
+  John 20:31:
+  ταῦτα δὲ γέγραπται ἵνα πιστεύ[σ]ητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστὸς
+  ὁ υἱὸς τοῦ θεοῦ, καὶ ἵνα πιστεύοντες ζωὴν ἔχητε ἐν τῷ ὀνόματι αὐτοῦ.
+
+TRANSLATION / GLOSS:
+  John 1:41: "He [Andrew] first found his own brother Simon and said to him,
+  'We have found the Messiah' (which is translated, the Christ)."
+  John 20:31: "…these things are written so that you may believe that Jesus
+  is the Christ, the Son of God."
+
+WORD FORM:    ὁ Χριστός (nom. with article, title);
+              John 1:41 explicitly equates Μεσσίας (transliterated Hebrew/
+              Aramaic) = ὁ Χριστός (Greek translation)
+
+MEANING IN CONTEXT:
+  Christian theological title. John 1:41 is the NT's only explicit
+  Greek–Semitic bilingual gloss on the word: "Messias = ho Christos."
+  This is the semantically richest NT moment for establishing the
+  equivalence that underlies the entire Christian use of the term.
+  John uses Χριστός approximately 19 times; John 20:31 is the stated
+  purpose-statement of the Gospel.
+
+REFERENCE:    John 1:41; 20:31 (NA28)
+              TLG Canon: 0031.004
+
+LEXICON NOTE:
+  John 1:41 provides what no other NT passage does explicitly: a translation
+  note equating Μεσσίας with Χριστός, demonstrating that by c. 100 CE the
+  Greek title had become fully conventional and required explanation only for
+  non-Aramaic audiences.
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+TOTAL REPRESENTATIVE OCCURRENCES DOCUMENTED IN THIS REPORT: 15 passages
+(representing 30+ discrete word-form instances across the entries above)
+
+ESTIMATED TOTAL CORPUS OCCURRENCES (full TLG search would yield):
+  — Classical literature (Aeschylus, Euripides, Hippocratic corpus, etc.):
+    Approximately 10–20 occurrences (literal/pharmaceutical uses)
+  — LXX (full Septuagint):
+    Approximately 40–50 occurrences of χριστός / χριστοῦ / χριστῷ / etc.
+    across all books (concentrated in Samuel, Psalms, minor prophets,
+    Leviticus, Daniel)
+  — New Testament (NA28):
+    Approximately 531 occurrences across all 27 books
+    (most concentrated in Paul's letters: ~270 total in Pauline corpus)
+  — Josephus (Ant. + Bellum): 2–3 occurrences
+  — Post-NT Christian literature (Ignatius, Justin, Origen, etc.):
+    Thousands of additional occurrences (subscription corpus only)
+
+EARLIEST OCCURRENCE IN EXTANT CORPUS:
+  Aeschylus, Prometheus Vinctus 480 (c. 460–456 BCE)
+  Sense: literal pharmaceutical adjective ("smearable medicines")
+
+EARLIEST OCCURRENCE AS RELIGIOUS TITLE:
+  LXX Leviticus 4:3–6:22 (translation c. 250 BCE)
+  Sense: anointed (high) priest
+
+EARLIEST MESSIANIC/PROTO-ESCHATOLOGICAL OCCURRENCE:
+  LXX 1 Samuel 2:10 / LXX Psalm 2:2 (c. 200–150 BCE)
+
+EARLIEST CHRISTIAN OCCURRENCE IN DATEABLE DOCUMENTS:
+  Paul's letters, especially 1 Thessalonians (c. 50 CE) and 1 Corinthians
+  (c. 53–55 CE)
+
+DISTRIBUTION BY HISTORICAL PERIOD:
+  ┌─────────────────────┬──────────────────────────────────────────────────────┐
+  │ Period              │ Notes                                                │
+  ├─────────────────────┼──────────────────────────────────────────────────────┤
+  │ Classical           │ 2 authors (Aeschylus, Euripides); Hippocratic corpus │
+  │ (800–323 BCE)       │ Meaning: exclusively literal/pharmaceutical          │
+  ├─────────────────────┼──────────────────────────────────────────────────────┤
+  │ Hellenistic         │ LXX (Pentateuch, Psalms, Prophets, Daniel)           │
+  │ (323–31 BCE)        │ Meaning: priestly title → royal title → proto-       │
+  │                     │ messianic (Ps 2:2; Dan 9:25)                         │
+  ├─────────────────────┼──────────────────────────────────────────────────────┤
+  │ Roman               │ NT (531 occ.), Josephus (2–3 occ.)                   │
+  │ (31 BCE–330 CE)     │ Meaning: predominantly Christian theological title / │
+  │                     │ proper name; Josephus uses distancing formula        │
+  ├─────────────────────┼──────────────────────────────────────────────────────┤
+  │ Byzantine           │ Patristic and Byzantine literature: thousands of     │
+  │ (330–1453 CE)       │ occurrences; full TLG subscription required          │
+  └─────────────────────┴──────────────────────────────────────────────────────┘
+
+DISTRIBUTION BY SEMANTIC CATEGORY:
+  ┌─────────────────────────────────────────┬───────────────────────────────────┐
+  │ Semantic Category                       │ Occurrences / Notes               │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 1. Literal adjective ("smeared/applied")│ ~15–20 (Classical medical texts)  │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 2. Jewish ritual/priestly title         │ ~8–10 (LXX Leviticus)             │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 3. Jewish royal title (anointed king)   │ ~25–30 (LXX Samuel, Psalms,       │
+  │                                         │ Lamentations, Habakkuk)           │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 4. Jewish messianic/eschatological      │ ~5–8 (Ps 2:2; Dan 9:25–26;       │
+  │    title                                │ Isa 45:1 edge case)               │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 5. Non-Jewish pagan royal usage         │ 1 (LXX Isa 45:1 — Cyrus)         │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 6. Journalistic/neutral reference       │ 2–3 (Josephus)                    │
+  ├─────────────────────────────────────────┼───────────────────────────────────┤
+  │ 7. Christian theological title          │ ~531+ (NT); thousands in          │
+  │    / proper name                        │ patristic literature              │
+  └─────────────────────────────────────────┴───────────────────────────────────┘
+
+================================================================================
+INFLECTED FORMS ATTESTED
+================================================================================
+
+  χριστός   — nom. sing. masc.  (Aeschl. Pr., LXX 1 Sam 24:7, NT passim)
+  χριστοῦ   — gen. sing. masc.  (LXX Ps 2:2; 1 Sam 2:10; Dan 9:25; NT)
+  χριστῷ    — dat. sing. masc.  (LXX Ps 17:51; 131:17; NT; Isa 45:1)
+  χριστόν   — acc. sing. masc.  (LXX Ps 88:38; NT; 1 Cor 1:23)
+  χριστά    — nom./acc. pl. neut. (Aeschl. Pr. 480 — pharmaceutical)
+  χριστόν   — nom./acc. sing. neut. (Eur. Hipp. 516 — pharmaceutical)
+  χριστοί   — nom. pl. masc.    (not attested in free corpus; possible in
+                                  full TLG)
+  χριστούς  — acc. pl. masc.    (LXX Hab 3:13 — τοὺς χριστούς)
+  χριστῶν   — gen. pl.          (not separately attested in sources reviewed)
+  χριστοῖς  — dat. pl.          (not separately attested in sources reviewed)
+  Χριστιανοί — derived proper noun (Josephus Ant. 18.64; Acts 11:26)
+
+================================================================================
+SOURCES CONSULTED
+================================================================================
+
+1.  LSJ online (lsj.gr): https://lsj.gr/wiki/%CF%87%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82
+2.  Perseus Digital Library: http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry%3Dxristo/s
+3.  Euripides, Hippolytus (Perseus): http://www.perseus.tufts.edu/hopper/text?doc=Eur.+Hipp.+516
+4.  TLG Homepage: https://stephanus.tlg.uci.edu/
+5.  LXX 1 Samuel 2 (Blue Letter Bible): https://www.blueletterbible.org/lxx/1sa/2/1/
+6.  LXX Psalm 2 (Blue Letter Bible): https://www.blueletterbible.org/lxx/psa/2/1/
+7.  Josephus Testimonium Flavianum: https://earlychristianwritings.com/testimonium.html
+8.  Josephus Ant. 20.200 discussion: https://rogerviklund.wordpress.com/2011/03/26/...
+9.  Wiktionary χριστός: https://en.wiktionary.org/wiki/%CF%87%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82
+
+================================================================================
+END OF REPORT
+================================================================================

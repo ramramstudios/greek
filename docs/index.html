@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christ-TLG Research Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      padding: 3rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+    .hero .project-id {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-family: 'Courier New', monospace;
+      margin-bottom: 0.8rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      color: var(--gold-light);
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+    .hero .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+      font-style: italic;
+      max-width: 640px;
+      margin-bottom: 1.5rem;
+      line-height: 1.65;
+    }
+    .hero .hero-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: 'Courier New', monospace;
+    }
+    .hero .hero-meta span { margin-right: 2rem; }
+    .branch-intro {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .branch-intro p { margin-bottom: 0; font-size: 0.9rem; color: var(--text-dim); }
+    .branch-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      font-weight: bold;
+    }
+    .bl-christos { color: var(--gold); }
+    .bl-pharmakon { color: var(--purple); }
+    .bl-jason { color: var(--teal); }
+    .branch-section-title {
+      font-size: 1.3rem;
+      margin: 2.5rem 0 0.5rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .branch-section-title.christos { color: var(--gold); }
+    .branch-section-title.pharmakon { color: var(--purple); }
+    .branch-section-title.jason { color: var(--teal); }
+    .quick-links {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .quick-links h4 { color: var(--gold); font-style: normal; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.8rem; }
+    .quick-links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.4rem; }
+    .quick-links-grid a { font-size: 0.82rem; color: var(--link); padding: 0.2rem 0; display: block; }
+    .quick-links-grid a:hover { color: var(--gold-light); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-home">☩ CHRIST-TLG</span>
+  <span class="nav-sep">|</span>
+  <span class="nav-branch">Philological Research Archive</span>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="hero">
+    <div class="project-id">project: christ-tlg &nbsp;|&nbsp; TLG Philological Research &nbsp;|&nbsp; 2026-03-07</div>
+    <h1>Christ-TLG<br>Research Archive</h1>
+    <p class="hero-sub">
+      A philological and cultural-historical investigation of <span class="gk">χριστός</span> (christos)
+      across the Greek corpus — from its earliest pharmaceutical usage in Classical tragedy
+      through its transformation into a messianic title and proper name in the New Testament,
+      and into the pharmacological and mythological substrates that shaped early Christian practice.
+    </p>
+    <div class="hero-meta">
+      <span>Source: TLG Free Modules + Perseus Digital Library</span>
+      <span>Branch: main</span>
+      <span>Status: Active Research</span>
+    </div>
+  </div>
+
+  <div class="quick-links">
+    <h4>Quick Access</h4>
+    <div class="quick-links-grid">
+      <a href="christos_tlg_report.html">TLG Philological Report</a>
+      <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
+      <a href="lsj_christos_entry.html">LSJ Entry Reconstruction</a>
+      <a href="christos_semantic_flowchart.html">Semantic Flowchart</a>
+      <a href="christos_occurrences.html">Occurrences Database</a>
+      <a href="christos_sources.html">Sources Registry (JSON)</a>
+      <a href="pharmakon_chemical_lineage.html">Chemical Lineage Report</a>
+      <a href="pharmakon_hypothesis.html">Pharmakon Hypothesis</a>
+      <a href="pharmakon_sources.html">Pharmakon Sources (50)</a>
+      <a href="pharmakon_full_sources.html">Full Sources (63)</a>
+      <a href="jason_jesus_sidequest.html">Jason / Jesus Sidequest</a>
+    </div>
+  </div>
+
+  <!-- BRANCH 1: χριστός MIGRATION -->
+  <h2 class="branch-section-title christos">Branch I — <span class="gk">χριστός</span> Migration</h2>
+
+  <div class="branch-intro">
+    <div class="branch-label bl-christos">christos_migration/</div>
+    <p>Philological investigation of the word <span class="gk">χριστός</span> across the TLG corpus: from its earliest
+    attestation as a pharmaceutical adjective in Classical Greek tragedy (Aeschylus, Euripides, c.460–428 BCE)
+    through its use as a Jewish ritual title in the LXX Septuagint, its eschatological intensification in
+    Second Temple literature, and its crystallization into both a messianic title and a proper name
+    in the New Testament. Includes a complete diachronic semantic map and the full LSJ lexicon entry.</p>
+  </div>
+
+  <div class="research-grid">
+    <a href="christos_tlg_report.html" class="doc-card branch-christos">
+      <div class="doc-type">Report · TXT · 866 lines</div>
+      <div class="doc-title">TLG Philological Report</div>
+      <div class="doc-desc">15 documented occurrences from Aeschylus (c.460 BCE) through Josephus and the NT. Full Greek texts, translations, grammatical analysis, and lexicon notes. Includes summary statistics and inflected forms catalog.</div>
+    </a>
+    <a href="christos_diachronic_analysis.html" class="doc-card branch-christos">
+      <div class="doc-type">Analysis · TXT · 63KB</div>
+      <div class="doc-title">Diachronic Semantic Analysis</div>
+      <div class="doc-desc">Comprehensive audit and correction of the project files against primary sources. Five-stage semantic map: pharmaceutical adjective → priestly title → royal title → messianic title → proper name. Identifies gaps and open questions.</div>
+    </a>
+    <a href="lsj_christos_entry.html" class="doc-card branch-christos">
+      <div class="doc-type">Lexicon · TXT · 142 lines</div>
+      <div class="doc-title">LSJ Entry Reconstruction</div>
+      <div class="doc-desc">Full reconstruction of the Liddell–Scott–Jones entry for <span class="gk">χριστός</span> from open sources: three divisions (I–III), all cited texts, related words, Josephus attestations, and Thayer's NT supplement.</div>
+    </a>
+    <a href="christos_semantic_flowchart.html" class="doc-card branch-christos">
+      <div class="doc-type">Visualization · HTML · SVG</div>
+      <div class="doc-title">Semantic Migration Flowchart</div>
+      <div class="doc-desc">Interactive SVG diagram tracing the semantic migration of <span class="gk">χριστός</span> from pharmaceutical adjective to opaque proper name, c.460 BCE–155 CE. Shows the parallel Μεσσίας loanword channel and five developmental stages.</div>
+    </a>
+    <a href="christos_occurrences.html" class="doc-card branch-christos">
+      <div class="doc-type">Database · CSV · 38 rows</div>
+      <div class="doc-title">Occurrences Database</div>
+      <div class="doc-desc">Structured spreadsheet of 38 word-form instances across the corpus: author, TLG canon, date, period, grammatical case, semantic category, Greek text snippet, English translation, and source reference.</div>
+    </a>
+    <a href="christos_sources.html" class="doc-card branch-christos">
+      <div class="doc-type">Registry · JSON · Structured</div>
+      <div class="doc-title">Sources Registry</div>
+      <div class="doc-desc">Annotated source database in JSON format: lexica (LSJ, Thayer, BDB), all five semantic stages with primary texts, grammatical data, authorship notes, disputed readings, and open scholarly questions.</div>
+    </a>
+  </div>
+
+  <!-- BRANCH 2: PHARMAKON RESEARCH -->
+  <h2 class="branch-section-title pharmakon">Branch II — Pharmakon Research</h2>
+
+  <div class="branch-intro">
+    <div class="branch-label bl-pharmakon">pharmakon_research/</div>
+    <p>Investigation of the pharmacological tradition embedded in Greek mystery religion
+    (Eleusinian, Bacchic, Orphic) as a neglected cultural substrate for understanding the
+    ministry and passion of Jesus. The hypothesis argues that the physical act of anointing
+    (<span class="gk">χρίω</span>) with pharmacologically active substances connects the Greek pharmakological
+    lineage from Medea and Hecate through Galen's theriac to the anointing oils, death-drugs,
+    and sacred meals of early Christianity. Includes a 63-entry master sources database.</p>
+  </div>
+
+  <div class="research-grid">
+    <a href="pharmakon_chemical_lineage.html" class="doc-card branch-pharmakon">
+      <div class="doc-type">Report · TXT · 13 sections</div>
+      <div class="doc-title">Chemical Lineage Report</div>
+      <div class="doc-desc">Philological-pharmacological research narrative tracing the tradition of ritual drug use from Homer and Medea through the Eleusinian Mysteries, Socrates's hemlock, and Galen's theriac. Documents the full φάρμακον lineage.</div>
+    </a>
+    <a href="pharmakon_hypothesis.html" class="doc-card branch-pharmakon">
+      <div class="doc-type">Hypothesis · TXT · 15 sections · 776 lines</div>
+      <div class="doc-title">The Pharmakon Hypothesis</div>
+      <div class="doc-desc">Cumulative probabilistic case for Jesus as mystery-cult initiate and initiator. 10 evidence streams: Talmud 43a narcotic wine, Tel Arad cannabis discovery, Gethsemane as mystery vigil, Transfiguration as ἐποπτεία, hostile witnesses (Celsus, Julian, Tertullian).</div>
+    </a>
+    <a href="pharmakon_sources.html" class="doc-card branch-pharmakon">
+      <div class="doc-type">Database · CSV · 50 rows</div>
+      <div class="doc-title">Pharmakon Sources (Original)</div>
+      <div class="doc-desc">50-entry annotated source table: Homer, Pindar, Euripides, Apollonius, Plato, Theophrastus, Dioscorides, Galen, Plutarch, Orphic tablets, Josephus, NT Passion narrative, and Talmudic evidence.</div>
+    </a>
+    <a href="pharmakon_full_sources.html" class="doc-card branch-pharmakon">
+      <div class="doc-type">Database · CSV · 63 rows · Master</div>
+      <div class="doc-title">Full Sources Database</div>
+      <div class="doc-desc">Master 63-entry table with expanded hypothesis-relevance column (H1/H2/H3). Adds: b.Sanhedrin 43a (death narcotic), Gospel of Philip (chrism=resurrection), Acts of John (circle dance), 1QS Dead Sea Scrolls, Tel Arad archaeology, Apuleius, Wisdom of Solomon.</div>
+    </a>
+  </div>
+
+  <!-- BRANCH 3: JASON/JESUS -->
+  <h2 class="branch-section-title jason">Branch III — Jason / Jesus Sidequest</h2>
+
+  <div class="branch-intro">
+    <div class="branch-label bl-jason">jason-jesus/</div>
+    <p>Research sidequest documenting the etymological and structural relationship between
+    <span class="gk">Ἰάσων</span> (Jason) and <span class="gk">Ἰησοῦς</span> (Jesus), historically documented in
+    2 Maccabees 4:7 where a Jewish high priest named Joshua/Yeshua adopts the Greek name Jason.
+    Develops the hypothesis that the Argonautica (Apollonius Rhodius, c.250 BCE) is a literary
+    proto-Gospel, with Medea as a literary ancestor of Mary Magdalene, through seven structural
+    parallels including the dove at the threshold, the woman's pharmacological anointing, and the
+    exile of the female resurrection-figure.</p>
+  </div>
+
+  <div class="research-grid">
+    <a href="jason_jesus_sidequest.html" class="doc-card branch-jason">
+      <div class="doc-type">Research Document · TXT · 6 sections · 423 lines</div>
+      <div class="doc-title">Jason / Jesus — A Literary Resurrection</div>
+      <div class="doc-desc">Full research direction document: name etymology and 2 Maccabees documentation, 6 structural parallels (Ἰάσων as proto-Jesus), 5 axes of Medea–Magdalene typology, the Literary Resurrection hypothesis, 7 specific textual parallels for future research, and a roadmap for 6 planned sub-studies.</div>
+    </a>
+  </div>
+
+  <hr>
+
+  <div style="margin-top: 2rem;">
+    <h3 style="color: var(--text-dim); font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem;">Research Methodology</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.8rem; font-size: 0.82rem;">
+      <div class="card" style="padding: 1rem;">
+        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Primary Sources</div>
+        <p style="color: var(--text-dim); margin: 0;">TLG Free Modules, Perseus Digital Library, Rahlfs-Hanhart LXX, NA28 NT, Niese Josephus</p>
+      </div>
+      <div class="card" style="padding: 1rem;">
+        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Lexica</div>
+        <p style="color: var(--text-dim); margin: 0;">LSJ 9th ed. (lsj.gr), Thayer NT Lexicon, Brown-Driver-Briggs Hebrew Lexicon</p>
+      </div>
+      <div class="card" style="padding: 1rem;">
+        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">TLG Access</div>
+        <p style="color: var(--text-dim); margin: 0;">Abridged corpus (open access): NT, classical prose/poetry. Full corpus requires institutional subscription.</p>
+      </div>
+      <div class="card" style="padding: 1rem;">
+        <div style="color: var(--gold); margin-bottom: 0.4rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em;">Citation Format</div>
+        <p style="color: var(--text-dim); margin: 0;">TLG canonical conventions. All Greek cited from standard critical editions.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  christ-tlg research archive &nbsp;|&nbsp; generated 2026-03-07 &nbsp;|&nbsp; philological research project
+</footer>
+
+</body>
+</html>

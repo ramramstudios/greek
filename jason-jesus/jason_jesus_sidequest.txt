@@ -1,0 +1,422 @@
+================================================================================
+SIDEQUEST: JASON / JESUS — A LITERARY RESURRECTION
+The Argonautic Myth as Proto-Gospel; Medea as Proto-Magdalene
+
+Project: christ-tlg | Branch: jason-jesus
+Date: 2026-03-07
+Status: Research Direction Document — Future Expansion
+================================================================================
+
+This document records a research sidequest for future development. The core
+observation is simple and philologically grounded, then opens into a wider
+mythological typology:
+
+    Jason (Ἰάσων) is another name for Jesus (Ἰησοῦς).
+
+Not metaphorically. Etymologically, functionally, and historically documented.
+
+And if Jason and Jesus share a name — and a name in antiquity is a program,
+a destiny, a role — then the oldest surviving extended narrative about a hero
+named Jason (Apollonius Rhodius's Argonautica) may be something more than
+background context for our research. It may be a literary ancestor — a dry
+run — of the same mythological figure who appears four centuries later in the
+Gospels.
+
+And if that is true, then Medea is something more than a parallel figure to
+Mary Magdalene. She may be an earlier draft of the same character: the foreign
+woman with pharmacological knowledge, devoted to the hero, marginalized by
+the tradition that follows him, and ultimately left holding the instruments
+of death and resurrection while the male story moves on without her.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION I: THE NAME — Ἰάσων AND Ἰησοῦς
+────────────────────────────────────────────────────────────────────────────────
+
+The name Jesus (Ἰησοῦς) is the Greek rendering of the Aramaic/Hebrew name
+Yeshua (יֵשׁוּעַ), which derives from the root yasha' (יָשַׁע) = "to save,
+to deliver." It means "God is salvation" or "the one who saves/delivers."
+
+The name Jason (Ἰάσων) is Greek, from the root ἰάομαι (iaomai) = "to heal."
+It means "the healer."
+
+Two different etymological roots — Hebrew yasha' (save) and Greek iaomai (heal)
+— but the same semantic field: the one who restores those who are lost,
+broken, or dying.
+
+The crucial historical link is in 2 Maccabees:
+
+  2 Maccabees 4:7 (LXX, TLG 0527.001):
+  "When Seleucus died and Antiochus called Epiphanes succeeded to the
+  kingdom, Jason the brother of Onias (Ἰάσων δὲ ὁ ἀδελφὸς Ὀνίου)
+  obtained the high priesthood by corruption."
+
+  2 Maccabees 4:10-13:
+  "When the king assented and Jason came to office, he at once shifted
+  his compatriots over to the Greek way of life... He set aside the
+  existing royal concessions to the Jews... and introduced new customs
+  contrary to the law."
+
+Jason of 2 Maccabees is a Jewish high priest (~175 BCE) who Hellenized
+Jerusalem and adopted a Greek name. His Hebrew name was Joshua (Yeshua —
+the same name as Jesus). He took the Greek name Jason as the functional
+equivalent of Yeshua. The Hellenizing Jewish world chose Ἰάσων as the Greek
+form of Ἰησοῦς / Yeshua.
+
+This is not speculation. 2 Maccabees 4:7 is the historical document of the
+equivalence. Jason = Jesus in the Greek-Jewish naming world.
+
+Paul's associate in Thessalonica (Acts 17:5-9) is also named Jason
+(Ἰάσων) — a Diaspora Jew with a Greek name that is the Hellenized form of
+Yeshua/Joshua. Romans 16:21: "Jason, my kinsman" — Paul's greeting to a
+Jewish companion named Jason.
+
+The name floats freely between Hebrew Yeshua and Greek Jason in the 2nd
+century BCE through 1st century CE Jewish world. They are the same name
+in different linguistic registers.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION II: THE FIGURE — JASON AS PROTO-JESUS
+────────────────────────────────────────────────────────────────────────────────
+
+Given the name identity, the structural parallels between the Argonautic
+hero Jason and the Gospel figure Jesus deserve systematic comparison.
+
+PRIMARY SOURCE: Apollonius Rhodius, Argonautica (~3rd c. BCE; TLG 0001.001)
+This is the fullest surviving version of the Jason myth. It would have been
+widely read in the Hellenized Jewish world of the 1st century BCE-CE, as
+part of the standard Greek literary education (paideia).
+
+Parallel 1: THE GATHERING OF DISCIPLES
+  · Jason assembles the Argonauts — a band of exceptional men who follow him
+    on a divine mission to recover a sacred object (the Golden Fleece).
+  · Jesus assembles twelve disciples — a band of ordinary men who follow him
+    on a divine mission (the Kingdom of God).
+  · Both groups are specifically called and specifically chosen (not random).
+  · Both narratives describe the individual callings (Arg. 1.23-227 lists
+    each Argonaut; the Gospels record each disciple's calling).
+
+Parallel 2: THE DIVINE MISSION AND SACRED OBJECT
+  · The Golden Fleece (χρυσόμαλλον δέρας): a divine object in a distant land,
+    guarded by supernatural forces, whose recovery will vindicate Jason's claim
+    to his heritage (his father's kingdom).
+  · The Kingdom of God (βασιλεία τοῦ θεοῦ): a divine reality to be recovered/
+    inaugurated, guarded by religious and political opposition, whose arrival
+    will vindicate the children of God's claim to their inheritance.
+  · Both are described as something lost that must be recovered through a
+    dangerous journey.
+
+Parallel 3: THE PASSAGE THROUGH DANGEROUS WATERS
+  · The Argonauts pass through the Symplegades (Clashing Rocks) — the
+    threshold at the Bosphorus between the known world and the unknown.
+    Arg. 2.536-610: the rocks crash together and nearly destroy the Argo;
+    only a divine dove guides them through.
+  · Jesus passes through the Jordan River at baptism — the threshold between
+    the old life and the new mission (Mark 1:9-11). The Jordan was the
+    historical entry-point to the Promised Land (Joshua 3-4 LXX).
+  · Both threshold passages involve divine guidance (dove: Arg. 2.536;
+    dove at Jesus's baptism: Mark 1:10) and a transformation of the hero.
+
+Note: the dove at the Symplegades and the dove at the Jordan baptism.
+In both narratives, a divine bird guides the hero through a death-threshold.
+Argonautica 2.536: the dove flies ahead; the rocks crash but only clip
+the tail-feathers. Mark 1:10: the Spirit descends "like a dove" (ὡς περιστεράν)
+immediately after Jesus rises from the death-water.
+
+Parallel 4: THE HERO'S PASSIVITY AND THE WOMAN'S AGENCY
+  · The standard critique of Jason as an Argonautic hero: he succeeds largely
+    because Medea does the actual work. She provides the pharmaka, navigates
+    the ritual, breaks the dragon's sleep, betrays her father.
+  · Jesus in the Gospels is often passive in the anointing narratives:
+    he is anointed by women (Mary of Bethany; the sinful woman in Luke 7;
+    the spice-bearers at the tomb). The women provide the pharmacological
+    agency; the male hero receives it.
+  · In both narratives, the woman's knowledge and action — specifically
+    involving anointing substances — is what makes the hero's mission possible.
+
+Parallel 5: THE BETRAYAL AND ABANDONMENT
+  · Jason abandons Medea for Glauce (Euripides Medea): he trades the woman
+    who gave him everything for a politically advantageous marriage. Medea's
+    revenge destroys everything.
+  · Jesus's male disciples abandon him at the crucifixion (Mark 14:50:
+    "they all left him and fled" — καὶ ἀφέντες αὐτὸν ἔφυγον πάντες).
+    The women remain (Mark 15:40-41). Mary Magdalene is there at the cross
+    and at the tomb.
+  · In both narratives, the male hero is surrounded by male followers who
+    ultimately fail or betray; the female figure (Medea / Mary Magdalene)
+    remains and is the true witness.
+
+Parallel 6: THE RESURRECTION FIGURE
+  · Medea performs resurrection in the myth: she rejuvenates the aged Aeson
+    (Jason's father) by draining his blood and replacing it with a magical
+    herb-potion; she deceives Pelias's daughters into killing their father
+    with a false promise of rejuvenation (Ovid Met. 7.159-293; Diodorus 4.52).
+    She is the resurrection-figure of the myth: she knows how to bring back
+    the dead and how to send to death.
+  · Mary Magdalene is the resurrection-witness of the Gospels: she is the
+    first to see the risen Jesus (John 20:14-18). She comes to the tomb with
+    spices (ἀρώματα — the same word used for pharmacological aromatic
+    substances) for anointing the body (Mark 16:1).
+  · Both women carry pharmacological knowledge toward a dead or dying male
+    figure and are the agents of the death/resurrection transition.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION III: MEDEA AS PROTO-MAGDALENE
+────────────────────────────────────────────────────────────────────────────────
+
+The structural parallel between Medea and Mary Magdalene is not incidental.
+It maps across multiple independent axes:
+
+AXIS 1: FOREIGN WOMAN / MARGINAL GEOGRAPHY
+  · Medea is from Colchis (eastern Black Sea coast) — a barbarian from the
+    margins of the Greek world. She is "other" in the Hellenistic imagination.
+  · Mary Magdalene is from Magdala (Migdal) on the Sea of Galilee — a woman
+    from the Galilean margins. "Galilee of the Gentiles" (Matt 4:15).
+    Her name (Magdalene) marks her geographic identity, just as "Medea" marks
+    the Colchian/Median connection.
+
+AXIS 2: PHARMACOLOGICAL KNOWLEDGE
+  · Medea: her defining characteristic is her mastery of pharmaka, taught by
+    Hecate. She anoints Jason (Arg. 3.844-869). She heals and kills with
+    substances.
+  · Mary Magdalene: she comes to the tomb with anointing spices (Mark 16:1:
+    ἀγοράσωσιν ἀρώματα ἵνα ἐλθοῦσαι ἀλείψωσιν αὐτόν — "to buy spices
+    so that they might come and anoint him"). She is an anointing-woman.
+  · In the tradition of Luke 7:37-50, a woman (sometimes identified as
+    Mary Magdalene) anoints Jesus with ointment from an alabaster flask
+    and wipes his feet with her hair. The ointment (μύρον) is pharmacologically
+    active (myrrh-based or spikenard). Her act is intimate, physical, and
+    pharmacological.
+
+AXIS 3: DEVOTION TO THE HERO / REJECTION BY THE TRADITION
+  · Medea sacrifices everything for Jason — her homeland, her family, her
+    father's trust. Jason later abandons her. The tradition (through Euripides)
+    transforms her from a devoted helper into a terrifying vengeful figure —
+    making her the villain so that Jason's failure is obscured.
+  · Mary Magdalene is the most prominent female follower of Jesus in the
+    Gospels. In John's Gospel she is the first witness to the resurrection
+    — the most privileged position. But in the subsequent tradition she is
+    reduced, conflated with the sinful woman of Luke 7, and marginalized.
+    Pope Gregory I (591 CE) officially declared her a reformed prostitute —
+    a move with no Gospel basis, which effectively demoted her from
+    resurrection-witness to penitent sinner.
+  · In both cases: the woman who holds the pharmacological and spiritual
+    key to the hero's mission is subsequently demoted and demonized by the
+    male tradition that succeeds the hero.
+
+AXIS 4: THE RESURRECTION KNOWLEDGE
+  · Medea knows how to resurrect the dead (Aeson's rejuvenation; the trick
+    with Pelias). She is the keeper of resurrection pharmacology.
+  · Mary Magdalene is the first to see and testify to the resurrection.
+    In John 20:11-18, she mistakes Jesus for "the gardener" (κηπουρόν) —
+    possible: a figure tending plants, roots, herbs; possibly an echo of
+    the rhizotomos / root-cutter / pharmacological practitioner role.
+  · Both women: what looks like death is reversed in their presence.
+    The resurrection knowledge belongs to the woman.
+
+AXIS 5: THE HECATE / MAGDALENE PARALLEL
+  · Medea is Hecate's priestess. Hecate is the goddess of crossroads, the
+    underworld, pharmaka, and liminal spaces between life and death.
+  · Mary Magdalene was reportedly delivered of "seven demons" (Luke 8:2) —
+    she lived at the boundary between the possessed and the freed, between
+    death-in-life and life. She is a liminal figure, like Hecate's devotees.
+  · The tower (migdal) of Magdala could evoke a watchtower at a liminal
+    point — a crossing-place. Compare Hecate at the crossroads.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION IV: THE LITERARY RESURRECTION HYPOTHESIS
+────────────────────────────────────────────────────────────────────────────────
+
+The proposal is not that the Gospels plagiarized the Argonautica. The proposal
+is more interesting: that both texts draw on a common deep mythological grammar
+of the Mediterranean world, and that the Greek literary tradition offered
+a ready-made template — a hero named "the Healer/Savior" guided by a
+pharmacological woman through death and back — which was available to the
+authors of the Gospels and to the cultural imagination of their audience.
+
+This is what we can call a LITERARY RESURRECTION: not that Jason literally
+becomes Jesus, but that the mythological figure of the hero-named-healer,
+guided by the woman-with-pharmaka through the death-threshold, was resurrected
+in the Gospel tradition — reborn in a new theological register, carrying the
+same structural skeleton.
+
+The tradition would have worked as follows:
+
+  1. The Jason myth was widely known in the educated Hellenized Jewish world.
+     The Argonautica was part of the standard literary curriculum (paideia).
+     Educated Jews in Alexandria, Antioch, and Hellenized Palestine read it.
+
+  2. The name Jason = Yeshua / Jesus was a recognized equivalence (2 Macc 4:7).
+     A Hellenized Jew reading the Argonautica and hearing about a hero named
+     Ἰάσων would experience the same name-recognition as a Christian hearing
+     Ἰησοῦς — the healer/savior.
+
+  3. The Argonautic structure — gathering of followers, divine mission,
+     dangerous journey, woman with pharmaka, death-threshold, recovery of
+     sacred object — was a pre-existing narrative template.
+
+  4. The Gospel authors (writing in Greek for Greek-speaking audiences, 40-100 CE)
+     worked within this shared cultural imagination. Whether deliberately or
+     by absorption, the Jason/Medea template shapes the Jesus/Magdalene narrative.
+
+  5. The result is a LITERARY RESURRECTION: the ancient mythological hero is
+     reborn in the Gospel figure, carrying the structural inheritance of the
+     Argonautic tradition into the new theological context.
+
+The most elegant version of this argument:
+  Jason is Jesus's literary ancestor.
+  Medea is Mary Magdalene's literary ancestor.
+  The Argonautica is the proto-Gospel that the Greek world had already
+  written, four centuries before the historical Jesus.
+  When Jesus lived and died and was proclaimed risen, his story was told
+  in the only narrative grammar available: the grammar of the hero-named-healer,
+  guided by the woman-with-pharmaka, through the waters of death and back.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION V: SPECIFIC TEXTUAL PARALLELS FOR FUTURE RESEARCH
+────────────────────────────────────────────────────────────────────────────────
+
+The following specific textual parallels deserve detailed future analysis:
+
+1. THE DOVE AT THE THRESHOLD
+   · Arg. 2.536: dove guides the Argo through the Symplegades (death-rocks)
+   · Mark 1:10: dove descends at Jesus's baptism (death-water threshold)
+   · Both: a divine bird guides the hero through a death-threshold at the
+     start of the mission.
+   · Research direction: examine περιστερά (dove) in LXX and Hellenistic
+     religious contexts; what is the dove's role in mystery cult imagery?
+
+2. THE GOLDEN FLEECE AND THE KINGDOM OF GOD
+   · The Fleece is a divine object that belongs to the hero's heritage but
+     is held in a foreign land by hostile forces.
+   · The Kingdom is a divine reality that belongs to the children of God
+     but is occluded by hostile political-religious forces.
+   · Both are recovered/inaugurated at the end of the hero's journey.
+   · The Fleece is golden (χρυσόν) — gold as divine light; compare the
+     transfiguration (Matt 17:2: "his face shone like the sun").
+
+3. THE WOMAN'S ANOINTING AND THE HERO'S INVULNERABILITY
+   · Medea anoints Jason with the Promethean drug (Arg. 3.844-869): makes him
+     invulnerable to fire and iron for one day.
+   · Mary of Bethany anoints Jesus with spikenard (Mark 14:3-9): Jesus
+     interprets this as his burial preparation — a pharmakological preparation
+     for death that paradoxically enables his resurrection.
+   · Both: the woman's anointing (χρίω) makes the hero capable of passing
+     through death.
+
+4. THE GARDEN AND THE DRAGON
+   · The Golden Fleece is guarded by a never-sleeping dragon in a sacred grove
+     (Arg. 4.127-166). Medea drugs the dragon to sleep.
+   · Jesus's ordeal begins in the Garden of Gethsemane (κῆπος — garden),
+     and immediately after Gethsemane comes the "serpent's" move: Judas's
+     betrayal (the garden as threshold of the death-ordeal).
+   · Note: the Garden of Eden in Genesis has a serpent guarding the sacred tree.
+     The Fleece-grove has a dragon-serpent guarding the sacred object.
+     Gethsemane is a garden that precedes death. The garden-serpent-sacred object
+     pattern appears at all three sites.
+
+5. THE BETRAYAL WITHIN THE INNER CIRCLE
+   · Jason's mission is nearly undone not by external enemies but by internal
+     dynamics — Medea's betrayal of her own father and brother; the Argonauts'
+     disputes among themselves.
+   · Jesus's mission is undone by Judas — one of the twelve, from inside.
+   · Both narratives hinge on betrayal from within as the mechanism of the
+     hero's greatest test.
+
+6. THE TRIAL BEFORE A KING
+   · Jason must perform impossible tasks set by King Aeetes (Arg. 3.400-421)
+     before receiving the Fleece: yoke fire-breathing bulls, sow dragon's teeth,
+     defeat the armed men who spring up.
+   · Jesus undergoes trial before Pilate (king/governor) who sets him an
+     impossible political test; the crowd demands Barabbas; Pilate's verdict
+     is the mechanism of the death.
+   · Both: the hero faces a king whose judgment sends him toward death.
+
+7. MEDEA'S EXILE / MARY MAGDALENE'S MARGINALIZATION
+   · After Jason abandons her and she kills her children (Euripides' version),
+     Medea flies away in her dragon-drawn chariot — exiled, unreachable,
+     terrifying. She escapes to Athens (or Colchis in alternate versions).
+     She disappears from the narrative.
+   · After the resurrection appearance in John 20:11-18, Mary Magdalene
+     effectively disappears from the canonical narrative. She delivers the
+     message ("I have seen the Lord") and is not heard from again in the
+     canonical Gospels. In later tradition she is exiled — sent to Provence
+     (the medieval legend), sent to Ephesus, sent to the margins.
+   · Both women: after their central role in the death/resurrection moment,
+     they are exiled from the main narrative. The tradition cannot hold them.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SECTION VI: RESEARCH DIRECTIONS — WHAT TO BUILD HERE
+────────────────────────────────────────────────────────────────────────────────
+
+This directory is a placeholder for a research expansion that would include:
+
+1. PHILOLOGICAL ANALYSIS: Parallel passages from Apollonius Rhodius's
+   Argonautica and the Synoptic Gospels/John, with Greek texts aligned in
+   two columns, showing verbal and structural parallels.
+   → Output: argonautica_gospel_parallels.csv
+
+2. NAME STUDY: Full TLG search for Ἰάσων in Jewish Greek texts (LXX, 2 Macc,
+   Josephus, NT) documenting every instance where Jason = Joshua/Jesus.
+   → Output: jason_yeshua_name_study.txt
+
+3. MEDEA-MAGDALENE STUDY: Systematic comparison of Medea in Euripides,
+   Apollonius, and Ovid with Mary Magdalene in the four Gospels, the Gospel
+   of Mary (Nag Hammadi), and the Gospel of Philip.
+   → Output: medea_magdalene_comparison.txt
+
+4. THE DOVE MOTIF: Cross-reference περιστερά (dove) in TLG from Arg. 2.536
+   through LXX through Gospel baptism narratives; trace the dove as threshold-
+   guide figure.
+   → Output: dove_threshold_motif.txt
+
+5. GARDEN, SERPENT, SACRED OBJECT: The garden-dragon-sacred object pattern
+   from Genesis through Argonautica through Gethsemane as a continuous
+   mythological grammar.
+   → Output: garden_dragon_pattern.txt
+
+6. THE JASON OF 2 MACCABEES: He Hellenized Jerusalem. He replaced Jewish
+   names with Greek. He introduced Greek gymnasia and paideia. He is the
+   historical figure who embodies the Jason/Jesus name-equivalence in a
+   politically charged context — a priestly "healer/savior" who turns out to
+   be a betrayer of tradition. This is deeply relevant to the hypothesis
+   that Jesus was himself a Jewish Hellenizer who "betrayed" his tradition
+   by incorporating Greek mystery religion.
+   → The Jason of 2 Maccabees = the shadow of the Jason/Jesus who comes later.
+
+────────────────────────────────────────────────────────────────────────────────
+
+KEY SOURCES TO CONSULT WHEN BUILDING THIS OUT
+────────────────────────────────────────────────────────────────────────────────
+
+Primary:
+  · Apollonius Rhodius, Argonautica (TLG 0001.001) — esp. Books 3-4
+  · Euripides, Medea (TLG 0006.003) and Apollonius on Medea
+  · 2 Maccabees 4:7-26 (LXX, TLG 0527.001) — Jason as Joshua/Jesus
+  · Gospel of John 20:11-18 (Mary Magdalene resurrection scene)
+  · Gospel of Mark 14:3-9 (anointing at Bethany)
+  · Gospel of Mary (Nag Hammadi / Berlin Codex, BG 8502.1)
+  · Gospel of Philip (Nag Hammadi II.3) — Mary Magdalene as companion
+  · Acts 17:5-9; Romans 16:21 (Jason as Diaspora Jewish companion of Paul)
+
+Secondary:
+  · Hunter, R.L. "The Argonautica of Apollonius: Literary Studies" (1993)
+  · Clauss, J.J. and Johnston, S.I. (eds.) "Medea: Essays on Medea in Myth,
+    Literature, Philosophy, and Art" (1997)
+  · Pagels, E. "The Gnostic Gospels" (1979) — on Mary Magdalene in Gnostic texts
+  · King, K.L. "The Gospel of Mary of Magdala" (2003)
+  · Boyarin, D. "Dying for God: Martyrdom and the Making of Christianity
+    and Judaism" (1999)
+  · Wicker, K.O. "Mulierem Fortem in the Pauline Epistles" (Medea parallels)
+  · Fontenrose, J. "Python: A Study of Delphic Myth" (1959) — dragon/serpent
+    guardian patterns across Greek and Near Eastern myth
+
+================================================================================
+END DOCUMENT | jason-jesus/jason_jesus_sidequest.txt
+Project: christ-tlg | Generated: 2026-03-07
+================================================================================

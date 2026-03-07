@@ -1,0 +1,585 @@
+{
+  "project": "Χριστός Philological Research Database",
+  "description": "Structured source registry and occurrence database for the diachronic semantic history of χριστός / Christos across Classical, Hellenistic, Roman, and Early Church Greek.",
+  "created": "2026-03-06",
+  "maintainer": "Christ-TLG Research Project",
+  "schema_version": "1.0",
+
+  "lexica": [
+    {
+      "id": "LSJ",
+      "full_title": "Liddell, Scott, Jones — A Greek-English Lexicon",
+      "edition": "9th ed. 1940; Supplement 1996",
+      "headword": "χριστός",
+      "online_url": "https://lsj.gr/wiki/%CF%87%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82",
+      "perseus_url": "http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry%3Dxristo/s",
+      "entry_summary": {
+        "I": "Of things: 'to be rubbed on, used as ointment or salve' — opp. πιστός (Aesch. Pr. 480; Eur. Hipp. 516)",
+        "IIa": "Of persons: anointed priests — LXX Lev 4:5, 4:16, 6:22",
+        "IIb": "Kings of Israel: χριστὸς κυρίου — LXX 1 Sam 24:7; Ps 17:51",
+        "IIc": "Plural: χριστοί — LXX Hab 3:13",
+        "III": "NT: ὁ χ. = the Messiah (Heb. מָשִׁיחַ) — as title Matt 2:4; as proper name Matt 1:1"
+      },
+      "notes": "LSJ gives minimal treatment to NT and patristic usage; Thayer's NT lexicon supplements for those stages."
+    },
+    {
+      "id": "Thayer",
+      "full_title": "Thayer, J.H. — A Greek-English Lexicon of the New Testament",
+      "edition": "1889",
+      "headword": "Χριστός",
+      "entry_summary": {
+        "1": "ὁ Χριστός as Jewish messianic title (the expected deliverer)",
+        "2": "Applied to Jesus as fulfillment of OT messianic role",
+        "3": "Title becoming proper name: Ἰησοῦς Χριστός",
+        "4": "ψευδόχριστοι (false Christs) — confirms titular technical status"
+      }
+    },
+    {
+      "id": "BDB",
+      "full_title": "Brown, Driver, Briggs — A Hebrew and English Lexicon of the Old Testament",
+      "edition": "1906",
+      "headword": "מָשַׁח / מָשִׁיחַ",
+      "entry_summary": "māšaḥ = to anoint/smear (verb); māšîaḥ = anointed one (qal passive ptcp. substantivized). Primary referents: priests (Lev), kings (Sam/Ps), Cyrus (Isa 45:1), future leader (Dan 9:25–26).",
+      "notes": "Hebrew root מָשַׁח is structurally parallel to Greek χρίω; both yield verbal adjectives meaning 'anointed one.'"
+    }
+  ],
+
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Classical Greek — Pharmaceutical Adjective",
+      "date_range": "c. 460–1st century BCE (and continuing in medical prose)",
+      "period": "Classical",
+      "semantic_function": "Literal adjective: 'smearable, applicable (as ointment/salve)'",
+      "paradigmatic_opposition": "χριστά ≠ πιστά / ποτά (topical vs. drinkable medicines)",
+      "morphological_status": "Verbal adjective (from χρίω); modifies THINGS not persons",
+      "religious_content": false,
+      "key_texts": [
+        {
+          "author": "Aeschylus",
+          "work": "Prometheus Vinctus",
+          "tlg_canon": "0085.003",
+          "citation": "Line 480",
+          "date_bce": 460,
+          "authorship_note": "DISPUTED: M.L. West (JHS 99, 1979) and M. Griffith (1983) argue post-Aeschylean authorship; attribution to Aeschylus is traditional but contested.",
+          "greek_form": "χριστά",
+          "grammatical_case": "Neuter plural nominative (adjective)",
+          "greek_text": "φάρμακα … χριστά τε καὶ πιστά",
+          "translation": "medicines … smearable and drinkable",
+          "semantic_category": "pharmaceutical",
+          "source": "LSJ s.v. χριστός I; Perseus:text:1999.01.0010"
+        },
+        {
+          "author": "Euripides",
+          "work": "Hippolytus",
+          "tlg_canon": "0006.005",
+          "citation": "Line 516",
+          "date_bce": 428,
+          "authorship_note": "Securely Euripidean; 428 BCE performance date recorded by ancient vita.",
+          "greek_form": "χριστόν",
+          "grammatical_case": "Neuter singular (predicative adjective / substantivized)",
+          "greek_text": "πότερα δὲ χριστὸν ἢ ποτὸν τὸ φάρμακον;",
+          "translation": "Is the drug a smearable [salve] or a drinkable [potion]?",
+          "semantic_category": "pharmaceutical",
+          "source": "LSJ s.v. χριστός I; Perseus:text:1999.01.0105"
+        },
+        {
+          "author": "Hippocratic Corpus",
+          "work": "De ulceribus and passim",
+          "tlg_canon": "0627.007",
+          "citation": "Ulc. 18 and throughout surgical/pharmacological treatises",
+          "date_bce_approx": 400,
+          "morphological_note": "CAUTION: De ulceribus 18 (Perseus:1999.01.0248) uses χρηστέον (gerundive from χράομαι 'to use', not from χρίω 'to anoint'). These are distinct roots. Genuine χριστά forms (from χρίω) do appear in the Hippocratic corpus but in passages not retrieved from open-access text. Full TLG query needed.",
+          "greek_form": "χριστά φάρμακα / χριστέον (from χρίω)",
+          "grammatical_case": "Neuter plural / verbal adjective",
+          "semantic_category": "pharmaceutical",
+          "source": "LSJ s.v. χρίω (related entries); medical text tradition"
+        }
+      ]
+    },
+    {
+      "stage": "2a",
+      "name": "LXX Hellenistic — Priestly Anointing Title",
+      "date_range": "LXX Pentateuch translation c. 250–200 BCE",
+      "period": "Hellenistic",
+      "semantic_function": "Institutional title: 'the anointed priest' — renders H. הַכֹּהֵן הַמָּשִׁיחַ",
+      "translation_mechanism": "Structural calque: Greek χριστός chosen as morphological equivalent of Hebrew מָשִׁיחַ (both = verbal adj. of 'anoint')",
+      "morphological_status": "Attributive adjective in frozen title construction: ὁ ἱερεὺς ὁ χριστός",
+      "religious_content": true,
+      "religious_type": "Priestly / ritual",
+      "key_texts": [
+        {
+          "book": "Leviticus",
+          "tlg_canon": "0527",
+          "citation": "4:5",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστός",
+          "grammatical_case": "Masc. sg. nom. (attributive adj.)",
+          "greek_text": "ὁ ἱερεὺς ὁ χριστὸς ὁ τετελειωμένος τὰς χεῖρας",
+          "translation": "the anointed priest who has been ordained",
+          "hebrew_source": "הַכֹּהֵן הַמָּשִׁיחַ",
+          "semantic_category": "priestly_ritual_title"
+        },
+        {
+          "book": "Leviticus",
+          "tlg_canon": "0527",
+          "citation": "4:16",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστός",
+          "grammatical_case": "Masc. sg. nom. (attributive adj.)",
+          "greek_text": "ὁ ἱερεὺς ὁ χριστός",
+          "translation": "the anointed priest",
+          "hebrew_source": "הַכֹּהֵן הַמָּשִׁיחַ",
+          "semantic_category": "priestly_ritual_title"
+        },
+        {
+          "book": "Leviticus",
+          "tlg_canon": "0527",
+          "citation": "6:22",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστός",
+          "grammatical_case": "Masc. sg. nom. (attributive adj.)",
+          "greek_text": "ὁ ἱερεὺς ὁ χριστὸς ἀντ᾿ αὐτοῦ",
+          "translation": "the anointed priest who succeeds him",
+          "hebrew_source": "הַכֹּהֵן הַמָּשִׁיחַ",
+          "semantic_category": "priestly_ritual_title"
+        },
+        {
+          "book": "Leviticus",
+          "tlg_canon": "0527",
+          "citation": "21:10",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστόν",
+          "grammatical_case": "Neuter sg. acc. (adj. modifying ἔλαιον)",
+          "greek_text": "τὸ ἔλαιον τὸ χριστόν",
+          "translation": "the anointing oil",
+          "note": "Bridges Stage 1 and Stage 2a: χριστός still modifies an object (oil) but in a religious ritual context",
+          "semantic_category": "ritual_oil_application"
+        },
+        {
+          "book": "Leviticus",
+          "tlg_canon": "0527",
+          "citation": "4:3",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "κεχρισμένος",
+          "grammatical_case": "Perfect passive participle (masc. sg. nom.)",
+          "greek_text": "ὁ ἀρχιερεὺς ὁ κεχρισμένος",
+          "translation": "the anointed high priest",
+          "note": "Perfect passive participle κεχρισμένος (NOT the adjective χριστός) — both render the same Hebrew הַמָּשִׁיחַ; LXX translators alternate between the two forms without semantic distinction.",
+          "semantic_category": "priestly_ritual_title"
+        }
+      ]
+    },
+    {
+      "stage": "2b",
+      "name": "LXX Hellenistic — Royal Davidic Title",
+      "date_range": "Historical books and Psalms, translation c. 200–150 BCE",
+      "period": "Hellenistic",
+      "semantic_function": "Royal title: 'the LORD's anointed' — renders H. מְשִׁיחַ יְהוָה / מְשִׁיחִי",
+      "morphological_status": "Near-formulaic construction: χριστὸς κυρίου (nom.) / χριστοῦ αὐτοῦ (gen.) / τῷ χριστῷ (dat.)",
+      "religious_content": true,
+      "religious_type": "Royal / Davidic covenant",
+      "key_texts": [
+        {
+          "book": "1 Samuel",
+          "lxx_name": "A' Basileion",
+          "citation": "2:10",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστοῦ",
+          "grammatical_case": "Gen. sg. masc. (possessive: 'of his anointed')",
+          "greek_text": "ὑψώσει κέρας χριστοῦ αὐτοῦ",
+          "translation": "will exalt the horn of his anointed",
+          "note": "Hannah's prayer — reference is PROSPECTIVE (no king yet); one of the earliest LXX passages with any forward-looking force for χριστός.",
+          "semantic_category": "royal_prospective"
+        },
+        {
+          "book": "1 Samuel",
+          "lxx_name": "A' Basileion",
+          "citation": "24:7",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστῷ / χριστός",
+          "grammatical_case": "Dat. sg. (1st use); Nom. sg. predicate (2nd use)",
+          "greek_text": "τῷ χριστῷ κυρίου … χριστὸς κυρίου ἐστὶν οὗτος",
+          "translation": "to the LORD's anointed … because this is the LORD's anointed",
+          "note": "PARADIGMATIC royal use: Saul as current χριστὸς κυρίου; the formula χριστὸς κυρίου ἐστίν is the clearest predicative title construction.",
+          "semantic_category": "royal_current"
+        },
+        {
+          "book": "Psalm",
+          "citation": "2:2 (LXX) = MT 2:2",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστοῦ",
+          "grammatical_case": "Gen. sg. masc.",
+          "greek_text": "κατὰ τοῦ κυρίου καὶ κατὰ τοῦ χριστοῦ αὐτοῦ",
+          "translation": "against the LORD and against his anointed",
+          "nt_application": "Acts 4:25–26 applies this verse to Jesus and Herod/Pilate",
+          "note": "Most-cited LXX messianic verse in NT. Its 'royal' reference becomes proto-messianic through re-reading.",
+          "semantic_category": "royal_proto_messianic"
+        },
+        {
+          "book": "Isaiah",
+          "citation": "45:1",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστῷ",
+          "grammatical_case": "Dat. sg. masc. (indirect object, in apposition to Κύρῳ)",
+          "greek_text": "τῷ χριστῷ μου Κύρῳ",
+          "translation": "to my anointed — Cyrus",
+          "note": "UNIQUE: only LXX application of χριστός to a non-Israelite. Decouples the title from Davidic lineage. Proves χριστός = functionally 'divinely authorized agent' not 'ethnic insider.'",
+          "semantic_category": "non_israelite_royal"
+        },
+        {
+          "book": "Habakkuk",
+          "citation": "3:13",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστούς",
+          "grammatical_case": "Masc. acc. PLURAL — only plural instance in LSJ LXX citation",
+          "greek_text": "τοὺς χριστούς σου",
+          "translation": "your anointed ones",
+          "note": "Collective/plural royal use; NT NEVER uses plural χριστοί in this way — the NT singularizes the title exclusively onto Jesus.",
+          "semantic_category": "royal_collective_plural"
+        },
+        {
+          "book": "Lamentations",
+          "citation": "4:20",
+          "edition": "Rahlfs-Hanhart LXX",
+          "greek_form": "χριστός",
+          "grammatical_case": "Nom. sg. masc. (predicate in apposition)",
+          "greek_text": "χριστὸς κυρίου συνελήμφθη ἐν ταῖς διαφθοραῖς αὐτῶν",
+          "translation": "the LORD's anointed was caught in their traps",
+          "historical_referent": "King Zedekiah, captured 586 BCE",
+          "semantic_category": "royal_elegiac"
+        }
+      ]
+    },
+    {
+      "stage": "2c",
+      "name": "LXX Hellenistic — Proto-Messianic (Future Reference)",
+      "date_range": "Daniel translation c. 100 BCE; Theodotion revision c. 2nd century CE",
+      "period": "Hellenistic",
+      "semantic_function": "Future-pointing anointed figure in a numerical schema",
+      "key_texts": [
+        {
+          "book": "Daniel",
+          "version": "Theodotion",
+          "citation": "9:25",
+          "edition": "Rahlfs-Hanhart LXX (Theodotion text)",
+          "greek_form": "χριστοῦ",
+          "grammatical_case": "Gen. sg. masc. — ANARTHROUS (no article)",
+          "greek_text": "ἕως χριστοῦ ἡγουμένου ἑβδομάδες ἑπτά",
+          "translation": "until an anointed leader, seven weeks",
+          "note": "Anarthrous — signals proto-name status. Future referent within '70 weeks' schema. Foundational for Second Temple messianic chronology.",
+          "semantic_category": "proto_messianic_eschatological"
+        },
+        {
+          "book": "Daniel",
+          "version": "LXX vs. Theodotion",
+          "citation": "9:26",
+          "textual_variants": {
+            "LXX": "ἐξολοθρευθήσεται χρῖσμα (= 'an anointing will be cut off')",
+            "Theodotion": "ἐξολοθρευθήσεται χριστός (= 'an anointed one will be cut off')"
+          },
+          "note": "DISPUTED TEXT: LXX and Theodotion diverge on whether the referent is the abstract noun χρῖσμα or the title χριστός. Theodotion's version becomes standard in Christian citation. The variant itself shows LXX translators navigating the title/abstract-noun boundary.",
+          "semantic_category": "proto_messianic_disputed_text"
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "Second Temple Jewish — Explicitly Eschatological Messianic Title",
+      "date_range": "Psalms of Solomon c. 50 BCE",
+      "period": "Hellenistic/Roman transition",
+      "semantic_function": "Title for a FUTURE Davidic deliverer — not a current reigning king",
+      "note": "NOT IN PROJECT FILES — critical missing evidence",
+      "key_texts": [
+        {
+          "work": "Psalms of Solomon",
+          "citation": "17:32",
+          "date_bce": 50,
+          "edition": "Ed. Rahlfs; R.B. Wright in OTP vol.2 (Charlesworth, 1985)",
+          "online_greek": "https://www.motorera.com/greek/apocrypha/ps17.html",
+          "greek_form": "χριστός",
+          "grammatical_case": "Nom. sg. masc. — ANARTHROUS predicate",
+          "greek_text": "βασιλεὺς αὐτῶν χριστὸς κυρίου",
+          "translation": "their king, the Lord's anointed",
+          "note": "CRUCIAL: the king is FUTURE (no Davidic king reigns; Hasmoneans considered illegitimate). χριστὸς κυρίου without article — title is shedding the article = moving toward name-status. This is genuine eschatological messianism pre-dating the NT.",
+          "semantic_category": "eschatological_future_messianic",
+          "significance": "Strongest pre-NT evidence for χριστός as a genuinely future eschatological title"
+        },
+        {
+          "work": "Psalms of Solomon",
+          "citation": "18:7",
+          "date_bce": 50,
+          "edition": "Ed. Rahlfs",
+          "greek_form": "χριστοῦ",
+          "grammatical_case": "Gen. sg. masc.",
+          "greek_text": "ὑπὸ ῥάβδον παιδείας χριστοῦ κυρίου",
+          "translation": "under the rod of discipline of the Lord's anointed",
+          "semantic_category": "eschatological_future_messianic"
+        }
+      ]
+    },
+    {
+      "stage": "4a",
+      "name": "New Testament — Paul (earliest layer)",
+      "date_range": "c. 49–62 CE",
+      "period": "Roman",
+      "semantic_function": "Proper name / title in transition; ἐν Χριστῷ formula; creedal uses",
+      "key_texts": [
+        {
+          "work": "1 Thessalonians",
+          "tlg_canon": "0031.012",
+          "citation": "1:1",
+          "date_ce": 50,
+          "greek_form": "Χριστῷ",
+          "grammatical_case": "Dat. sg. (ἐν Χριστῷ)",
+          "greek_text": "ἐν θεῷ πατρὶ καὶ κυρίῳ Ἰησοῦ Χριστῷ",
+          "translation": "in God the Father and the Lord Jesus Christ",
+          "note": "Earliest datable Christian document. Compound name Ἰησοῦς Χριστός fully established.",
+          "semantic_category": "proper_name_formula",
+          "source": "NA28"
+        },
+        {
+          "work": "1 Corinthians",
+          "tlg_canon": "0031.006",
+          "citation": "15:3",
+          "date_ce": 54,
+          "greek_form": "Χριστός",
+          "grammatical_case": "Nom. sg. — ANARTHROUS subject of main verb",
+          "greek_text": "Χριστὸς ἀπέθανεν ὑπὲρ τῶν ἁμαρτιῶν ἡμῶν κατὰ τὰς γραφάς",
+          "translation": "Christ died for our sins according to the scriptures",
+          "note": "Received pre-Pauline tradition (παρέδωκα … ὃ παρέλαβον). Anarthrous Χριστός as subject = proper name. INFERENCE that underlying tradition dates c.35–40 CE (Dunn, Theology of Paul, pp.235–238).",
+          "semantic_category": "proper_name_creedal",
+          "source": "NA28"
+        },
+        {
+          "work": "1 Corinthians",
+          "tlg_canon": "0031.006",
+          "citation": "1:23",
+          "date_ce": 54,
+          "greek_form": "Χριστόν",
+          "grammatical_case": "Acc. sg. (object)",
+          "greek_text": "Χριστὸν ἐσταυρωμένον, Ἰουδαίοις μὲν σκάνδαλον",
+          "translation": "Christ crucified — a stumbling block to Jews",
+          "note": "Paul explicitly acknowledges that 'Christ crucified' is a RESEMANTICIZATION of the messianic title: crucifixion ≠ the expected messianic victory (σκάνδαλον = scandal).",
+          "semantic_category": "proper_name_resemanticized",
+          "source": "NA28"
+        },
+        {
+          "work": "Galatians",
+          "tlg_canon": "0031.009",
+          "citation": "3:28",
+          "date_ce": 55,
+          "greek_form": "Χριστῷ",
+          "grammatical_case": "Dat. sg. (locative: ἐν Χριστῷ)",
+          "greek_text": "εἷς ἐστε ἐν Χριστῷ Ἰησοῦ",
+          "translation": "you are all one in Christ Jesus",
+          "note": "ἐν Χριστῷ formula (~164 occurrences in Pauline corpus). Locative dative with a person's name = the name is fully onomastic.",
+          "semantic_category": "proper_name_locative",
+          "source": "NA28"
+        }
+      ]
+    },
+    {
+      "stage": "4b",
+      "name": "New Testament — Synoptic Gospels",
+      "date_range": "c. 70–90 CE",
+      "period": "Roman",
+      "semantic_function": "Both title (ὁ Χριστός) and proper name (Ἰησοῦς Χριστός)",
+      "key_texts": [
+        {
+          "work": "Matthew",
+          "tlg_canon": "0031.001",
+          "citation": "1:1",
+          "greek_text": "Βίβλος γενέσεως Ἰησοῦ Χριστοῦ, υἱοῦ Δαυίδ",
+          "translation": "The book of the genealogy of Jesus Christ, son of David",
+          "note": "Incipit: Χριστός without article = proper name (cognomen).",
+          "semantic_category": "proper_name",
+          "source": "NA28"
+        },
+        {
+          "work": "Matthew",
+          "tlg_canon": "0031.001",
+          "citation": "16:16",
+          "greek_text": "Σὺ εἶ ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ τοῦ ζῶντος",
+          "translation": "You are the Christ, the Son of the living God",
+          "note": "Peter's confession: ὁ Χριστός with article = live messianic title in narrative context.",
+          "semantic_category": "messianic_title",
+          "source": "NA28"
+        },
+        {
+          "work": "Matthew",
+          "tlg_canon": "0031.001",
+          "citation": "24:24",
+          "greek_text": "ψευδόχριστοι καὶ ψευδοπροφῆται",
+          "translation": "false Christs and false prophets",
+          "note": "COMPOUND ψευδόχριστοι = 'false Christs.' Proves χριστός sufficiently technical that a category of false claimants is conceivable — title formation is complete.",
+          "semantic_category": "title_formation_confirmed",
+          "source": "NA28"
+        }
+      ]
+    },
+    {
+      "stage": "4c",
+      "name": "New Testament — Johannine Literature",
+      "date_range": "c. 90–100 CE",
+      "period": "Roman",
+      "semantic_function": "Bilingual gloss; both title and name; stated Gospel purpose",
+      "key_texts": [
+        {
+          "work": "John",
+          "tlg_canon": "0031.004",
+          "citation": "1:41",
+          "greek_text": "Εὑρήκαμεν τὸν Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον ὁ Χριστός",
+          "translation": "We have found the Messiah, which is translated 'the Christ'",
+          "note": "KEY PASSAGE: ONLY NT passage with explicit bilingual translation gloss. Establishes: Μεσσίας (Aramaic loanword) = ὁ Χριστός (Greek calque). The formula μεθερμηνευόμενον ('which is translated') is the metalinguistic marker.",
+          "semantic_category": "bilingual_translation_gloss",
+          "source": "NA28"
+        },
+        {
+          "work": "John",
+          "tlg_canon": "0031.004",
+          "citation": "4:25",
+          "greek_text": "Μεσσίας ἔρχεται, ὁ λεγόμενος Χριστός",
+          "translation": "The Messiah is coming, the one called Christ",
+          "note": "Second bilingual gloss in John; ὁ λεγόμενος Χριστός = same distancing/explanatory formula as Josephus Ant. 20.200. Here explanatory for Greek readers, not distancing.",
+          "semantic_category": "bilingual_translation_gloss",
+          "source": "NA28"
+        },
+        {
+          "work": "John",
+          "tlg_canon": "0031.004",
+          "citation": "20:31",
+          "greek_text": "ἵνα πιστεύ[σ]ητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ",
+          "translation": "that you may believe that Jesus is the Christ, the Son of God",
+          "note": "Gospel's stated purpose: the identification 'Jesus = the Christ' is the organizing theological claim. ὁ Χριστός with double article = maximum definiteness.",
+          "semantic_category": "christological_thesis",
+          "source": "NA28"
+        }
+      ]
+    },
+    {
+      "stage": "4d",
+      "name": "New Testament — Non-Christian Attestation (Josephus)",
+      "date_range": "c. 93–94 CE",
+      "period": "Roman",
+      "key_texts": [
+        {
+          "author": "Josephus",
+          "work": "Antiquitates Judaicae",
+          "tlg_canon": "0526.001",
+          "citation": "20.200",
+          "edition": "Niese ed.",
+          "greek_form": "Χριστοῦ",
+          "grammatical_case": "Gen. sg. (in participial phrase)",
+          "greek_text": "τὸν ἀδελφὸν Ἰησοῦ τοῦ λεγομένου Χριστοῦ, Ἰάκωβος ὄνομα αὐτῷ",
+          "translation": "the brother of Jesus who was called Christ, James by name",
+          "authenticity": "AUTHENTIC (widely accepted by scholars; no Christian interpolation suspected)",
+          "note": "τοῦ λεγομένου Χριστοῦ: Josephus assumes his readers KNOW what 'Christ' designates and uses λεγόμενος ('so-called') to distance himself from endorsement — not to explain an obscure term. Confirms name-status by 93 CE.",
+          "semantic_category": "proper_name_distanced_external",
+          "source": "Niese ed.; Oxford Academic on Ant.20.200"
+        },
+        {
+          "author": "Josephus",
+          "work": "Antiquitates Judaicae",
+          "tlg_canon": "0526.001",
+          "citation": "18.63–64 (Testimonium Flavianum)",
+          "edition": "Niese ed.",
+          "greek_form": "χριστός",
+          "grammatical_case": "Nom. sg. predicate",
+          "greek_text": "ὁ χριστὸς οὗτος ἦν",
+          "translation": "he was the Christ",
+          "authenticity": "DISPUTED: current form reflects probable Christian embellishment; no surviving 'neutral' Greek manuscript. Modern reconstructions are scholarly hypotheses.",
+          "semantic_category": "disputed_external_reference",
+          "source": "Niese ed.; Meier, Marginal Jew vol.1, pp.56–88"
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "name": "Early Church — Fixed Proper Name and Theological Expansion",
+      "date_range": "c. 96–165 CE",
+      "period": "Roman (early patristic)",
+      "semantic_function": "Fixed proper name; generates new vocabulary (Χριστιανισμός); requires etymological explanation for non-Christian audiences",
+      "note": "NOT IN PROJECT FILES — new evidence added in diachronic analysis",
+      "key_texts": [
+        {
+          "author": "1 Clement",
+          "tlg_canon": "1271.001",
+          "citation": "1:1",
+          "date_ce": 96,
+          "greek_text": "…κλητοῖς ἡγιασμένοις ἐν θελήματι θεοῦ διὰ τοῦ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ",
+          "translation": "to the called, sanctified by the will of God through our Lord Jesus Christ",
+          "note": "Χριστός is purely formulaic in 1 Clement salutation — no messianic explanation needed; it IS the proper name.",
+          "semantic_category": "proper_name_liturgical"
+        },
+        {
+          "author": "Ignatius of Antioch",
+          "work": "Epistle to the Philadelphians",
+          "tlg_canon": "1443.001",
+          "citation": "Salutation; 3:2; 6:1; 11:2",
+          "date_ce": 110,
+          "edition": "Schoedel, Hermeneia (1985)",
+          "key_forms": {
+            "name_formula": "κυρίου Ἰησοῦ Χριστοῦ (salutation) — proper name compound",
+            "partitive_gen": "ὅσοι γὰρ θεοῦ εἰσιν καὶ Ἰησοῦ Χριστοῦ (3:2)",
+            "neologism": "Χριστιανισμός (6:1) — abstract noun from the proper name",
+            "locative": "ἐν Χριστῷ Ἰησοῦ τῇ κοινῇ ἐλπίδι ἡμῶν (11:2)"
+          },
+          "note": "Χριστιανισμός (Phld.6:1; Magn.10:1–3) is a NEOLOGISM: you cannot form '-ισμός' abstracts from titles, only from proper names. This SEALS Stage 5.",
+          "semantic_category": "proper_name_with_neologism",
+          "online_greek": "https://greekdoc.com/DOCUMENTS/early/i-philadelphians.html"
+        },
+        {
+          "author": "Justin Martyr",
+          "work": "First Apology",
+          "tlg_canon": "0645.001",
+          "citation": "Chapter 4",
+          "date_ce": 155,
+          "edition": "Marcovich (De Gruyter, 1994)",
+          "note": "Justin defends the NAME 'Χριστιανοί'. Plays on confusion: Χριστιανοί (from Χριστός = 'anointed') vs. χρηστοί / Χρηστιανοί (from χρηστός = 'good'). The fact that Justin must ARGUE that the name is not blameworthy, and must distinguish it from a similarly-sounding Greek adjective, proves Χριστός is an OPAQUE PROPER NAME to non-Christian Greek speakers by c.155 CE.",
+          "semantic_category": "proper_name_opaque_requiring_defence",
+          "scaife_url": "https://scaife.perseus.org/library/urn:cts:greekLit:tlg0645.tlg003/"
+        },
+        {
+          "author": "Justin Martyr",
+          "work": "Dialogue with Trypho",
+          "tlg_canon": "0645.003",
+          "citation": "Chapter 86",
+          "date_ce": 158,
+          "edition": "Marcovich (De Gruyter, 1997)",
+          "note": "Justin explains that Jesus is called χριστός because he was 'anointed' (κεχρισμένος) as king, priest, and prophet. This ETYMOLOGICAL RECOVERY — explaining to an audience WHY a word means what it means — is the definitive sign that χριστός has become an opaque proper name.",
+          "semantic_category": "proper_name_etymologically_recovered",
+          "scaife_url": "https://scaife.perseus.org/library/urn:cts:greekLit:tlg0645.tlg003/"
+        }
+      ]
+    }
+  ],
+
+  "analytical_summary": {
+    "question_1_borrowing_model": {
+      "verdict": "INACCURATE to describe as 'borrowing into Hebrew and back into Greek'",
+      "correct_model": "SEMANTIC CALQUE: Greek χριστός chosen as structural translation equivalent for Hebrew מָשִׁיחַ; Hebrew never borrowed the Greek word; direction of semantic transfer is Hebrew → Greek through LXX translation; Μεσσίας (John 1:41) is a separate LOANWORD channel (Aramaic → Greek)"
+    },
+    "semantic_stages_summary": [
+      "Stage 1: Pure pharmaceutical adjective (Classical) — LITERAL",
+      "Stage 2a: Priestly title via LXX calque — LEXICAL TRANSLATION",
+      "Stage 2b: Royal formulaic title — TITLE FORMATION",
+      "Stage 2c: Proto-messianic (Daniel) — PROTO-ESCHATOLOGICAL",
+      "Stage 3: Explicit future messianic (PsSol) — ESCHATOLOGICAL TITLE",
+      "Stage 4: NT — name/title in transition, resemanticized — RESEMANTICIZATION",
+      "Stage 5: Early church — fixed proper name — ONOMASTIC"
+    ],
+    "strongest_evidence_for_name_transition": [
+      "Anarthrous Χριστός as sentence subject: 1 Cor 15:3",
+      "Derived appellative Χριστιανοί: Acts 11:26",
+      "Neologism Χριστιανισμός: Ignatius Phld. 6:1",
+      "Need to explain etymology: Justin 1 Apol. 4"
+    ],
+    "open_questions": [
+      "Hippocratic corpus genuine χριστ- forms require full TLG credential query",
+      "χριστοί nom. pl. masc. not separately confirmed in open-source text",
+      "LXX total occurrence count: ~38–40 (not 40–50 as in project files)",
+      "Justin Dial. 86 exact Greek requires Marcovich critical edition"
+    ]
+  }
+}

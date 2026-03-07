@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Migration Flowchart — χριστός</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .flowchart-section {
+      margin: 2rem 0;
+    }
+    .flowchart-wrap {
+      background: #f8f6f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+    }
+    .flowchart-wrap svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .flowchart-caption {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      margin-top: 1rem;
+    }
+    .stage-legend {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.6rem;
+      margin: 1.5rem 0;
+    }
+    .legend-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+    }
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .legend-item p { margin: 0; color: var(--text-dim); line-height: 1.4; }
+    .legend-item strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-home">☩ CHRIST-TLG</a>
+  <span class="nav-sep">|</span>
+  <span class="nav-branch">christos_migration/</span>
+  <span class="nav-sep">|</span>
+  <a href="christos_tlg_report.html">TLG Report</a>
+  <span class="nav-sep">|</span>
+  <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
+  <span class="nav-sep">|</span>
+  <a href="lsj_christos_entry.html">LSJ Entry</a>
+</nav>
+
+<div class="page-wrapper-wide">
+
+  <div class="page-header">
+    <div class="branch-tag">christos_migration/ &nbsp;·&nbsp; visualization</div>
+    <h1>Semantic Migration of <span class="gk">χριστός</span></h1>
+    <p class="subtitle">From pharmaceutical adjective to opaque proper name, c. 460 BCE – 155 CE</p>
+    <div class="page-meta">
+      <span>Format: SVG · Interactive</span>
+      <span>Stages: 5</span>
+      <span>Date Range: 460 BCE – 155 CE</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h4>Contents</h4>
+    <ol>
+      <li><a href="#overview">Stage Overview</a></li>
+      <li><a href="#flowchart">Semantic Migration Flowchart</a></li>
+      <li><a href="#legend">Stage Legend</a></li>
+      <li><a href="#notes">Methodological Notes</a></li>
+    </ol>
+  </div>
+
+  <section id="overview">
+    <h2>Stage Overview</h2>
+    <div class="summary-grid">
+      <div class="stat-box">
+        <span class="stat-num" style="font-size:1.3rem; color: #5890c8;">Stage 1</span>
+        <div class="stat-label">Classical · c. 460 BCE<br>Pharmaceutical adjective<br><em style="color: var(--text-muted);">χριστά φάρμακα</em></div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" style="font-size:1.3rem; color: var(--gold);">Stage 2</span>
+        <div class="stat-label">Hellenistic · 250–100 BCE<br>LXX priestly → royal title<br><em style="color: var(--text-muted);">χριστὸς κυρίου</em></div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" style="font-size:1.3rem; color: var(--red);">Stage 3</span>
+        <div class="stat-label">2nd Temple · c. 50 BCE<br>Eschatological messianic<br><em style="color: var(--text-muted);">PsSol 17:32 ★</em></div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" style="font-size:1.3rem; color: var(--red);">Stage 4</span>
+        <div class="stat-label">NT · c. 50–100 CE<br>Title → proper name<br><em style="color: var(--text-muted);">Ἰησοῦς Χριστός</em></div>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" style="font-size:1.3rem; color: var(--green);">Stage 5</span>
+        <div class="stat-label">Early Church · 96–160 CE<br>Fixed opaque proper name<br><em style="color: var(--text-muted);">Χριστιανισμός</em></div>
+      </div>
+    </div>
+
+    <div class="callout callout-note">
+      <div class="callout-label">Methodological Note</div>
+      <p>The diagram traces a <strong>semantic calque</strong> process, not a borrowing. Greek <span class="gk">χριστός</span> (verbal adj. from <span class="gk">χρίω</span>, "to anoint") was chosen by the LXX translators as a structural equivalent for Hebrew מָשִׁיחַ (māšîaḥ). Hebrew semantic content migrated into the Greek word through translation. The parallel <span class="gk">Μεσσίας</span> channel is a separate loanword from Aramaic מְשִׁיחָא.</p>
+    </div>
+  </section>
+
+  <section id="flowchart">
+    <h2>Semantic Migration Flowchart</h2>
+    <p style="color: var(--text-dim); font-size: 0.88rem; margin-bottom: 1rem;">The diagram below is rendered on a light background to preserve color contrast in the original SVG. Scroll horizontally on narrow screens.</p>
+
+    <div class="flowchart-wrap">
+      <!-- SVG from christos_semantic_flowchart.html (original, light-mode) -->
+      <svg viewBox="0 0 1120 1460" width="1120" height="1460" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="arrow-main" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+          </marker>
+          <marker id="arrow-mes" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#6B3A8B"/>
+          </marker>
+          <marker id="arrow-conv" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#8C2020"/>
+          </marker>
+          <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000025"/>
+          </filter>
+        </defs>
+
+        <rect x="0" y="0" width="1120" height="1460" fill="#F8F6F0"/>
+        <line x1="88" y1="60" x2="88" y2="1380" stroke="#CCC" stroke-width="2" stroke-dasharray="6,4"/>
+        <text x="44" y="55" text-anchor="middle" font-size="11" fill="#999" font-family="Georgia, serif" font-style="italic">date</text>
+
+        <rect x="90" y="70"  width="1020" height="175" fill="#EEF4FA" rx="6" opacity="0.5"/>
+        <rect x="90" y="260" width="1020" height="390" fill="#FEFAF0" rx="6" opacity="0.5"/>
+        <rect x="90" y="665" width="1020" height="175" fill="#FAF0F0" rx="6" opacity="0.5"/>
+        <rect x="90" y="855" width="1020" height="175" fill="#F5F0FA" rx="6" opacity="0.5"/>
+        <rect x="90" y="1045" width="1020" height="205" fill="#FAEAEA" rx="6" opacity="0.5"/>
+        <rect x="90" y="1265" width="1020" height="110" fill="#F0F7F2" rx="6" opacity="0.5"/>
+
+        <text x="1110" y="165"  text-anchor="end" font-size="10" fill="#9BA8B5" font-family="Georgia" font-style="italic">Classical</text>
+        <text x="1110" y="460"  text-anchor="end" font-size="10" fill="#B5A070" font-family="Georgia" font-style="italic">Hellenistic / LXX</text>
+        <text x="1110" y="760"  text-anchor="end" font-size="10" fill="#B57070" font-family="Georgia" font-style="italic">Second Temple</text>
+        <text x="1110" y="950"  text-anchor="end" font-size="10" fill="#8B6AAB" font-family="Georgia" font-style="italic">Messianic (PsSol)</text>
+        <text x="1110" y="1150" text-anchor="end" font-size="10" fill="#A05050" font-family="Georgia" font-style="italic">NT / Roman</text>
+        <text x="1110" y="1330" text-anchor="end" font-size="10" fill="#4A8C60" font-family="Georgia" font-style="italic">Early Church</text>
+
+        <rect x="210" y="78" width="660" height="158" rx="10" fill="#D6E4F5" stroke="#2A5C8E" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#2A5C8E" font-family="Georgia, serif">STAGE 1 — Classical Greek</text>
+        <text x="540" y="124" text-anchor="middle" font-size="11" fill="#2A5C8E" font-family="Georgia, serif">c. 460 – 400 BCE</text>
+        <line x1="230" y1="133" x2="850" y2="133" stroke="#2A5C8E" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="153" text-anchor="middle" font-size="17" fill="#1A3C6E" font-family="Georgia, serif" font-style="italic">χριστά / χριστόν</text>
+        <text x="540" y="174" text-anchor="middle" font-size="11" fill="#2A5C8E" font-family="Georgia, serif">verbal adjective of χρίω — "to be smeared / used as salve"</text>
+        <text x="540" y="194" text-anchor="middle" font-size="10" fill="#4A6C8E" font-family="Georgia, serif">Aeschylus PV 480: χριστὰ φάρμακα · Euripides Hipp. 516: χριστὸν ἢ ποτὸν τὸ φάρμακον</text>
+        <text x="540" y="212" text-anchor="middle" font-size="10" fill="#4A6C8E" font-family="Georgia, serif">Hippocratic corpus: standard pharmacological contrast (topical vs. oral)</text>
+        <text x="82" y="160" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">460</text>
+        <line x1="88" y1="157" x2="210" y2="157" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <line x1="540" y1="236" x2="540" y2="270" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="415" y="240" width="250" height="22" rx="4" fill="#444"/>
+        <text x="540" y="255" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">LXX semantic calque of מָשִׁיחַ (to anoint priests)</text>
+
+        <rect x="210" y="272" width="660" height="140" rx="10" fill="#FEF3CD" stroke="#8B6914" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#8B6914" font-family="Georgia, serif">STAGE 2a — LXX Priestly Title</text>
+        <text x="540" y="316" text-anchor="middle" font-size="11" fill="#8B6914" font-family="Georgia, serif">c. 250 – 150 BCE (LXX Pentateuch)</text>
+        <line x1="230" y1="324" x2="850" y2="324" stroke="#8B6914" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="347" text-anchor="middle" font-size="17" fill="#6B4A00" font-family="Georgia, serif" font-style="italic">ὁ ἱερεὺς ὁ χριστός</text>
+        <text x="540" y="368" text-anchor="middle" font-size="11" fill="#8B6914" font-family="Georgia, serif">"the anointed priest" — institutional title, still adjectival in syntax</text>
+        <text x="540" y="388" text-anchor="middle" font-size="10" fill="#9B7920" font-family="Georgia, serif">LXX Lev 4:3, 4:5, 4:16, 6:22; τὸ ἔλαιον τὸ χριστόν (Lev 21:10)</text>
+        <text x="540" y="402" text-anchor="middle" font-size="10" fill="#9B7920" font-family="Georgia, serif">κεχρισμένος (perf. pass. ptc.) used alongside — distinct morphological form, same role</text>
+        <text x="82" y="342" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">250</text>
+        <line x1="88" y1="342" x2="210" y2="342" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <line x1="540" y1="412" x2="540" y2="446" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="385" y="416" width="310" height="22" rx="4" fill="#444"/>
+        <text x="540" y="431" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">extended to royal sphere — calque of מְשִׁיחַ יְהוָה in narrative books</text>
+
+        <rect x="210" y="448" width="660" height="148" rx="10" fill="#FEE8C0" stroke="#B8750A" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="474" text-anchor="middle" font-size="13" font-weight="bold" fill="#B8750A" font-family="Georgia, serif">STAGE 2b — LXX Royal Epithet</text>
+        <text x="540" y="492" text-anchor="middle" font-size="11" fill="#B8750A" font-family="Georgia, serif">c. 200 – 100 BCE (Samuel, Psalms, Lamentations)</text>
+        <line x1="230" y1="500" x2="850" y2="500" stroke="#B8750A" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="522" text-anchor="middle" font-size="17" fill="#8B5500" font-family="Georgia, serif" font-style="italic">χριστὸς κυρίου</text>
+        <text x="540" y="542" text-anchor="middle" font-size="11" fill="#B8750A" font-family="Georgia, serif">"the LORD's anointed" — stereotyped formula, still a title not a name</text>
+        <text x="540" y="562" text-anchor="middle" font-size="10" fill="#C08520" font-family="Georgia, serif">1 Sam 2:10; 24:7; Ps 2:2; Ps 17:51; Lam 4:20; Hab 3:13 (χριστούς σου)</text>
+        <text x="540" y="578" text-anchor="middle" font-size="10" fill="#C08520" font-family="Georgia, serif">Isa 45:1: τῷ χριστῷ μου Κύρῳ — applied to non-Israelite (Cyrus); title is transferable</text>
+        <text x="540" y="593" text-anchor="middle" font-size="10" fill="#C08520" font-family="Georgia, serif">Plural χριστοί possible (Hab 3:13) — confirms adjectival / appellative status</text>
+        <text x="82" y="528" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">200</text>
+        <line x1="88" y1="528" x2="210" y2="528" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <line x1="540" y1="596" x2="540" y2="628" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="360" y="600" width="360" height="22" rx="4" fill="#444"/>
+        <text x="540" y="615" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">anarthrous use in prophetic chronology → anticipatory / proto-eschatological</text>
+
+        <rect x="210" y="630" width="660" height="130" rx="10" fill="#FDDCB5" stroke="#C07020" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="656" text-anchor="middle" font-size="13" font-weight="bold" fill="#C07020" font-family="Georgia, serif">STAGE 2c — Proto-Eschatological (Daniel)</text>
+        <text x="540" y="674" text-anchor="middle" font-size="11" fill="#C07020" font-family="Georgia, serif">c. 165 BCE (Theodotion Dan 9:25–26)</text>
+        <line x1="230" y1="682" x2="850" y2="682" stroke="#C07020" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="703" text-anchor="middle" font-size="16" fill="#904000" font-family="Georgia, serif" font-style="italic">ἕως χριστοῦ ἡγουμένου … ἐξολοθρευθήσεται χριστός</text>
+        <text x="540" y="723" text-anchor="middle" font-size="11" fill="#C07020" font-family="Georgia, serif">anarthrous χριστός in prophetic chronology — still a common noun but future-oriented</text>
+        <text x="540" y="742" text-anchor="middle" font-size="10" fill="#C08030" font-family="Georgia, serif">Foundation of Second Temple Jewish seventy-weeks messianic chronology</text>
+        <text x="540" y="757" text-anchor="middle" font-size="10" fill="#C08030" font-family="Georgia, serif">LXX Dan 9 (Rahlfs): χρῖσμα used; Theodotion Dan: χριστός — textual variant significant</text>
+        <text x="82" y="695" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">165</text>
+        <line x1="88" y1="692" x2="210" y2="692" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <line x1="540" y1="760" x2="540" y2="868" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="330" y="780" width="420" height="22" rx="4" fill="#444"/>
+        <text x="540" y="795" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">Psalms of Solomon: χριστός fully eschatologized — a specific future deliverer</text>
+        <rect x="380" y="806" width="320" height="20" rx="3" fill="#555" opacity="0.85"/>
+        <text x="540" y="820" text-anchor="middle" font-size="9.5" fill="#FFD" font-family="Georgia, serif">(critical bridge: LXX royal → genuinely messianic — c. 50 BCE)</text>
+
+        <rect x="210" y="870" width="660" height="148" rx="10" fill="#F0DDD0" stroke="#8C4010" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="896" text-anchor="middle" font-size="13" font-weight="bold" fill="#8C4010" font-family="Georgia, serif">STAGE 3 — Psalms of Solomon ★</text>
+        <text x="540" y="914" text-anchor="middle" font-size="11" fill="#8C4010" font-family="Georgia, serif">c. 50 BCE (Second Temple Jewish pseudepigrapha)</text>
+        <line x1="230" y1="922" x2="850" y2="922" stroke="#8C4010" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="944" text-anchor="middle" font-size="17" fill="#6C2000" font-family="Georgia, serif" font-style="italic">βασιλεὺς αὐτῶν χριστὸς κυρίου</text>
+        <text x="540" y="964" text-anchor="middle" font-size="11" fill="#8C4010" font-family="Georgia, serif">"their king, the LORD's anointed" — fully eschatological messianic title</text>
+        <text x="540" y="984" text-anchor="middle" font-size="10" fill="#9C5020" font-family="Georgia, serif">PsSol 17:32; 18:7 — χριστὸς κυρίου with explicit future-deliverer function</text>
+        <text x="540" y="1000" text-anchor="middle" font-size="10" fill="#9C5020" font-family="Georgia, serif">★ CRITICAL STAGE: first attested χριστός as a genuinely eschatological figure</text>
+        <text x="540" y="1015" text-anchor="middle" font-size="10" fill="#9C5020" font-family="Georgia, serif">Not LXX canon; bridges LXX royal formula → NT messianic title</text>
+        <text x="82" y="944" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">50</text>
+        <line x1="88" y1="944" x2="210" y2="944" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <rect x="870" y="900" width="220" height="108" rx="10" fill="#EAD5F5" stroke="#6B3A8B" stroke-width="2" filter="url(#shadow)"/>
+        <text x="980" y="924" text-anchor="middle" font-size="12" font-weight="bold" fill="#6B3A8B" font-family="Georgia, serif">LOANWORD CHANNEL</text>
+        <line x1="888" y1="930" x2="1072" y2="930" stroke="#6B3A8B" stroke-width="0.8" opacity="0.4"/>
+        <text x="980" y="950" text-anchor="middle" font-size="15" fill="#4A1A6B" font-family="Georgia, serif" font-style="italic">Μεσσίας</text>
+        <text x="980" y="970" text-anchor="middle" font-size="10" fill="#6B3A8B" font-family="Georgia, serif">Aramaic מְשִׁיחָא</text>
+        <text x="980" y="987" text-anchor="middle" font-size="10" fill="#6B3A8B" font-family="Georgia, serif">transliterated (not translated)</text>
+        <text x="980" y="1003" text-anchor="middle" font-size="9.5" fill="#8B5AAB" font-family="Georgia, serif">John 1:41; 4:25</text>
+        <line x1="870" y1="1004" x2="780" y2="1095" stroke="#6B3A8B" stroke-width="2" stroke-dasharray="8,4" marker-end="url(#arrow-mes)"/>
+        <rect x="788" y="1032" width="195" height="22" rx="4" fill="#6B3A8B" opacity="0.85"/>
+        <text x="886" y="1047" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">John 1:41 bilingual gloss</text>
+
+        <line x1="540" y1="1018" x2="540" y2="1058" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="310" y="1022" width="460" height="22" rx="4" fill="#444"/>
+        <text x="540" y="1037" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">NT appropriation: ὁ Χριστός as Jesus's messianic identity → then name-formation</text>
+
+        <rect x="130" y="1060" width="740" height="188" rx="10" fill="#F5D5D5" stroke="#8C2020" stroke-width="2.5" filter="url(#shadow)"/>
+        <text x="500" y="1086" text-anchor="middle" font-size="13" font-weight="bold" fill="#8C2020" font-family="Georgia, serif">STAGE 4 — New Testament</text>
+        <text x="500" y="1104" text-anchor="middle" font-size="11" fill="#8C2020" font-family="Georgia, serif">c. 50 – 100 CE (Paul → Gospels → Johannine corpus)</text>
+        <line x1="150" y1="1112" x2="850" y2="1112" stroke="#8C2020" stroke-width="0.8" opacity="0.4"/>
+        <rect x="150" y="1122" width="280" height="110" rx="7" fill="#F8E8E8" stroke="#8C2020" stroke-width="1"/>
+        <text x="290" y="1142" text-anchor="middle" font-size="11" font-weight="bold" fill="#8C2020" font-family="Georgia, serif">TITLE CHANNEL</text>
+        <text x="290" y="1160" text-anchor="middle" font-size="14" fill="#6C0000" font-family="Georgia, serif" font-style="italic">ὁ Χριστός</text>
+        <text x="290" y="1178" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">= the Messiah (with article)</text>
+        <text x="290" y="1194" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">Matt 2:4; 16:16; John 1:20</text>
+        <text x="290" y="1210" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">Χριστὸς ἐσταυρωμένος (1 Cor 1:23)</text>
+        <rect x="352" y="1118" width="196" height="28" rx="5" fill="#8C2020"/>
+        <text x="450" y="1131" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif" font-weight="bold">TWO CHANNELS CONVERGE</text>
+        <text x="450" y="1143" text-anchor="middle" font-size="10" fill="#FFD" font-family="Georgia, serif">John 1:41 — explicit gloss</text>
+        <rect x="570" y="1122" width="280" height="110" rx="7" fill="#F8E8E8" stroke="#8C2020" stroke-width="1"/>
+        <text x="710" y="1142" text-anchor="middle" font-size="11" font-weight="bold" fill="#8C2020" font-family="Georgia, serif">NAME CHANNEL</text>
+        <text x="710" y="1160" text-anchor="middle" font-size="14" fill="#6C0000" font-family="Georgia, serif" font-style="italic">Χριστός / Ἰησοῦς Χριστός</text>
+        <text x="710" y="1178" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">anarthrous → proper name</text>
+        <text x="710" y="1194" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">1 Cor 15:3; Rom 1:1; Gal 1:1</text>
+        <text x="710" y="1210" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">ἐν Χριστῷ formula: ~164 occ.</text>
+        <text x="710" y="1226" text-anchor="middle" font-size="10" fill="#8C2020" font-family="Georgia, serif">Χριστιανοί: Acts 11:26</text>
+        <text x="82" y="1160" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">50–100</text>
+        <line x1="88" y1="1157" x2="130" y2="1157" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <line x1="500" y1="1248" x2="500" y2="1278" stroke="#555" stroke-width="2" marker-end="url(#arrow-main)"/>
+        <rect x="290" y="1252" width="420" height="22" rx="4" fill="#444"/>
+        <text x="500" y="1267" text-anchor="middle" font-size="10" fill="#FFF" font-family="Georgia, serif">onomastic crystallization — etymology opaque; abstract -ισμός derivation</text>
+
+        <rect x="210" y="1280" width="660" height="108" rx="10" fill="#D5EAD8" stroke="#2E6E4A" stroke-width="2" filter="url(#shadow)"/>
+        <text x="540" y="1306" text-anchor="middle" font-size="13" font-weight="bold" fill="#2E6E4A" font-family="Georgia, serif">STAGE 5 — Early Church (Post-Apostolic)</text>
+        <text x="540" y="1324" text-anchor="middle" font-size="11" fill="#2E6E4A" font-family="Georgia, serif">c. 96 – 160 CE (1 Clement, Ignatius, Justin Martyr)</text>
+        <line x1="230" y1="1332" x2="850" y2="1332" stroke="#2E6E4A" stroke-width="0.8" opacity="0.4"/>
+        <text x="540" y="1354" text-anchor="middle" font-size="17" fill="#1A4E2A" font-family="Georgia, serif" font-style="italic">Χριστός · Χριστιανισμός</text>
+        <text x="540" y="1374" text-anchor="middle" font-size="11" fill="#2E6E4A" font-family="Georgia, serif">Fixed proper name; etymology fully opaque to Greek-speakers</text>
+        <text x="540" y="1390" text-anchor="middle" font-size="10" fill="#3E7E5A" font-family="Georgia, serif">Ignatius Phld. 6:1: Χριστιανισμός — abstract noun seals onomastic status</text>
+        <text x="540" y="1404" text-anchor="middle" font-size="10" fill="#3E7E5A" font-family="Georgia, serif">Justin Martyr 1 Apol. 4: must explain to Romans that Χριστός means "anointed"</text>
+        <text x="82" y="1340" text-anchor="middle" font-size="10" fill="#AAA" font-family="Georgia">96–160</text>
+        <line x1="88" y1="1337" x2="210" y2="1337" stroke="#BBB" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <rect x="108" y="1416" width="900" height="36" rx="6" fill="#E8E4DC" stroke="#CCC" stroke-width="1"/>
+        <text x="120" y="1432" font-size="10" fill="#555" font-family="Georgia, serif" font-weight="bold">LEGEND:</text>
+        <rect x="185" y="1420" width="12" height="12" rx="2" fill="#D6E4F5" stroke="#2A5C8E"/>
+        <text x="200" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">Classical</text>
+        <rect x="265" y="1420" width="12" height="12" rx="2" fill="#FEE8C0" stroke="#B8750A"/>
+        <text x="280" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">Hellenistic / LXX</text>
+        <rect x="380" y="1420" width="12" height="12" rx="2" fill="#F0DDD0" stroke="#8C4010"/>
+        <text x="395" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">PsSol / Second Temple ★</text>
+        <rect x="530" y="1420" width="12" height="12" rx="2" fill="#F5D5D5" stroke="#8C2020"/>
+        <text x="545" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">NT / Roman</text>
+        <rect x="615" y="1420" width="12" height="12" rx="2" fill="#EAD5F5" stroke="#6B3A8B"/>
+        <text x="630" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">Μεσσίας loanword (Aramaic)</text>
+        <rect x="780" y="1420" width="12" height="12" rx="2" fill="#D5EAD8" stroke="#2E6E4A"/>
+        <text x="795" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">Early Church</text>
+        <line x1="890" y1="1426" x2="916" y2="1426" stroke="#6B3A8B" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="920" y="1432" font-size="10" fill="#555" font-family="Georgia, serif">convergence</text>
+      </svg>
+      <p class="flowchart-caption">
+        Sources: LSJ s.v. χριστός (Liddell–Scott–Jones 9th ed.); Rahlfs–Hanhart LXX; Nestle–Aland 28th ed.; Niese Josephus;
+        Psalms of Solomon (Wright, OTP II); Ignatius of Antioch (Schoedel 1985); Justin Martyr (Marcovich 1994).<br>
+        ★ Psalms of Solomon is not LXX canon. Analysis follows the calque model (χριστός = semantic calque; Μεσσίας = transliteration loanword).
+      </p>
+    </div>
+  </section>
+
+  <section id="legend">
+    <h2>Stage Legend</h2>
+    <div class="stage-legend">
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#D6E4F5; border:1px solid #2A5C8E;"></div>
+        <div>
+          <strong>Stage 1 — Classical</strong>
+          <p>c. 460–400 BCE. Pure pharmaceutical adjective: "smearable" (χριστά φάρμακα). No religious content. Aeschylus, Euripides, Hippocrates.</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#FEF3CD; border:1px solid #8B6914;"></div>
+        <div>
+          <strong>Stage 2a — LXX Priestly</strong>
+          <p>c. 250 BCE. LXX calque of Hebrew הַכֹּהֵן הַמָּשִׁיחַ: "the anointed priest." Institutional title in frozen construction.</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#FEE8C0; border:1px solid #B8750A;"></div>
+        <div>
+          <strong>Stage 2b–2c — LXX Royal / Proto-Messianic</strong>
+          <p>c. 200–100 BCE. Royal formula χριστὸς κυρίου in Samuel, Psalms. Proto-eschatological in Daniel 9:25 (Theodotion).</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#F0DDD0; border:1px solid #8C4010;"></div>
+        <div>
+          <strong>Stage 3 — Psalms of Solomon ★</strong>
+          <p>c. 50 BCE. First genuinely eschatological use: χριστὸς κυρίου as a FUTURE deliverer (PsSol 17:32). Critical bridge to NT.</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#EAD5F5; border:1px solid #6B3A8B;"></div>
+        <div>
+          <strong>Loanword Channel — Μεσσίας</strong>
+          <p>Aramaic מְשִׁיחָא transliterated into Greek. Separate channel: Μεσσίας = borrowed form; ὁ Χριστός = calque. Converge at John 1:41.</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#F5D5D5; border:1px solid #8C2020;"></div>
+        <div>
+          <strong>Stage 4 — NT (Paul → Gospels → John)</strong>
+          <p>c. 50–100 CE. Title/name in transition. Anarthrous Χριστός = proper name (Paul). ὁ Χριστός = messianic title (Gospels). John 1:41 explicit bilingual gloss.</p>
+        </div>
+      </div>
+      <div class="legend-item">
+        <div class="legend-swatch" style="background:#D5EAD8; border:1px solid #2E6E4A;"></div>
+        <div>
+          <strong>Stage 5 — Early Church</strong>
+          <p>c. 96–160 CE. Fixed opaque proper name. Χριστιανισμός (Ignatius) seals onomastic status. Justin Martyr must explain the etymology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="notes">
+    <h2>Methodological Notes</h2>
+    <div class="callout callout-warn">
+      <div class="callout-label">Semantic Calque vs. Borrowing</div>
+      <p>The correct model for the Hebrew-Greek transfer is <strong>semantic calque</strong>, not borrowing. Hebrew מָשִׁיחַ was never borrowed into Greek; Greek χριστός was never borrowed into Hebrew. The LXX translators chose χριστός as the Greek structural equivalent of מָשִׁיחַ on the basis of parallel morphology (both = verbal adjective of "to anoint"). Hebrew semantic content migrated into the Greek word through repeated use as its translation equivalent across ~38–40 LXX passages.</p>
+    </div>
+    <div class="callout callout-note">
+      <div class="callout-label">★ Psalms of Solomon</div>
+      <p>PsSol 17:32 and 18:7 are not in the LXX canon but are the <strong>most important pre-NT evidence</strong> for χριστός as a genuinely eschatological title (a FUTURE deliverer, not a current king). These texts are entirely absent from the original project files and were added in the diachronic analysis. Their absence is the most significant gap in the initial research.</p>
+    </div>
+    <div class="callout callout-key">
+      <div class="callout-label">Onomastic Crystallization</div>
+      <p>The transition from title to proper name is confirmed by four independent criteria: (1) anarthrous Χριστός as sentence subject (1 Cor 15:3); (2) derived appellative Χριστιανοί (Acts 11:26, Josephus Ant. 18.64); (3) abstract neologism Χριστιανισμός (Ignatius Phld. 6:1); (4) need for etymological explanation by Justin Martyr (1 Apol. 4) — the surest sign a word has become opaque.</p>
+    </div>
+  </section>
+
+  <hr>
+  <div style="text-align:center; font-size:0.8rem; color: var(--text-muted); margin-top:1.5rem;">
+    <a href="lsj_christos_entry.html">LSJ Entry</a> &nbsp;·&nbsp;
+    <a href="christos_tlg_report.html">TLG Report</a> &nbsp;·&nbsp;
+    <a href="christos_diachronic_analysis.html">Diachronic Analysis</a> &nbsp;·&nbsp;
+    <a href="christos_occurrences.html">Occurrences Database</a> &nbsp;·&nbsp;
+    <a href="index.html">Index</a>
+  </div>
+
+</div>
+
+<footer>
+  christ-tlg research archive &nbsp;|&nbsp; christos_migration/ &nbsp;|&nbsp; semantic flowchart &nbsp;|&nbsp; 2026-03-07
+</footer>
+
+</body>
+</html>

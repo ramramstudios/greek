@@ -1,0 +1,141 @@
+================================================================================
+LSJ ENTRY — χριστός  (FULL RECONSTRUCTION FROM OPEN SOURCES)
+Source: Liddell–Scott–Jones, A Greek–English Lexicon, 9th ed. (1940 / 1996 rev.)
+Online: https://lsj.gr/wiki/%CF%87%CF%81%CE%B9%CF%83%CF%84%CF%8C%CF%82
+Also: http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry%3Dxristo/s
+================================================================================
+
+χριστός, -ή, -όν    verbal adjective of χρίω
+
+Literal etymology:
+  χρίω  ("to anoint, rub/smear with oil or fat")
+     + -τός  (verbal adjective suffix indicating "capable of / subject to"
+               the action of the verb)
+  → χριστός: "that which is/has been/is to be anointed or smeared on"
+
+────────────────────────────────────────────────────────────────────────────────
+I.  OF THINGS:  "to be rubbed on, used as ointment or salve"
+────────────────────────────────────────────────────────────────────────────────
+  Opposed to πιστός / ποτός ("drinkable"):
+
+  ● Aeschylus, Prometheus Vinctus 480
+    χριστά φάρμακα — "ointments / smearable medicines"
+    [Prometheus enumerating gifts to humankind: knowledge of topical vs.
+     oral medicaments]
+
+  ● Euripides, Hippolytus 516
+    χριστὸν ἢ ποτὸν τὸ φάρμακον — "is the drug a salve or a potion?"
+    [Phaedra's question to the Nurse about the love-charm]
+
+  Pharmacological contrast: χριστά (topical applications) vs. πιστά (oral
+  medicines) is the standard Classical Greek distinction in medical writing.
+  The Hippocratic corpus uses this contrast throughout surgical and
+  pharmaceutical treatises.
+
+────────────────────────────────────────────────────────────────────────────────
+II.  OF PERSONS:  "anointed"
+────────────────────────────────────────────────────────────────────────────────
+
+  IIa. ANOINTED PRIESTS (LXX — Leviticus):
+       ὁ ἱερεὺς ὁ χριστός = "the anointed priest" (= H. הַכֹּהֵן הַמָּשִׁיחַ)
+       LXX Leviticus 4:3, 4:5, 4:16, 6:22
+
+       τὸ ἔλαιον τὸ χριστόν = "the anointing oil"
+       LXX Leviticus 21:10
+
+  IIb. ANOINTED KINGS (LXX — Samuel, Psalms, Lamentations, Habakkuk):
+       ὁ χριστὸς κυρίου = "the LORD's anointed" (= H. מְשִׁיחַ יְהוָה)
+
+       LXX 1 Samuel 2:10  —  ὑψώσει κέρας χριστοῦ αὐτοῦ
+       LXX 1 Samuel 24:7  —  τῷ χριστῷ κυρίου / χριστὸς κυρίου ἐστὶν
+       LXX Psalm 2:2       —  κατὰ τοῦ χριστοῦ αὐτοῦ
+       LXX Psalm 17:51 [MT 18:50]  —  τῷ χριστῷ αὐτοῦ τῷ Δαυίδ
+       LXX Lamentations 4:20  —  χριστὸς κυρίου συνελήμφθη
+
+  IIc. PLURAL USAGE:
+       χριστοί σου = "your anointed ones" (collective)
+       LXX Habakkuk 3:13  — τοὺς χριστούς σου
+
+  IId. NON-ISRAELITE:
+       τῷ χριστῷ μου Κύρῳ = "to my anointed, Cyrus"
+       LXX Isaiah 45:1  — the only LXX case of χριστός applied to a
+                          non-Israelite
+
+  IIe. ESCHATOLOGICAL / PROTO-MESSIANIC:
+       χριστοῦ ἡγουμένου = "of an anointed leader"
+       LXX/Theodotion Daniel 9:25
+       ἐξολοθρευθήσεται χριστός = "an anointed one will be cut off"
+       Theodotion Daniel 9:26
+       [Foundation of Second Temple Jewish messianic chronology]
+
+────────────────────────────────────────────────────────────────────────────────
+III.  PROPER NAME / TITLE IN NEW TESTAMENT GREEK
+────────────────────────────────────────────────────────────────────────────────
+
+  LSJ III: "ὁ χ., the Messiah (Hebr. מָשִׁיחַ)…
+            used as a proper name for Jesus: Ἰησοῦς Χρ., Matt. 1.1"
+
+  a. AS TITLE (with article ὁ):
+     ὁ Χριστός = "the Christ / the Messiah"
+     Matt 2:4; 16:16; 22:42; Luke 2:26; John 1:20; 7:26–27; Acts 2:36 etc.
+
+  b. AS PROPER NAME (without article):
+     Ἰησοῦς Χριστός = personal name "Jesus Christ"
+     Matt 1:1; Mark 1:1; Rom 1:1; 1 Cor 1:1; Gal 1:1; Phil 1:1 etc.
+
+  c. BILINGUAL GLOSS:
+     Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον ὁ Χριστός (John 1:41)
+     = explicit equation of Aramaic Μεσσίας with Greek ὁ Χριστός
+
+  d. IN PAUL — "ἐν Χριστῷ" formula (locative dative):
+     ~164 occurrences of ἐν Χριστῷ / ἐν Χριστῷ Ἰησοῦ in Pauline corpus
+     indicating incorporation into / participation in Christ
+
+  e. EVOLUTION from title to name:
+     Classical Greek: χριστός = descriptive adjective (pharmaceutical)
+     LXX: ὁ χριστός = institutional title (priestly, royal)
+     NT early (Synoptics): ὁ Χριστός = eschatological/messianic title
+     NT middle (Paul): Χριστός = proper name (though title retained)
+     NT late (John, Rev): both usages in full
+
+────────────────────────────────────────────────────────────────────────────────
+JOSEPHUS (non-Christian attestation)
+────────────────────────────────────────────────────────────────────────────────
+
+  Ant. 18.63:  ὁ χριστὸς οὗτος ἦν — "he was the Christ"
+               [Testimonium Flavianum; currently debated; possibly partially
+                authentic with Christian embellishment]
+
+  Ant. 20.200: τοῦ λεγομένου Χριστοῦ — "of the one called Christ"
+               [Widely regarded as authentic; most secure extra-NT attestation]
+               λεγόμενος ("so-called / called") signals reporter's neutrality
+
+────────────────────────────────────────────────────────────────────────────────
+RELATED WORDS (same root χρίω)
+────────────────────────────────────────────────────────────────────────────────
+
+  χρίω        — verb: "to anoint, smear, rub with oil/fat"
+  χρῖσμα      — noun: "anointing, unguent" (1 John 2:20,27; LXX Dan 9:26 LXX)
+  χρίσις      — noun: "anointing"
+  ἄλειφα      — noun: "ointment" (parallel term)
+  κεχρισμένος — perfect passive participle: "having been anointed"
+                 (LXX Lev 4:3; used alongside χριστός as title)
+  διάχριστος  — adj.: "smeared over, coated" (medical texts: Dioscorides,
+                 Galen)
+  Μεσσίας     — NT transliteration of Aramaic מְשִׁיחָא (= Greek Χριστός):
+                 John 1:41; 4:25
+
+================================================================================
+THAYER'S NOTE (NT Greek Lexicon):
+  Distinguishes four NT usages:
+  1. ὁ Χριστός as Jewish messianic title (the expected deliverer)
+  2. Applied to Jesus as fulfillment of OT messianic role
+  3. Title becoming proper name (Ἰησοῦς Χριστός)
+  4. In plural: possible in early Christian usage (e.g., "false Christs"
+     in Matt 24:24 — ψευδόχριστοι)
+
+NOTE ON ψευδόχριστοι (compound):
+  Matthew 24:24 / Mark 13:22: ψευδόχριστοι = "false Christs"
+  Confirms χριστός was sufficiently technical a title by the time of
+  composition that false claimants to the title were a recognized category.
+================================================================================
