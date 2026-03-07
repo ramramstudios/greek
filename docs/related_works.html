@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Related Works | Pagan Roots of Monotheism</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){var t=localStorage.getItem('prm-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();
+    function toggleTheme(){var n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('prm-theme',n);}
+    function toggleNav(){var l=document.getElementById('nav-links'),b=document.getElementById('nav-toggle'),o=l.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.innerHTML=o?'\u2715':'\u2630';}
+  </script>
+  <style>
+    .rw-section-head {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-family: 'Courier New', monospace;
+      margin: 3rem 0 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .rw-category-head {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: 'Courier New', monospace;
+      margin: 2rem 0 0.65rem;
+      font-weight: bold;
+    }
+    .rw-category-head.cat-teal { color: var(--teal); }
+    .rw-category-head.cat-purple { color: var(--purple); }
+
+    /* ── Book list ── */
+    .book-list {
+      list-style: none;
+      margin: 0 0 0.25rem;
+      padding: 0;
+    }
+    .book-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.7rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-bottom: 0.45rem;
+      background: var(--surface);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .book-list li:hover {
+      border-color: var(--gold-dim);
+      background: var(--surface2);
+    }
+    .item-num {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-family: 'Courier New', monospace;
+      min-width: 2rem;
+      text-align: right;
+      padding-top: 0.1rem;
+      flex-shrink: 0;
+    }
+    .book-info { flex: 1; }
+    .book-title {
+      color: var(--gold-light);
+      font-style: italic;
+      font-size: 0.96rem;
+      line-height: 1.4;
+    }
+    .book-author {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-family: 'Courier New', monospace;
+      margin-top: 0.18rem;
+    }
+    .item-link {
+      font-size: 0.75rem;
+      color: var(--link);
+      font-family: 'Courier New', monospace;
+      margin-top: 0.28rem;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .item-link:hover { color: var(--link-hover); text-decoration: underline; }
+
+    /* ── Article list ── */
+    .article-list {
+      list-style: none;
+      margin: 0 0 0.25rem;
+      padding: 0;
+    }
+    .article-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--teal-dim);
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 0.45rem;
+      background: var(--surface);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .article-list li:hover {
+      background: var(--surface2);
+      border-left-color: var(--teal);
+    }
+    .article-num {
+      font-size: 0.7rem;
+      color: var(--teal);
+      font-family: 'Courier New', monospace;
+      min-width: 2rem;
+      text-align: right;
+      padding-top: 0.1rem;
+      flex-shrink: 0;
+    }
+    .article-info { flex: 1; }
+    .article-title {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.45;
+      font-style: italic;
+    }
+    .article-author {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-family: 'Courier New', monospace;
+      margin-top: 0.18rem;
+    }
+
+    .rw-count-tag {
+      display: inline-block;
+      font-size: 0.66rem;
+      letter-spacing: 0.08em;
+      padding: 0.12rem 0.5rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      color: var(--text-muted);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    @media (max-width: 680px) {
+      .book-list li, .article-list li { padding: 0.65rem 0.75rem; }
+      .book-title, .article-title { font-size: 0.92rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-home">&#9737; Pagan Roots of Monotheism</a>
+  <div class="nav-links" id="nav-links">
+    <span class="nav-sep">|</span>
+    <a href="christos_tlg_report.html">&#967;&#961;&#953;&#963;&#964;&#972;&#962; Research</a>
+    <span class="nav-sep">|</span>
+    <a href="pharmakon_hypothesis.html">Pharmakon</a>
+    <span class="nav-sep">|</span>
+    <a href="jason_jesus_sidequest.html">Jason / Jesus</a>
+    <span class="nav-sep">|</span>
+    <span class="nav-branch">Related Works</span>
+  </div>
+  <div class="nav-controls">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">&#9776;</button>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
+  </div>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="page-header">
+    <div class="branch-tag">Research Context</div>
+    <h1>Related Works</h1>
+    <p class="subtitle">Secondary literature, scholarly precedents, and further reading across the three branches of this archive</p>
+    <div class="page-meta">
+      <span>26 books &nbsp;&middot;&nbsp; 33 articles &amp; papers</span>
+      <span>Entheogen research &nbsp;&middot;&nbsp; Mystery religion &nbsp;&middot;&nbsp; Mimesis criticism &nbsp;&middot;&nbsp; Gnosticism</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       BOOKS
+  ═══════════════════════════════════════════════ -->
+  <div class="rw-section-head">Books <span class="rw-count-tag">26</span></div>
+
+  <!-- ── Entheogen & Psychedelic ── -->
+  <div class="rw-category-head">Entheogen &amp; Psychedelic Studies</div>
+  <ul class="book-list">
+    <li>
+      <span class="item-num">1</span>
+      <div class="book-info">
+        <div class="book-title">The Immortality Key: The Secret History of the Religion with No Name</div>
+        <div class="book-author">Brian C. Muraresku</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">2</span>
+      <div class="book-info">
+        <div class="book-title">The Psychedelic Gospels: The Secret History of Hallucinogens in Christianity</div>
+        <div class="book-author">Jerry B. Brown &amp; Julie M. Brown</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">3</span>
+      <div class="book-info">
+        <div class="book-title">The Sacred Mushroom and the Cross</div>
+        <div class="book-author">John M. Allegro</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">4</span>
+      <div class="book-info">
+        <div class="book-title">The Apples of Apollo: Pagan and Christian Mysteries of the Eucharist</div>
+        <div class="book-author">Carl A. P. Ruck, Mark Hoffman &amp; Blaise Staples</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">5</span>
+      <div class="book-info">
+        <div class="book-title">The Road to Eleusis: Unveiling the Secret of the Mysteries</div>
+        <div class="book-author">Carl A. P. Ruck &amp; Danny Staples</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">6</span>
+      <div class="book-info">
+        <div class="book-title">Animals and Psychedelics: The Natural World and the Instinct to Alter Consciousness</div>
+        <div class="book-author">Giorgio Samorini</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">7</span>
+      <div class="book-info">
+        <div class="book-title">The Cosmic Serpent: DNA and the Origins of Knowledge</div>
+        <div class="book-author">Jeremy Narby</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">8</span>
+      <div class="book-info">
+        <div class="book-title">Shamanism: A Biopsychosocial Paradigm of Consciousness and Healing</div>
+        <div class="book-author">Michael Winkelman</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">26</span>
+      <div class="book-info">
+        <div class="book-title">The Chemical Muse: Drug Use and the Roots of Western Civilization</div>
+        <div class="book-author">D. C. A. Hillman</div>
+        <a class="item-link" href="https://books.google.com/books/about/The_Chemical_Muse.html?id=dN1NBAAAQBAJ" target="_blank" rel="noopener">books.google.com &rarr;</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Mystery Religion ── -->
+  <div class="rw-category-head">Mystery Religion &amp; Ancient Cults</div>
+  <ul class="book-list">
+    <li>
+      <span class="item-num">11</span>
+      <div class="book-info">
+        <div class="book-title">Drudgery Divine: On the Comparison of Early Christianities and the Religions of Late Antiquity</div>
+        <div class="book-author">Jonathan Z. Smith</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">12</span>
+      <div class="book-info">
+        <div class="book-title">Ancient Mystery Cults</div>
+        <div class="book-author">Walter Burkert</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">13</span>
+      <div class="book-info">
+        <div class="book-title">Dionysos</div>
+        <div class="book-author">Richard Seaford</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">14</span>
+      <div class="book-info">
+        <div class="book-title">The Ancient Mysteries: A Sourcebook of Sacred Texts</div>
+        <div class="book-author">Marvin Meyer</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">15</span>
+      <div class="book-info">
+        <div class="book-title">Mystery Cults of the Ancient World</div>
+        <div class="book-author">Hugh Bowden</div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Gnosticism ── -->
+  <div class="rw-category-head cat-purple">Gnosticism &amp; Early Christianity</div>
+  <ul class="book-list">
+    <li>
+      <span class="item-num">9</span>
+      <div class="book-info">
+        <div class="book-title">The Jesus Mysteries: Was the &ldquo;Original Jesus&rdquo; a Pagan God?</div>
+        <div class="book-author">Timothy Freke &amp; Peter Gandy</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">10</span>
+      <div class="book-info">
+        <div class="book-title">Jesus and the Lost Goddess: The Secret Teachings of the Original Christians</div>
+        <div class="book-author">Timothy Freke &amp; Peter Gandy</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">16</span>
+      <div class="book-info">
+        <div class="book-title">The Gnostic Gospels</div>
+        <div class="book-author">Elaine Pagels</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">17</span>
+      <div class="book-info">
+        <div class="book-title">The Gnostic Scriptures</div>
+        <div class="book-author">Bentley Layton</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">18</span>
+      <div class="book-info">
+        <div class="book-title">The Original Gospel of Thomas in Translation</div>
+        <div class="book-author">April DeConick</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">19</span>
+      <div class="book-info">
+        <div class="book-title">Ancient Gnosticism: Traditions and Literature</div>
+        <div class="book-author">Birger Pearson</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">20</span>
+      <div class="book-info">
+        <div class="book-title">Not in His Image: Gnostic Vision, Sacred Ecology, and the Future of Belief</div>
+        <div class="book-author">John Lamb Lash</div>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Mythology & Mimesis ── -->
+  <div class="rw-category-head cat-teal">Mythology, Mimesis &amp; Comparative Religion</div>
+  <ul class="book-list">
+    <li>
+      <span class="item-num">21</span>
+      <div class="book-info">
+        <div class="book-title">The Hero with a Thousand Faces</div>
+        <div class="book-author">Joseph Campbell</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">22</span>
+      <div class="book-info">
+        <div class="book-title">The Homeric Epics and the Gospel of Mark</div>
+        <div class="book-author">Dennis R. MacDonald</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">23</span>
+      <div class="book-info">
+        <div class="book-title">The Dionysian Gospel: The Fourth Gospel and Euripides</div>
+        <div class="book-author">Dennis R. MacDonald</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">24</span>
+      <div class="book-info">
+        <div class="book-title">The Golden Bough: A Study in Magic and Religion</div>
+        <div class="book-author">James Frazer</div>
+      </div>
+    </li>
+    <li>
+      <span class="item-num">25</span>
+      <div class="book-info">
+        <div class="book-title">The Riddle of Resurrection: &ldquo;Dying and Rising Gods&rdquo; in the Ancient Near East</div>
+        <div class="book-author">Tryggve Mettinger</div>
+      </div>
+    </li>
+  </ul>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ARTICLES & PAPERS
+  ═══════════════════════════════════════════════ -->
+  <div class="rw-section-head">Articles &amp; Academic Papers <span class="rw-count-tag">33</span></div>
+
+  <!-- ── Christos / Naming ── -->
+  <div class="rw-category-head">&#967;&#961;&#953;&#963;&#964;&#972;&#962;, Naming &amp; Early Christology</div>
+  <ul class="article-list">
+    <li>
+      <span class="article-num">26</span>
+      <div class="article-info">
+        <div class="article-title">The Earliest Christian Use of Christos: Some Suggestions</div>
+        <div class="article-author">M. de Jonge</div>
+        <a class="item-link" href="https://www.cambridge.org/core/journals/new-testament-studies/article/earliest-christian-use-of-christos-some-suggestions/85BB77260A5CCCC89474074E9AD1F17F" target="_blank" rel="noopener">cambridge.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">27</span>
+      <div class="article-info">
+        <div class="article-title">Naming Christians in Antiquity</div>
+        <div class="article-author">Tim Hegedus</div>
+        <a class="item-link" href="https://journals.sagepub.com/doi/10.1177/000842980403300203" target="_blank" rel="noopener">journals.sagepub.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">28</span>
+      <div class="article-info">
+        <div class="article-title">Christianity and Nazarene: Linguistic Implications and Origins</div>
+        <a class="item-link" href="https://jicrcr.com/index.php/jicrcr/article/download/960/744/2011" target="_blank" rel="noopener">jicrcr.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">29</span>
+      <div class="article-info">
+        <div class="article-title">The Origin of the Word Christ</div>
+        <a class="item-link" href="https://earlychristiantexts.com/the-origin-of-the-word-christ/" target="_blank" rel="noopener">earlychristiantexts.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">30</span>
+      <div class="article-info">
+        <div class="article-title">The Development of Early Christology</div>
+        <a class="item-link" href="https://vc.bridgew.edu/cgi/viewcontent.cgi?article=1023&amp;context=honors_proj" target="_blank" rel="noopener">vc.bridgew.edu &rarr;</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Entheogen / Sacred Pharmacy ── -->
+  <div class="rw-category-head">Entheogen Use &amp; Sacred Pharmacy</div>
+  <ul class="article-list">
+    <li>
+      <span class="article-num">31</span>
+      <div class="article-info">
+        <div class="article-title">Entheogens in Christian Art: Wasson, Allegro, and the Psychedelic Gospels</div>
+        <div class="article-author">Jerry B. Brown</div>
+        <a class="item-link" href="https://akjournals.com/view/journals/2054/3/2/article-p142.pdf" target="_blank" rel="noopener">akjournals.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">32</span>
+      <div class="article-info">
+        <div class="article-title">Observing Past Entheogenic Practices and Considering the Eucharist</div>
+        <div class="article-author">H. Hollensbe</div>
+        <a class="item-link" href="https://digitalcommons.georgefox.edu/cgi/viewcontent.cgi?article=1415&amp;context=dmin" target="_blank" rel="noopener">digitalcommons.georgefox.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">33</span>
+      <div class="article-info">
+        <div class="article-title">Entheogens and the Ancient Mystery Religions</div>
+        <div class="article-author">Mark A. Hoffman</div>
+        <a class="item-link" href="https://www.academia.edu/44235520/Entheogens_Psychedelic_Drugs_and_the_Ancient_Mystery_Religions_Mark_A_Hoffman" target="_blank" rel="noopener">academia.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">34</span>
+      <div class="article-info">
+        <div class="article-title">Biblical Entheogens: A Speculative Hypothesis</div>
+        <a class="item-link" href="https://www.researchgate.net/publication/233597014_Biblical_Entheogens_a_Speculative_Hypothesis" target="_blank" rel="noopener">researchgate.net &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">35</span>
+      <div class="article-info">
+        <div class="article-title">Psychedelics, Eleusis, and the Invention of Religious Experience</div>
+        <div class="article-author">Mosurinjohn</div>
+        <a class="item-link" href="https://www.liebertpub.com/doi/full/10.1177/28314425251361835" target="_blank" rel="noopener">liebertpub.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">36</span>
+      <div class="article-info">
+        <div class="article-title">Sacred Plants and the Gnostic Church</div>
+        <a class="item-link" href="https://pdfs.semanticscholar.org/ba52/84eefa99da873cacb2fbfd630cf8a45554ac.pdf" target="_blank" rel="noopener">semanticscholar.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">37</span>
+      <div class="article-info">
+        <div class="article-title">Psychedelic Intersections, vol. 1</div>
+        <div class="article-author">Harvard Divinity School — Center for the Study of World Religions</div>
+        <a class="item-link" href="https://cswr.hds.harvard.edu/sites/g/files/omnuum4346/files/2025-02/2.3.25%20PICA%20vol%201.pdf" target="_blank" rel="noopener">cswr.hds.harvard.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">50</span>
+      <div class="article-info">
+        <div class="article-title">Speculations on Entheogen-Use in Early Christian Ritual</div>
+        <div class="article-author">Jerry B. Brown</div>
+        <a class="item-link" href="https://philarchive.org/archive/BROSPA-8" target="_blank" rel="noopener">philarchive.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">51</span>
+      <div class="article-info">
+        <div class="article-title">Evidence for Entheogen Use in Prehistory and World Religions</div>
+        <div class="article-author">Michael Winkelman</div>
+        <a class="item-link" href="https://akjournals.com/view/journals/2054/3/2/article-p43.xml" target="_blank" rel="noopener">akjournals.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">52</span>
+      <div class="article-info">
+        <div class="article-title">The Psychedelic Gospels: The Secret History of Hallucinogens in Christianity</div>
+        <div class="article-author">Brown &amp; Brown</div>
+        <a class="item-link" href="https://philpapers.org/archive/BROTPG-2.pdf" target="_blank" rel="noopener">philpapers.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">53</span>
+      <div class="article-info">
+        <div class="article-title">Psychedelics, Eleusis, and the Invention of Religious Experience</div>
+        <div class="article-author">Mosurinjohn &amp; Ascough</div>
+        <a class="item-link" href="https://www.liebertpub.com/doi/10.1177/28314425251361835" target="_blank" rel="noopener">liebertpub.com &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">54</span>
+      <div class="article-info">
+        <div class="article-title">Psychedelic Futures and Altered States in the Religions of the Ancient Mediterranean</div>
+        <div class="article-author">C. M. Stang</div>
+        <a class="item-link" href="https://www.cambridge.org/core/journals/harvard-theological-review/article/psychedelic-futures-and-altered-states-in-the-religions-of-the-ancient-mediterranean/CFC771D700D6D7BEA8AD6D961BAC4F27" target="_blank" rel="noopener">cambridge.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">55</span>
+      <div class="article-info">
+        <div class="article-title">Mixing the Kykeon</div>
+        <a class="item-link" href="https://www.researchgate.net/publication/317412224_Mixing_the_Kykeon" target="_blank" rel="noopener">researchgate.net &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">56</span>
+      <div class="article-info">
+        <div class="article-title">Foreword: Psychedelics — Psychedelic Intersections</div>
+        <div class="article-author">Harvard Divinity School</div>
+        <a class="item-link" href="https://cswr.hds.harvard.edu/publications/psychedelic-intersections/foreward-psychedelics-stang" target="_blank" rel="noopener">cswr.hds.harvard.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">57</span>
+      <div class="article-info">
+        <div class="article-title">The Secret History of Hallucinogens in Christianity</div>
+        <a class="item-link" href="https://philarchive.org/rec/BROTPG-2" target="_blank" rel="noopener">philarchive.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">58</span>
+      <div class="article-info">
+        <div class="article-title">Toxic Eucharist</div>
+        <a class="item-link" href="https://open.bu.edu/items/75f4f7fe-1b8a-4cb0-95c4-9f638b3fcf1a" target="_blank" rel="noopener">open.bu.edu &rarr;</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Greek Tragedy / LXX / NT ── -->
+  <div class="rw-category-head cat-teal">Greek Tragedy, the Septuagint &amp; New Testament</div>
+  <ul class="article-list">
+    <li>
+      <span class="article-num">41</span>
+      <div class="article-info">
+        <div class="article-title">Divine Epiphanies in Greek Tragedy, the Septuagint and the New Testament: A Shared Vision of the Divine</div>
+        <div class="article-author">Edmund Stewart</div>
+        <a class="item-link" href="https://www.academia.edu/25832230/DIVINE_EPIPHANIES_IN_GREEK_TRAGEDY_THE_SEPTUAGINT_AND_THE_NEW_TESTAMENT_A_SHARED_VISION_OF_THE_DIVINE" target="_blank" rel="noopener">academia.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">42</span>
+      <div class="article-info">
+        <div class="article-title">Medea of Euripides and the Old Testament</div>
+        <div class="article-author">E. G. Dafni</div>
+        <a class="item-link" href="https://hts.org.za/index.php/hts/article/view/6145/15976" target="_blank" rel="noopener">hts.org.za &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">43</span>
+      <div class="article-info">
+        <div class="article-title">The Figure of Mary in Christus Patiens and Greek Tragedy: Fragmenting Tragic Myth and Passion Narrative in a Byzantine Appropriation of Euripidean Tragedy</div>
+        <div class="article-author">Bryant Davies</div>
+        <a class="item-link" href="https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/61541/Bryant%20Davies%20The%20Figure%20of%20Mary%20Mother%20of%20God%20in%20Christus%20Patiens%3A%20Fragmenting%20Tragic%20Myth%20and%20Passion%20Narrative%20in%20a%20Byzantine%20Appropriation%20of%20Euripidean%20Tragedy%202017%20Accepted.docx" target="_blank" rel="noopener">qmro.qmul.ac.uk &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">44</span>
+      <div class="article-info">
+        <div class="article-title">Women and Gender in Ancient Religions</div>
+        <a class="item-link" href="https://www.researchgate.net/profile/Stephen-Ahearne-Kroll/publication/319141464_Women_and_Gender_in_Ancient_Religions/links/59946aa6458515c0ce652c4f/Women-and-Gender-in-Ancient-Religions.pdf" target="_blank" rel="noopener">researchgate.net &rarr;</a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ── Mimesis Criticism ── -->
+  <div class="rw-category-head cat-teal">Mimesis Criticism &mdash; MacDonald &amp; the Homeric Gospel</div>
+  <ul class="article-list">
+    <li>
+      <span class="article-num">38</span>
+      <div class="article-info">
+        <div class="article-title">The Homeric Epics and the Gospel of Mark (archive copy)</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://archive.org/details/gospelshomerimit0001macd" target="_blank" rel="noopener">archive.org &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">39</span>
+      <div class="article-info">
+        <div class="article-title">Review: The Homeric Epics and the Gospel of Mark</div>
+        <div class="article-author">Bryn Mawr Classical Review</div>
+        <a class="item-link" href="https://bmcr.brynmawr.edu/2000/2000.09.16/" target="_blank" rel="noopener">bmcr.brynmawr.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">40</span>
+      <div class="article-info">
+        <div class="article-title">Does the New Testament Imitate Homer? Four Cases from the Acts of the Apostles</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://dokumen.pub/does-the-new-testament-imitate-homer-four-cases-from-the-acts-of-the-apostles-9780300129892.html" target="_blank" rel="noopener">dokumen.pub &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">45</span>
+      <div class="article-info">
+        <div class="article-title">Does the New Testament Imitate Homer? Four Cases from the Acts of the Apostles</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://www.researchgate.net/publication/293116872_Does_the_new_testament_imitate_homer_Four_cases_from_the_acts_of_the_apostles" target="_blank" rel="noopener">researchgate.net &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">46</span>
+      <div class="article-info">
+        <div class="article-title">The Homeric Epics and the Gospel of Mark (PDF)</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://www.admin.ces.funai.edu.ng/textbook-solutions/publication/download/Homeric_Epics_And_The_Gospel_Of_Mark.pdf" target="_blank" rel="noopener">funai.edu.ng &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">47</span>
+      <div class="article-info">
+        <div class="article-title">Mark&rsquo;s Young Man and Homer&rsquo;s Elpenor</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://core.ac.uk/download/pdf/216831580.pdf" target="_blank" rel="noopener">core.ac.uk &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">48</span>
+      <div class="article-info">
+        <div class="article-title">The Gospels and Homer: Imitations of Greek Epic in Mark and Luke-Acts</div>
+        <a class="item-link" href="https://www.academia.edu/109178831/The_Gospels_and_Homer_Imitations_of_Greek_Epic_in_Mark_and_Luke_Acts" target="_blank" rel="noopener">academia.edu &rarr;</a>
+      </div>
+    </li>
+    <li>
+      <span class="article-num">49</span>
+      <div class="article-info">
+        <div class="article-title">Defending Mimesis Criticism</div>
+        <div class="article-author">Dennis R. MacDonald</div>
+        <a class="item-link" href="https://www.jstor.org/stable/pdf/j.ctvbcd1wt.15.pdf" target="_blank" rel="noopener">jstor.org &rarr;</a>
+      </div>
+    </li>
+  </ul>
+
+</div><!-- /page-wrapper -->
+
+<footer>
+  <div class="footer-main">
+    <span>Pagan Roots of Monotheism</span>
+    <span>|</span>
+    <span>Related Works</span>
+    <span>|</span>
+    <span>Generated 2026-03-07</span>
+    <span>|</span>
+    <span>26 books &middot; 33 articles</span>
+  </div>
+</footer>
+
+</body>
+</html>

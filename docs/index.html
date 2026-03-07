@@ -15,6 +15,11 @@
       document.documentElement.setAttribute('data-theme', n);
       localStorage.setItem('prm-theme', n);
     }
+    function toggleNav() {
+      var l = document.getElementById('nav-links'), b = document.getElementById('nav-toggle'), o = l.classList.toggle('open');
+      b.setAttribute('aria-expanded', String(o));
+      b.innerHTML = o ? '\u2715' : '\u2630';
+    }
   </script>
   <style>
     /* Index-page only overrides */
@@ -59,9 +64,18 @@
 
 <nav>
   <span class="nav-brand">&#9737; Pagan Roots of Monotheism</span>
-  <span class="nav-sep nav-meta-sep">|</span>
-  <span class="nav-section">Research Archive</span>
+  <div class="nav-links" id="nav-links">
+    <span class="nav-sep">|</span>
+    <a href="christos_tlg_report.html">&#967;&#961;&#953;&#963;&#964;&#972;&#962; Research</a>
+    <span class="nav-sep">|</span>
+    <a href="pharmakon_hypothesis.html">Pharmakon</a>
+    <span class="nav-sep">|</span>
+    <a href="jason_jesus_sidequest.html">Jason / Jesus</a>
+    <span class="nav-sep">|</span>
+    <a href="related_works.html">Related Works</a>
+  </div>
   <div class="nav-controls">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">&#9776;</button>
     <button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark theme">&#9680;</button>
   </div>
 </nav>
