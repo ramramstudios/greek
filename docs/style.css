@@ -70,7 +70,7 @@ body {
 }
 
 /* ─── NAVIGATION ─── */
-nav {
+nav:not(.toc) {
   background: var(--nav-bg);
   border-bottom: 1px solid var(--border);
   padding: 0 1.5rem;
@@ -128,13 +128,13 @@ nav .nav-branch {
 
 nav .nav-sep { color: var(--border-light); font-size: 0.85rem; }
 
-nav a {
+nav:not(.toc) a {
   color: var(--link);
   text-decoration: none;
   font-size: 0.82rem;
 }
 
-nav a:hover { color: var(--gold-light); }
+nav:not(.toc) a:hover { color: var(--gold-light); }
 
 /* Hamburger toggle button */
 .nav-toggle {
@@ -876,7 +876,7 @@ footer a:hover { color: var(--gold); }
   body { font-size: 16px; }
 
   /* ── Navigation ── */
-  nav {
+  nav:not(.toc) {
     padding: 0 1rem;
     flex-wrap: nowrap;
   }

@@ -72,6 +72,8 @@ christ-tlg/
 | v1.2 | 2026-03-07 | Jason/Jesus sidequest: etymological analysis, 6 structural parallels, Medea-Magdalene typology, research roadmap |
 | v2.0 | 2026-03-07 | Full site rebrand: Christ-TLG → Pagan Roots of Monotheism. Blog-style index with long-form article previews. Light/dark theme toggle. Visitor counter. Improved reading typography (17px base, 1.85 line-height). Unified nav across all pages. README overhaul with versioning. |
 | v2.1 | 2026-03-07 | Mobile-first redesign: hamburger nav with collapsible dropdown on all inner pages; light mode as default theme; 44px minimum tap targets on all interactive elements; `-webkit-overflow-scrolling: touch` on tables and code blocks; responsive hero, article, and footer spacing; summary grid collapses to single column below 400px; footer pipe separators hidden on mobile. |
+| v2.2 | 2026-03-07 | Add Related Works page (secondary literature survey); extend hamburger nav with Related Works link across all site pages. |
+| v2.3 | 2026-03-07 | Fix TOC overlay bug: scope `nav { position: sticky }` to `nav:not(.toc)` so inline table-of-contents blocks on 7 pages no longer float over page content. |
 
 ---
 
