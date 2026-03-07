@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LSJ Entry: χριστός | Pagan Roots of Monotheism</title>
   <link rel="stylesheet" href="style.css">
   <script>
-    (function(){var t=localStorage.getItem('prm-theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();
+    (function(){var t=localStorage.getItem('prm-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();
     function toggleTheme(){var n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('prm-theme',n);}
+    function toggleNav(){var l=document.getElementById('nav-links'),b=document.getElementById('nav-toggle'),o=l.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.innerHTML=o?'\u2715':'\u2630';}
   </script>
 </head>
 <body>
 
 <nav>
   <a href="index.html" class="nav-brand">&#9737; Pagan Roots of Monotheism</a>
-  <span class="nav-sep">|</span>
-  <a href="christos_tlg_report.html">TLG Report</a>
-  <span class="nav-sep">|</span>
-  <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
-  <span class="nav-sep">|</span>
-  <span style="color: var(--text-dim)">LSJ Entry</span>
-  <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
+  <div class="nav-links" id="nav-links">
+    <span class="nav-sep">|</span>
+    <a href="christos_tlg_report.html">TLG Report</a>
+    <span class="nav-sep">|</span>
+    <a href="christos_diachronic_analysis.html">Diachronic Analysis</a>
+    <span class="nav-sep">|</span>
+    <span style="color: var(--text-dim)">LSJ Entry</span>
+  </div>
+  <div class="nav-controls">
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">&#9776;</button>
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
+  </div>
 </nav>
 
 <div class="page-wrapper">

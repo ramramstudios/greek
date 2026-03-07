@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script>
     (function(){
-      var t = localStorage.getItem('prm-theme') || 'dark';
+      var t = localStorage.getItem('prm-theme') || 'light';
       document.documentElement.setAttribute('data-theme', t);
     })();
     function toggleTheme() {
@@ -59,9 +59,11 @@
 
 <nav>
   <span class="nav-brand">&#9737; Pagan Roots of Monotheism</span>
-  <span class="nav-sep">|</span>
+  <span class="nav-sep nav-meta-sep">|</span>
   <span class="nav-section">Research Archive</span>
-  <button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark theme">&#9680;</button>
+  <div class="nav-controls">
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark theme">&#9680;</button>
+  </div>
 </nav>
 
 <div class="page-wrapper-article">

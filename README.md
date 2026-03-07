@@ -71,6 +71,7 @@ christ-tlg/
 | v1.1 | 2026-03-07 | Pharmakon research branch: chemical lineage report, pharmakon hypothesis (15 sections), 50-entry sources database, 63-entry full sources with hypothesis tags |
 | v1.2 | 2026-03-07 | Jason/Jesus sidequest: etymological analysis, 6 structural parallels, Medea-Magdalene typology, research roadmap |
 | v2.0 | 2026-03-07 | Full site rebrand: Christ-TLG → Pagan Roots of Monotheism. Blog-style index with long-form article previews. Light/dark theme toggle. Visitor counter. Improved reading typography (17px base, 1.85 line-height). Unified nav across all pages. README overhaul with versioning. |
+| v2.1 | 2026-03-07 | Mobile-first redesign: hamburger nav with collapsible dropdown on all inner pages; light mode as default theme; 44px minimum tap targets on all interactive elements; `-webkit-overflow-scrolling: touch` on tables and code blocks; responsive hero, article, and footer spacing; summary grid collapses to single column below 400px; footer pipe separators hidden on mobile. |
 
 ---
 
