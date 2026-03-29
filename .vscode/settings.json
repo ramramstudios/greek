@@ -1,0 +1,12 @@
+{
+  "git.enabled": true,
+  "git.autofetch": true,
+  "git.decorations.enabled": true,
+  "git.showInlineOpenFileAction": true,
+  "scm.diffDecorations": "all",
+  "scm.diffDecorationsGutterVisibility": "always",
+  "editor.gutter.showModifiedChanges": true,
+  "scm.alwaysShowRepositories": true,
+  "scm.countBadge": "all",
+  "git.openRepositoryInParentFolders": "always"
+}
