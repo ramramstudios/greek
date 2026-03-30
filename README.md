@@ -90,6 +90,44 @@ christ-tlg/
 
 ---
 
+## Search
+
+The site uses [Pagefind](https://pagefind.app/) for static full-text search. A **Search** link appears in the nav on every page.
+
+### How it works
+
+Pagefind crawls the built HTML in `docs/` and produces a pre-built search index at `docs/pagefind/`. The search page (`docs/search.html`) loads the index at runtime via a dynamic `import()` of `pagefind/pagefind.js` — no backend required.
+
+Only the main page content is indexed. Each page marks its content region with `data-pagefind-body` on the `.page-wrapper` / `.page-wrapper-article` / `.page-wrapper-wide` div, so the sticky nav and repeated chrome are excluded from the index. The search page itself is marked `data-pagefind-ignore`.
+
+### Generating the index
+
+```bash
+# First time setup
+npm install
+
+# Build the index (run this after any HTML changes)
+npm run index
+```
+
+This runs `pagefind --site docs` and writes the index into `docs/pagefind/`. Commit the `docs/pagefind/` directory so GitHub Pages serves it.
+
+### Running locally
+
+Serve `docs/` from any static file server — the index loads via a relative path (`./pagefind/pagefind.js`):
+
+```bash
+npx serve docs
+# or
+python3 -m http.server 8000 --directory docs
+```
+
+Then open `http://localhost:8000/search.html`.
+
+> **Note:** The Pagefind index (`docs/pagefind/`) is generated from the HTML files in `docs/`. Re-run `npm run index` any time pages are added or changed.
+
+---
+
 ## License
 
 Research documents: CC BY 4.0 — free to share and adapt with attribution.

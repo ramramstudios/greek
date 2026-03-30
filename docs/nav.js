@@ -12,6 +12,7 @@
     { href: 'holy_week.html',                  label: 'Holy Week' },
     { href: 'nwt_exclusivity.html',            label: 'NWT \u0026 Exegesis' },
     { href: 'related_works.html',              label: 'Related Works' },
+    { href: 'search.html',                     label: 'Search' },
   ];
 
   function buildNav() {

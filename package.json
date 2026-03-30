@@ -1,0 +1,13 @@
+{
+  "name": "pagan-roots-of-monotheism",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Philological research archive — GitHub Pages site",
+  "scripts": {
+    "index": "pagefind --site docs",
+    "build": "pagefind --site docs"
+  },
+  "devDependencies": {
+    "pagefind": "^1.3.0"
+  }
+}

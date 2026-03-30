@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search — Pagan Roots of Monotheism</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="nav.js" defer></script>
+  <script>
+    (function(){var t=localStorage.getItem('prm-theme')||'light';document.documentElement.setAttribute('data-theme',t);})();
+    function toggleTheme(){var n=document.documentElement.getAttribute('data-theme')==='light'?'dark':'light';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('prm-theme',n);}
+    function toggleNav(){var l=document.getElementById('nav-links'),b=document.getElementById('nav-toggle'),o=l.classList.toggle('open');b.setAttribute('aria-expanded',String(o));b.innerHTML=o?'\u2715':'\u2630';}
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">&#9737; Pagan Roots of Monotheism</a>
+  <div class="nav-links" id="nav-links"></div>
+  <div class="nav-controls">
+    <button class="theme-btn" onclick="toggleTheme()" title="Toggle theme">&#9680;</button>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">&#9776;</button>
+  </div>
+</nav>
+
+<div class="page-wrapper-article" data-pagefind-ignore>
+
+  <div class="page-header">
+    <div class="branch-tag">site-wide full-text search</div>
+    <h1>Search</h1>
+    <p class="subtitle">Search the full text of all research pages.</p>
+  </div>
+
+  <div class="search-wrap">
+    <label for="search-input" class="sr-only">Search all pages</label>
+    <input
+      type="search"
+      id="search-input"
+      class="search-input"
+      placeholder="Search all pages&#x2026;"
+      autocomplete="off"
+      spellcheck="false"
+      autofocus
+      aria-controls="search-results"
+      aria-describedby="search-status"
+    >
+  </div>
+
+  <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+  <ol id="search-results" class="search-results" aria-label="Search results"></ol>
+
+</div>
+
+<script type="module">
+  const input   = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const status  = document.getElementById('search-status');
+
+  let pagefind = null;
+
+  async function init() {
+    try {
+      pagefind = await import('./pagefind/pagefind.js');
+      await pagefind.options({ excerptLength: 35 });
+    } catch (e) {
+      status.textContent =
+        'Search index not found. Run \u201cnpm run index\u201d after building the site.';
+    }
+  }
+  init();
+
+  let debounce;
+  input.addEventListener('input', function () {
+    clearTimeout(debounce);
+    debounce = setTimeout(runSearch, 220);
+  });
+
+  // Also trigger on Enter without waiting for debounce
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { clearTimeout(debounce); runSearch(); }
+  });
+
+  async function runSearch() {
+    const q = input.value.trim();
+    if (!pagefind || !q) {
+      results.innerHTML = '';
+      status.textContent = '';
+      return;
+    }
+
+    const search = await pagefind.search(q);
+
+    if (!search.results.length) {
+      results.innerHTML = '';
+      status.textContent = 'No results for \u201c' + escapeHtml(q) + '\u201d.';
+      return;
+    }
+
+    const count = search.results.length;
+    status.textContent =
+      count + ' result' + (count !== 1 ? 's' : '') + ' for \u201c' + escapeHtml(q) + '\u201d';
+
+    const items = await Promise.all(
+      search.results.slice(0, 20).map(function (r) { return r.data(); })
+    );
+
+    results.innerHTML = items.map(function (item) {
+      var title   = item.meta && item.meta.title ? escapeHtml(item.meta.title) : 'Untitled';
+      var excerpt = item.excerpt || '';   // Pagefind already HTML-encodes + wraps matches in <mark>
+      var url     = item.url || '#';
+      return '<li class="search-result">'
+        + '<a href="' + url + '" class="search-result-title">' + title + '</a>'
+        + '<p class="search-result-excerpt">' + excerpt + '</p>'
+        + '</li>';
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+</script>
+
+</body>
+</html>

@@ -2,3 +2,4 @@
 .claude/
 *.swp
 *.swo
+node_modules/
