@@ -12,7 +12,6 @@
     { href: 'holy_week.html',                  label: 'Holy Week' },
     { href: 'nwt_exclusivity.html',            label: 'NWT \u0026 Exegesis' },
     { href: 'related_works.html',              label: 'Related Works' },
-    { href: 'search.html',                     label: 'Search' },
   ];
 
   function buildNav() {
@@ -32,6 +31,25 @@
       }
     });
     linksEl.innerHTML = html;
+
+    // Inject search form into .nav-controls (always-visible area).
+    var controlsEl = document.querySelector('nav .nav-controls');
+    if (controlsEl && !document.getElementById('nav-search-form')) {
+      var form = document.createElement('form');
+      form.id = 'nav-search-form';
+      form.className = 'nav-search-form';
+      form.action = 'search.html';
+      form.method = 'GET';
+      var input = document.createElement('input');
+      input.type = 'search';
+      input.name = 'q';
+      input.className = 'nav-search-input';
+      input.placeholder = 'Search\u2026';
+      input.setAttribute('aria-label', 'Search site');
+      input.setAttribute('autocomplete', 'off');
+      form.appendChild(input);
+      controlsEl.insertBefore(form, controlsEl.firstChild);
+    }
   }
 
   if (document.readyState === 'loading') {

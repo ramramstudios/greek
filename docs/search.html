@@ -66,6 +66,13 @@
       status.textContent =
         'Search index not found. Run \u201cnpm run index\u201d after building the site.';
     }
+    // If the page was reached via the nav search form, run that query immediately.
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    if (q) {
+      input.value = q;
+      runSearch();
+    }
   }
   init();
 
