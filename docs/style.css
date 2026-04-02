@@ -1054,13 +1054,9 @@ footer a:hover { color: var(--gold); }
   color: var(--text-muted);
 }
 
-/* Shrink input on narrow viewports */
+/* On phones, route search through the nav menu's Search link instead of
+   squeezing an input into the sticky header controls. */
 @media (max-width: 680px) {
-  .nav-search-input { width: 6rem; }
-  .nav-search-input:focus { width: 9rem; }
-}
-
-@media (max-width: 400px) {
   .nav-search-form { display: none; }
 }
 

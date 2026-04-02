@@ -10,16 +10,32 @@
     { href: 'jason_jesus_sidequest.html',      label: 'Jason / Jesus' },
     { href: 'demeter_jesus_drink_refusal.html',label: 'Demeter \u0026 Jesus' },
     { href: 'holy_week.html',                  label: 'Holy Week' },
+    { href: 'messiahs/index.html',             label: 'Messianic Claimants' },
     { href: 'nwt_exclusivity.html',            label: 'NWT \u0026 Exegesis' },
     { href: 'related_works.html',              label: 'Related Works' },
+    { href: 'search.html',                     label: 'Search' },
   ];
 
   function buildNav() {
     var linksEl = document.getElementById('nav-links');
     if (!linksEl) return;
 
-    // Derive current filename from URL; fall back to 'index.html' for bare paths.
-    var current = window.location.pathname.split('/').pop() || 'index.html';
+    // Reuse the page-authored nav.js path as the relative prefix back to docs root.
+    var navScript = document.querySelector('script[src$="nav.js"], script[src$="/nav.js"]');
+    var navSrc = navScript ? (navScript.getAttribute('src') || '') : '';
+    var docsRoot = navSrc.replace(/nav\.js(?:\?.*)?$/, '');
+    if (docsRoot === './') docsRoot = '';
+
+    // Match current page by suffix so GitHub Pages project paths still highlight correctly.
+    var normalizedPath = window.location.pathname.replace(/\/$/, '/index.html');
+    var current = '';
+    NAV_PAGES.some(function (p) {
+      if (normalizedPath.endsWith('/' + p.href) || normalizedPath.endsWith(p.href)) {
+        current = p.href;
+        return true;
+      }
+      return false;
+    });
 
     var html = '';
     NAV_PAGES.forEach(function (p) {
@@ -27,7 +43,7 @@
       if (p.href === current) {
         html += '<span class="nav-branch">' + p.label + '</span>';
       } else {
-        html += '<a href="' + p.href + '">' + p.label + '</a>';
+        html += '<a href="' + docsRoot + p.href + '">' + p.label + '</a>';
       }
     });
     linksEl.innerHTML = html;
@@ -38,7 +54,7 @@
       var form = document.createElement('form');
       form.id = 'nav-search-form';
       form.className = 'nav-search-form';
-      form.action = 'search.html';
+      form.action = docsRoot + 'search.html';
       form.method = 'GET';
       var input = document.createElement('input');
       input.type = 'search';
