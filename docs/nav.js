@@ -11,6 +11,7 @@
     { href: 'demeter_jesus_drink_refusal.html',label: 'Demeter \u0026 Jesus' },
     { href: 'holy_week.html',                  label: 'Holy Week' },
     { href: 'messiahs/index.html',             label: 'Messianic Claimants' },
+    { href: 'early-xtianity/index.html',        label: 'Early Christianity' },
     { href: 'nwt_exclusivity.html',            label: 'NWT \u0026 Exegesis' },
     { href: 'related_works.html',              label: 'Related Works' },
     { href: 'search.html',                     label: 'Search' },
